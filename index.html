@@ -1616,6 +1616,60 @@
     .comp-header-col, .comp-type-col { padding: 20px; }
   }
 
+
+/* ── PRICE MATCH SECTION ── */
+.pm-section{background:#0A1628;padding:80px 0;position:relative;overflow:hidden}
+.pm-section::before{content:'';position:absolute;right:-80px;top:-80px;width:450px;height:450px;border-radius:50%;border:1px solid rgba(201,168,76,.08);pointer-events:none}
+.pm-section::after{content:'';position:absolute;left:-60px;bottom:-60px;width:320px;height:320px;border-radius:50%;border:1px solid rgba(201,168,76,.05);pointer-events:none}
+.pm-inner{display:grid;grid-template-columns:1fr 380px;gap:64px;align-items:start;position:relative;z-index:2}
+.pm-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.3);border-radius:100px;padding:5px 14px;font-size:12px;font-weight:600;color:#E8D09A;text-transform:uppercase;letter-spacing:.07em;margin-bottom:20px}
+.pm-title{font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,3.5vw,44px);font-weight:700;color:#fff;line-height:1.12;margin-bottom:16px}
+.pm-title em{font-style:normal;color:#C9A84C}
+.pm-desc{font-size:16px;color:rgba(255,255,255,.55);font-weight:300;line-height:1.75;margin-bottom:32px}
+.pm-steps{display:flex;flex-direction:column;gap:14px;margin-bottom:28px}
+.pm-step{display:flex;align-items:flex-start;gap:14px}
+.pm-step-num{width:28px;height:28px;border-radius:50%;background:rgba(201,168,76,.15);border:1.5px solid rgba(201,168,76,.4);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#C9A84C;flex-shrink:0;margin-top:1px}
+.pm-step-text{font-size:14px;color:rgba(255,255,255,.65);font-weight:300;line-height:1.55}
+.pm-step-text strong{color:#fff;font-weight:600}
+.pm-eligible{padding:18px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:10px}
+.pm-elig-title{font-size:11px;font-weight:700;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.07em;margin-bottom:10px}
+.pm-elig-tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px}
+.pm-tag{font-size:12px;padding:4px 11px;border-radius:100px;background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.25);color:#E8D09A;font-weight:500}
+.pm-tc{font-size:12px;color:rgba(255,255,255,.3);font-weight:300}
+.pm-tc a{color:rgba(201,168,76,.7);text-decoration:none}
+.pm-selected-note{font-size:12px;color:rgba(255,255,255,.3);font-weight:300;line-height:1.55;margin-bottom:8px;padding:8px 10px;background:rgba(255,255,255,.03);border-radius:6px;border-left:2px solid rgba(201,168,76,.3)}
+.pm-card{background:linear-gradient(145deg,#C9A84C 0%,#B8922F 100%);border-radius:20px;padding:32px;position:relative;overflow:hidden;box-shadow:0 16px 48px rgba(201,168,76,.25)}
+.pm-card-shine{position:absolute;top:-40px;right:-40px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.12)}
+.pm-card-top{position:relative;z-index:1;text-align:center}
+.pm-card-lbl{font-size:11px;font-weight:700;color:rgba(10,22,40,.5);text-transform:uppercase;letter-spacing:.09em;margin-bottom:8px}
+.pm-cashback{display:flex;align-items:baseline;justify-content:center;gap:6px;margin-bottom:4px}
+.pm-aed{font-family:'Playfair Display',Georgia,serif;font-size:22px;font-weight:700;color:rgba(10,22,40,.7)}
+.pm-num{font-family:'Playfair Display',Georgia,serif;font-size:80px;font-weight:700;color:#0A1628;line-height:1}
+.pm-card-sub{font-size:13px;color:rgba(10,22,40,.55);font-weight:300;margin-bottom:20px}
+.pm-card-divider{height:1px;background:rgba(10,22,40,.15);margin:0 0 18px;position:relative;z-index:1}
+.pm-card-bottom{display:flex;flex-direction:column;gap:10px;margin-bottom:20px;position:relative;z-index:1}
+.pm-gi{display:flex;align-items:center;gap:10px;font-size:13.5px;color:rgba(10,22,40,.75);font-weight:400}
+.pm-gi-dot{width:20px;height:20px;border-radius:50%;background:rgba(10,22,40,.1);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#0A1628;flex-shrink:0}
+.pm-wa-btn{width:100%;background:#25D366;color:#fff;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:700;padding:13px;border-radius:10px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .22s;position:relative;z-index:1}
+.pm-wa-btn:hover{background:#1ebe5d;transform:translateY(-1px)}
+@media(max-width:900px){.pm-inner{grid-template-columns:1fr;gap:40px}.pm-card{max-width:420px}}
+/* ── END PRICE MATCH ── */
+
+/* Why stats card (replaces broken image) */
+.why-stats-card{background:#0A1628;border-radius:16px;padding:32px;border:1px solid rgba(201,168,76,.2)}
+.wsc-header{display:flex;align-items:center;gap:10px;margin-bottom:24px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.08)}
+.wsc-badge{font-size:24px}
+.wsc-title{font-family:'Playfair Display',Georgia,serif;font-size:18px;font-weight:600;color:#fff}
+.wsc-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.07);border-radius:10px;overflow:hidden;margin-bottom:22px}
+.wsc-stat{padding:18px 16px;background:#0A1628;transition:background .2s}
+.wsc-stat:hover{background:#152340}
+.wsc-num{font-family:'Playfair Display',Georgia,serif;font-size:26px;font-weight:700;color:#C9A84C;line-height:1;margin-bottom:4px}
+.wsc-lbl{font-size:12px;color:rgba(255,255,255,.45);font-weight:300}
+.wsc-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.wsc-cbls{font-size:12px;color:rgba(255,255,255,.3);font-weight:300}
+.wsc-cta{background:#C9A84C;color:#0A1628;font-size:14px;font-weight:700;padding:10px 20px;border-radius:8px;text-decoration:none;transition:all .2s}
+.wsc-cta:hover{background:#B8922F}
+
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -2063,11 +2117,40 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
       </div>
 
       <div class="why-visual">
-        <div class="why-image-wrap">
-          <img src="https://emaarbusiness.com/wp-content/uploads/2025/05/pexels-mo-ismail-2130628-3763190-1024x682.jpg" alt="Dubai skyline — business hub of the Middle East" loading="lazy">
-          <div class="why-badge-overlay">
-            <div class="why-badge-num">24hrs</div>
-            <div class="why-badge-text">Average time to<br>receive your trade license</div>
+        <div class="why-stats-card">
+          <div class="wsc-header">
+            <div class="wsc-badge">🏆</div>
+            <div class="wsc-title">Why clients choose us</div>
+          </div>
+          <div class="wsc-stats">
+            <div class="wsc-stat">
+              <div class="wsc-num">2,000+</div>
+              <div class="wsc-lbl">Businesses formed</div>
+            </div>
+            <div class="wsc-stat">
+              <div class="wsc-num">80+</div>
+              <div class="wsc-lbl">Nationalities served</div>
+            </div>
+            <div class="wsc-stat">
+              <div class="wsc-num">24 hrs</div>
+              <div class="wsc-lbl">Fastest setup</div>
+            </div>
+            <div class="wsc-stat">
+              <div class="wsc-num">0%</div>
+              <div class="wsc-lbl">Visa rejection rate</div>
+            </div>
+            <div class="wsc-stat">
+              <div class="wsc-num">7 days</div>
+              <div class="wsc-lbl">Available every day</div>
+            </div>
+            <div class="wsc-stat">
+              <div class="wsc-num">All 7</div>
+              <div class="wsc-lbl">UAE emirates covered</div>
+            </div>
+          </div>
+          <div class="wsc-bottom">
+            <div class="wsc-cbls">CBLS Licensed &middot; No. 12491086</div>
+            <a href="/contact/" class="wsc-cta">Free Consultation &#8594;</a>
           </div>
         </div>
       </div>
@@ -2542,6 +2625,58 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
 <!-- ═══════════════════════════════════════
      SECTION 5 — FAQ
 ═══════════════════════════════════════ -->
+<!-- ═══ PRICE MATCH GUARANTEE ═══ -->
+<section class="pm-section" id="price-match" aria-labelledby="pm-h">
+<div class="container">
+  <div class="pm-inner">
+    <div>
+      <div class="pm-badge">🛡️ Emaar Global Price Guarantee</div>
+      <h2 class="pm-title" id="pm-h">Found It Cheaper?<br>We Match It.<br><em>Plus AED&nbsp;200 Back.</em></h2>
+      <p class="pm-desc">We&rsquo;re confident our prices are the most competitive for the quality of service we deliver. Find a genuine, like-for-like written quote from any licensed UAE consultancy — show us. We match the price and give you AED&nbsp;200 cashback after completion.</p>
+      <div class="pm-steps">
+        <div class="pm-step"><div class="pm-step-num">1</div><div class="pm-step-text">Get a <strong>written quote</strong> from any licensed UAE business setup company</div></div>
+        <div class="pm-step"><div class="pm-step-num">2</div><div class="pm-step-text"><strong>Send it to us</strong> via WhatsApp — we review within 24 hours</div></div>
+        <div class="pm-step"><div class="pm-step-num">3</div><div class="pm-step-text">We <strong>match the price</strong> in writing &amp; AED&nbsp;200 cashback on completion</div></div>
+      </div>
+      <div class="pm-eligible">
+        <div class="pm-elig-title">Eligible services</div>
+        <div class="pm-elig-tags">
+          <span class="pm-tag">Free Zone Setup</span>
+          <span class="pm-tag">Mainland Setup</span>
+          <span class="pm-tag">Visa Packages</span>
+          <span class="pm-tag">Golden Visa</span>
+          <span class="pm-tag">License Renewal</span>
+          <span class="pm-tag">Accounting &amp; VAT</span>
+        </div>
+        <div class="pm-selected-note">Only the services listed above are eligible for the price match &amp; AED 200 cashback. Acceptance of any claim is at Emaar Global&rsquo;s sole discretion after review.</div>
+      <div class="pm-tc">&#9432; <strong style="color:rgba(255,255,255,.5);font-weight:600;">Selected services only</strong> &middot; Like-for-like quotes only &middot; Licensed providers only &middot; Written quote required</div>
+      </div>
+    </div>
+    <div>
+      <div class="pm-card">
+        <div class="pm-card-shine"></div>
+        <div class="pm-card-top">
+          <div class="pm-card-lbl">Your guaranteed cashback</div>
+          <div class="pm-cashback"><span class="pm-aed">AED</span><span class="pm-num">200</span></div>
+          <div class="pm-card-sub">Credited after service completion</div>
+        </div>
+        <div class="pm-card-divider"></div>
+        <div class="pm-card-bottom">
+          <div class="pm-gi"><div class="pm-gi-dot">✓</div>Price matched to the dirham</div>
+          <div class="pm-gi"><div class="pm-gi-dot">✓</div>Decision within 24 hours</div>
+          <div class="pm-gi"><div class="pm-gi-dot">✓</div>Confirmed in writing before you commit</div>
+          <div class="pm-gi"><div class="pm-gi-dot">✓</div>No pressure to proceed</div>
+        </div>
+        <a href="https://wa.me/971561571514?text=Hi%2C%20I%20have%20a%20competitor%20quote%20I%27d%20like%20to%20submit%20for%20your%20Price%20Match%20Guarantee." class="pm-wa-btn" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.1.547 4.162 1.588 5.979L.043 24l6.24-1.637A11.969 11.969 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.999a9.94 9.94 0 01-5.063-1.378l-.363-.216-3.764.987.993-3.653-.237-.374A9.941 9.941 0 012.04 12c0-5.493 4.47-9.963 9.963-9.963 2.662 0 5.165 1.037 7.048 2.92a9.914 9.914 0 012.914 7.043c-.002 5.492-4.472 9.962-9.98 9.962l.015.037z"/></svg>
+          WhatsApp Your Competitor Quote
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
 <section class="faq-section" aria-labelledby="faq-heading">
   <div class="container">
     <div class="faq-inner">
