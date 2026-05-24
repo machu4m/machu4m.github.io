@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services — Emaar Global Business Solutions Dubai</title>
+<meta name="description" content="Complete UAE business services under one roof. Company formation, visa services, accounting and tax, corporate compliance, legal, notary, and government approvals in Dubai.">
+<link rel="canonical" href="https://emaarbusiness.com/services/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Emaar Global Business Solutions","url":"https://emaarbusiness.com","telephone":"+971561571514","email":"info@emaar-global.com","address":{"@type":"PostalAddress","addressLocality":"Dubai","addressCountry":"AE"},"description":"Full-service UAE business consultancy offering company formation, visa, accounting, legal, notary, corporate compliance and government approval services.","hasOfferCatalog":{"@type":"OfferCatalog","name":"UAE Business Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Business Licensing"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Visa Services"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Accounting and Tax"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Corporate Services"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Legal Services"}}]}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do you provide a trade license with a visa?","acceptedAnswer":{"@type":"Answer","text":"Yes. We offer packages including business license, UAE residency visa, medical, Emirates ID, and insurance. License-only and visa-included packages available."}},{"@type":"Question","name":"Can you help open a business bank account in UAE?","acceptedAnswer":{"@type":"Answer","text":"Yes. We assist with documentation, bank selection by activity, and appointments. We also help challenging profiles including startups, foreign shareholders, and high-risk sectors."}},{"@type":"Question","name":"Are there hidden fees?","acceptedAnswer":{"@type":"Answer","text":"No. We provide transparent pricing with a clear written proposal before any work begins. Government fees, service charges, and add-ons are all itemised upfront."}}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#C9A84C;--gold-light:#E8D09A;--gold-dark:#8B6914;
+  --navy:#0A1628;--navy-mid:#152340;--navy-light:#1E3460;
+  --slate:#4A5568;--slate-light:#718096;
+  --cream:#FAF8F3;--white:#FFFFFF;
+  --success:#1D9E75;--success-bg:#E1F5EE;
+  --border-soft:rgba(255,255,255,0.08);
+  --radius:12px;--radius-sm:8px;
+  --shadow:0 4px 24px rgba(10,22,40,0.08);
+  --shadow-gold:0 8px 32px rgba(201,168,76,0.2);
+  --fd:'Playfair Display',Georgia,serif;
+  --fb:'DM Sans',-apple-system,sans-serif;
+  --tr:0.22s cubic-bezier(0.4,0,0.2,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--fb);background:var(--cream);color:var(--navy);line-height:1.6;-webkit-font-smoothing:antialiased;}
+.container{max-width:1160px;margin:0 auto;padding:0 24px;}
+.section{padding:80px 0;}
+.section-alt{background:var(--white);}
+
+/* TOPBAR */
+.topbar{background:var(--navy);padding:9px 0;border-bottom:1px solid var(--border-soft);}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;}
+.topbar a{color:var(--gold-light);text-decoration:none;font-size:13px;display:flex;align-items:center;gap:6px;transition:color var(--tr);}
+.topbar a:hover{color:var(--white);}
+.topbar-left,.topbar-right{display:flex;gap:20px;align-items:center;}
+
+/* NAV */
+.nav-wrapper{position:sticky;top:0;z-index:100;background:var(--white);border-bottom:1px solid rgba(10,22,40,0.08);box-shadow:0 2px 16px rgba(10,22,40,0.06);}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:24px;}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.nav-logo-mark{width:40px;height:40px;background:var(--navy);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.nav-logo-name{font-family:var(--fd);font-size:18px;font-weight:600;color:var(--navy);display:block;line-height:1.2;}
+.nav-logo-sub{font-size:10px;font-weight:500;color:var(--gold-dark);text-transform:uppercase;letter-spacing:0.08em;display:block;}
+.nav-links{display:flex;list-style:none;gap:2px;align-items:center;}
+.nav-links a{text-decoration:none;color:var(--slate);font-size:14px;font-weight:500;padding:8px 14px;border-radius:var(--radius-sm);transition:all var(--tr);display:flex;align-items:center;gap:4px;}
+.nav-links a:hover,.nav-links a.active{color:var(--navy);background:var(--cream);}
+.has-drop{position:relative;}
+.drop-arrow{font-size:10px;color:var(--slate-light);transition:transform var(--tr);}
+.has-drop:hover .drop-arrow{transform:rotate(180deg);}
+.dropdown{position:absolute;top:calc(100% + 8px);left:0;background:var(--white);border:1px solid rgba(10,22,40,0.08);border-radius:var(--radius);padding:8px;min-width:220px;box-shadow:var(--shadow);opacity:0;pointer-events:none;transform:translateY(-6px);transition:all var(--tr);z-index:200;}
+.has-drop:hover .dropdown{opacity:1;pointer-events:all;transform:translateY(0);}
+.dropdown a{display:block;padding:9px 14px;font-size:14px;color:var(--slate);border-radius:var(--radius-sm);white-space:nowrap;}
+.dropdown a:hover,.dropdown a.active{background:var(--cream);color:var(--navy);}
+.nav-cta{background:var(--gold)!important;color:var(--navy)!important;font-weight:600!important;padding:10px 20px!important;border-radius:var(--radius-sm)!important;}
+.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;background:none;border:none;}
+.nav-toggle span{display:block;width:22px;height:2px;background:var(--navy);border-radius:2px;}
+.nav-mobile{display:none;background:var(--white);border-top:1px solid rgba(10,22,40,0.07);padding:16px 24px 20px;}
+.nav-mobile.open{display:block;}
+.nav-mobile a{display:block;padding:10px 0;font-size:15px;color:var(--slate);text-decoration:none;border-bottom:1px solid rgba(10,22,40,0.05);font-weight:500;}
+.nav-mobile a.mobile-cta{color:var(--gold-dark);font-weight:600;border-bottom:none;}
+
+/* BUTTONS */
+.btn-gold{background:var(--gold);color:var(--navy);font-family:var(--fb);font-size:15px;font-weight:600;padding:14px 28px;border-radius:var(--radius-sm);text-decoration:none;border:none;cursor:pointer;transition:all var(--tr);display:inline-flex;align-items:center;gap:8px;}
+.btn-gold:hover{background:#B8922F;transform:translateY(-1px);box-shadow:var(--shadow-gold);}
+.btn-navy{background:var(--navy);color:var(--white);font-family:var(--fb);font-size:15px;font-weight:600;padding:14px 28px;border-radius:var(--radius-sm);text-decoration:none;border:none;cursor:pointer;transition:all var(--tr);display:inline-flex;align-items:center;gap:8px;}
+.btn-navy:hover{background:var(--navy-light);transform:translateY(-1px);}
+.btn-ghost{background:transparent;color:rgba(255,255,255,0.8);font-family:var(--fb);font-size:15px;font-weight:500;padding:14px 28px;border-radius:var(--radius-sm);border:1px solid rgba(255,255,255,0.2);text-decoration:none;cursor:pointer;transition:all var(--tr);display:inline-flex;align-items:center;gap:8px;}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-light);}
+.btn-wa{background:#25D366;color:var(--white);font-family:var(--fb);font-size:15px;font-weight:600;padding:14px 28px;border-radius:var(--radius-sm);text-decoration:none;border:none;cursor:pointer;transition:all var(--tr);display:inline-flex;align-items:center;gap:8px;}
+.btn-wa:hover{background:#1ebe5d;transform:translateY(-1px);}
+
+/* LABELS */
+.label{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--gold-dark);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px;}
+.label::before{content:'';display:block;width:20px;height:2px;background:var(--gold);border-radius:2px;}
+.label-light{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--gold-light);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px;}
+.label-light::before{content:'';display:block;width:20px;height:2px;background:var(--gold);border-radius:2px;}
+.h2{font-family:var(--fd);font-size:clamp(26px,3vw,40px);font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:14px;}
+.h2-light{font-family:var(--fd);font-size:clamp(26px,3vw,40px);font-weight:700;color:var(--white);line-height:1.2;margin-bottom:14px;}
+.lead{font-size:16px;color:var(--slate);line-height:1.7;font-weight:300;max-width:600px;}
+.hdr-c{margin-bottom:52px;text-align:center;}
+.hdr-c .lead{margin:0 auto;}
+
+/* HERO */
+.hero{background:var(--navy);padding:80px 0 0;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;right:-100px;top:-100px;width:550px;height:550px;border-radius:50%;border:1px solid rgba(201,168,76,0.07);pointer-events:none;}
+.hero::after{content:'';position:absolute;left:-150px;bottom:-80px;width:420px;height:420px;border-radius:50%;border:1px solid rgba(201,168,76,0.04);pointer-events:none;}
+.hero-inner{display:grid;grid-template-columns:1fr 420px;gap:60px;align-items:center;position:relative;z-index:2;padding-bottom:56px;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,0.12);border:1px solid rgba(201,168,76,0.3);border-radius:100px;padding:6px 14px;font-size:12px;font-weight:500;color:var(--gold-light);margin-bottom:20px;text-transform:uppercase;letter-spacing:0.06em;}
+.hero-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:blink 2s ease-in-out infinite;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.5}}
+.hero h1{font-family:var(--fd);font-size:clamp(34px,4.2vw,54px);font-weight:700;color:var(--white);line-height:1.15;margin-bottom:20px;}
+.hero h1 em{font-style:normal;color:var(--gold);}
+.hero-desc{font-size:17px;color:rgba(255,255,255,0.65);line-height:1.7;margin-bottom:32px;font-weight:300;max-width:530px;}
+.hero-cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:40px;}
+.cbls-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius-sm);padding:10px 16px;}
+.cbls-icon{width:28px;height:28px;border-radius:50%;background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.cbls-text{font-size:12px;color:rgba(255,255,255,0.5);font-weight:300;line-height:1.4;}
+.cbls-text strong{color:rgba(255,255,255,0.75);font-weight:500;}
+
+/* Hero right snapshot */
+.hero-snapshot{display:flex;flex-direction:column;gap:10px;}
+.snap-cluster{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);padding:18px 20px;transition:all var(--tr);}
+.snap-cluster:hover{background:rgba(201,168,76,0.06);border-color:rgba(201,168,76,0.2);}
+.sc-head{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.sc-icon{width:32px;height:32px;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.sc-a{background:rgba(29,158,117,0.15);}
+.sc-b{background:rgba(30,52,96,0.5);}
+.sc-c{background:rgba(201,168,76,0.15);}
+.sc-label{font-size:13px;font-weight:600;color:var(--white);}
+.sc-count{font-size:11px;color:rgba(255,255,255,0.35);font-weight:300;margin-left:auto;}
+.sc-pills{display:flex;flex-wrap:wrap;gap:5px;}
+.sc-pill{font-size:11px;padding:3px 9px;border-radius:4px;background:rgba(255,255,255,0.07);color:rgba(255,255,255,0.55);border:0.5px solid rgba(255,255,255,0.1);}
+
+/* Stats strip */
+.hero-stats{background:rgba(255,255,255,0.05);border-top:1px solid rgba(255,255,255,0.07);padding:20px 0;position:relative;z-index:2;}
+.hero-stats-inner{display:flex;flex-wrap:wrap;}
+.hstat{flex:1;padding:12px 28px;border-right:1px solid rgba(255,255,255,0.07);min-width:130px;}
+.hstat:last-child{border-right:none;}
+.hstat-num{font-family:var(--fd);font-size:28px;font-weight:700;color:var(--gold);line-height:1;display:block;margin-bottom:4px;}
+.hstat-label{font-size:12px;color:rgba(255,255,255,0.4);font-weight:300;}
+
+/* WHY US */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.why-card{background:var(--cream);border:1px solid rgba(10,22,40,0.06);border-radius:var(--radius);padding:28px;transition:all var(--tr);position:relative;overflow:hidden;}
+.why-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform var(--tr);}
+.why-card:hover{background:var(--white);box-shadow:var(--shadow);transform:translateY(-3px);}
+.why-card:hover::after{transform:scaleX(1);}
+.why-icon{width:44px;height:44px;border-radius:var(--radius-sm);background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
+.why-title{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px;line-height:1.3;}
+.why-desc{font-size:14px;color:var(--slate);line-height:1.65;font-weight:300;}
+
+/* SERVICE CLUSTERS */
+.clusters-wrap{display:flex;flex-direction:column;gap:28px;}
+.cluster-block{border-radius:var(--radius);overflow:hidden;border:1px solid rgba(10,22,40,0.08);background:var(--white);}
+.cluster-header{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;padding:22px 28px;cursor:pointer;user-select:none;transition:background var(--tr);}
+.cluster-header:hover{background:rgba(250,248,243,0.8);}
+.cluster-num{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;flex-shrink:0;}
+.cn-green{background:var(--success-bg);color:#085041;}
+.cn-blue{background:rgba(21,35,64,0.1);color:var(--navy);}
+.cn-amber{background:rgba(201,168,76,0.15);color:var(--gold-dark);}
+.cluster-name{font-family:var(--fd);font-size:20px;font-weight:700;color:var(--navy);margin-bottom:3px;}
+.cluster-sub{font-size:13px;color:var(--slate-light);font-weight:300;}
+.cluster-toggle{font-size:18px;color:var(--slate-light);transition:transform var(--tr);flex-shrink:0;}
+.cluster-toggle.open{transform:rotate(180deg);}
+.cluster-body{border-top:1px solid rgba(10,22,40,0.07);padding:24px 28px;display:none;}
+.cluster-body.open{display:block;}
+.cluster-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;}
+.svc-card{background:var(--cream);border:1.5px solid rgba(10,22,40,0.07);border-radius:var(--radius);padding:20px;transition:all var(--tr);text-decoration:none;display:block;position:relative;overflow:hidden;}
+.svc-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gold);transform:scaleY(0);transform-origin:top;transition:transform var(--tr);}
+.svc-card:hover{background:var(--white);box-shadow:var(--shadow);transform:translateX(4px);}
+.svc-card:hover::before{transform:scaleY(1);}
+.svc-card.featured{border-color:rgba(201,168,76,0.35);background:rgba(201,168,76,0.03);}
+.svc-icon{width:38px;height:38px;border-radius:var(--radius-sm);background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:12px;}
+.svc-name{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:6px;line-height:1.3;}
+.svc-desc{font-size:13px;color:var(--slate);line-height:1.6;font-weight:300;}
+.svc-tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:10px;}
+.svc-tag{font-size:10px;padding:2px 7px;border-radius:4px;background:rgba(10,22,40,0.05);color:var(--slate-light);border:0.5px solid rgba(10,22,40,0.08);}
+.svc-link{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;color:var(--gold-dark);margin-top:10px;}
+
+/* FEATURED */
+.featured-section{background:var(--navy);padding:80px 0;position:relative;overflow:hidden;}
+.featured-section::before{content:'';position:absolute;right:-100px;top:50%;transform:translateY(-50%);width:500px;height:500px;border-radius:50%;border:1px solid rgba(201,168,76,0.06);pointer-events:none;}
+.featured-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;position:relative;z-index:2;}
+.feat-card{border-radius:var(--radius);padding:32px;position:relative;overflow:hidden;transition:transform var(--tr);}
+.feat-card:hover{transform:translateY(-4px);}
+.feat-gold{background:var(--gold);}
+.feat-dark{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);}
+.feat-lbl{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:12px;opacity:0.65;}
+.feat-gold .feat-lbl{color:var(--navy);}
+.feat-dark .feat-lbl{color:rgba(255,255,255,0.6);}
+.feat-tag{display:inline-block;font-size:11px;font-weight:600;padding:4px 12px;border-radius:100px;margin-bottom:12px;}
+.feat-gold .feat-tag{background:rgba(10,22,40,0.12);color:var(--navy);}
+.feat-dark .feat-tag{background:rgba(201,168,76,0.15);color:var(--gold);}
+.feat-title{font-family:var(--fd);font-size:22px;font-weight:700;margin-bottom:10px;line-height:1.2;}
+.feat-gold .feat-title{color:var(--navy);}
+.feat-dark .feat-title{color:var(--white);}
+.feat-desc{font-size:14px;line-height:1.65;font-weight:300;margin-bottom:22px;}
+.feat-gold .feat-desc{color:rgba(10,22,40,0.7);}
+.feat-dark .feat-desc{color:rgba(255,255,255,0.6);}
+.feat-badge{position:absolute;top:20px;right:20px;font-size:10px;font-weight:600;padding:3px 10px;border-radius:100px;text-transform:uppercase;letter-spacing:0.05em;}
+.feat-gold .feat-badge{background:rgba(10,22,40,0.1);border:1px solid rgba(10,22,40,0.15);color:var(--navy);}
+.feat-dark .feat-badge{background:rgba(29,158,117,0.2);border:1px solid rgba(29,158,117,0.4);color:#5DCAA5;}
+.feat-btn{display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:600;padding:11px 20px;border-radius:var(--radius-sm);text-decoration:none;transition:all var(--tr);}
+.feat-gold .feat-btn{background:var(--navy);color:var(--white);}
+.feat-gold .feat-btn:hover{background:var(--navy-light);}
+.feat-dark .feat-btn{background:rgba(255,255,255,0.1);color:var(--white);border:1px solid rgba(255,255,255,0.15);}
+.feat-dark .feat-btn:hover{border-color:var(--gold);color:var(--gold-light);}
+
+/* HOW IT WORKS */
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative;margin-top:52px;}
+.steps-grid::before{content:'';position:absolute;top:32px;left:calc(16.66% + 32px);right:calc(16.66% + 32px);height:1px;background:linear-gradient(90deg,var(--gold) 0%,rgba(201,168,76,0.3) 100%);z-index:0;}
+.step-item{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 24px 40px;position:relative;z-index:1;}
+.step-num{width:64px;height:64px;border-radius:50%;background:var(--white);border:3px solid var(--gold);display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-family:var(--fd);font-size:22px;font-weight:700;color:var(--navy);box-shadow:0 0 0 8px var(--cream);transition:all var(--tr);flex-shrink:0;}
+.step-item:hover .step-num{background:var(--gold);color:var(--navy);}
+.step-badge{font-size:11px;font-weight:600;color:var(--gold-dark);background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.25);border-radius:100px;padding:3px 10px;margin-bottom:10px;}
+.step-title{font-size:17px;font-weight:600;color:var(--navy);margin-bottom:8px;}
+.step-desc{font-size:14px;color:var(--slate);line-height:1.65;font-weight:300;}
+.step-time{font-size:12px;color:var(--success);font-weight:600;margin-top:8px;display:flex;align-items:center;gap:4px;justify-content:center;}
+
+/* PARTNER SECTION */
+.partner-section{background:var(--navy);padding:64px 0;position:relative;overflow:hidden;}
+.partner-section::before{content:'';position:absolute;left:-80px;top:50%;transform:translateY(-50%);width:360px;height:360px;border-radius:50%;border:1px solid rgba(201,168,76,0.06);pointer-events:none;}
+.partner-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;position:relative;z-index:2;}
+.partner-types{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px;}
+.partner-type{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);padding:16px;transition:all var(--tr);}
+.partner-type:hover{background:rgba(201,168,76,0.06);border-color:rgba(201,168,76,0.2);}
+.pt-name{font-size:13.5px;font-weight:600;color:var(--white);margin-bottom:4px;}
+.pt-desc{font-size:12px;color:rgba(255,255,255,0.4);font-weight:300;line-height:1.45;}
+.partner-offer{background:rgba(255,255,255,0.04);border:1px solid rgba(201,168,76,0.2);border-radius:var(--radius);padding:28px;}
+.partner-offer-title{font-family:var(--fd);font-size:18px;font-weight:600;color:var(--white);margin-bottom:8px;}
+.partner-offer-sub{font-size:14px;color:rgba(255,255,255,0.5);font-weight:300;margin-bottom:20px;line-height:1.6;}
+.pi-row{display:flex;align-items:center;gap:9px;font-size:13.5px;color:rgba(255,255,255,0.75);font-weight:300;margin-bottom:9px;}
+.pi-tick{color:var(--gold);font-size:14px;}
+
+/* FAQ */
+.faq-layout{display:grid;grid-template-columns:320px 1fr;gap:64px;align-items:start;}
+.faq-list{display:flex;flex-direction:column;gap:10px;}
+.faq-item{background:var(--white);border:1px solid rgba(10,22,40,0.07);border-radius:var(--radius);overflow:hidden;}
+.faq-q{width:100%;background:none;border:none;padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:14px;cursor:pointer;text-align:left;font-family:var(--fb);font-size:15px;font-weight:500;color:var(--navy);transition:background var(--tr);}
+.faq-q:hover{background:var(--cream);}
+.faq-q.active{background:var(--navy);color:var(--white);}
+.faq-ico{width:24px;height:24px;border-radius:50%;border:1.5px solid rgba(10,22,40,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all var(--tr);font-size:16px;color:var(--slate-light);}
+.faq-q.active .faq-ico{border-color:rgba(201,168,76,0.4);background:rgba(201,168,76,0.1);color:var(--gold-light);transform:rotate(45deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.4,0,.2,1);}
+.faq-a.open{max-height:500px;}
+.faq-a-inner{padding:0 22px 18px;font-size:14px;color:var(--slate);line-height:1.75;font-weight:300;}
+
+/* CTA BAND */
+.cta-band{background:var(--gold);padding:56px 0;}
+.cta-band-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;}
+.cta-title{font-family:var(--fd);font-size:clamp(22px,2.5vw,36px);font-weight:700;color:var(--navy);line-height:1.2;}
+.cta-sub{font-size:16px;color:rgba(10,22,40,0.6);margin-top:8px;font-weight:300;}
+
+/* FOOTER */
+.footer{background:var(--navy);padding:64px 0 0;}
+.footer-grid{display:grid;grid-template-columns:300px 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,0.07);}
+.footer-logo{display:flex;align-items:center;gap:10px;margin-bottom:16px;text-decoration:none;}
+.footer-logo-mark{width:36px;height:36px;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.3);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;}
+.footer-logo-name{font-family:var(--fd);font-size:17px;font-weight:600;color:var(--white);display:block;}
+.footer-logo-sub{font-size:10px;color:var(--gold);text-transform:uppercase;letter-spacing:0.08em;display:block;}
+.footer-tagline{font-size:14px;color:rgba(255,255,255,0.4);line-height:1.65;font-weight:300;margin-bottom:18px;}
+.footer-contact{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.55);margin-bottom:7px;text-decoration:none;transition:color var(--tr);}
+.footer-contact:hover{color:var(--gold-light);}
+.footer-col-title{font-size:12px;font-weight:600;color:var(--gold);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:20px;}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-links a{font-size:13.5px;color:rgba(255,255,255,0.5);text-decoration:none;transition:color var(--tr);font-weight:300;}
+.footer-links a:hover{color:var(--gold-light);}
+.footer-socials{display:flex;gap:10px;margin-top:18px;}
+.social-btn{width:36px;height:36px;border-radius:var(--radius-sm);background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;text-decoration:none;transition:all var(--tr);}
+.social-btn:hover{background:rgba(201,168,76,0.15);border-color:rgba(201,168,76,0.3);}
+.footer-bottom{padding:20px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+.footer-copy{font-size:12.5px;color:rgba(255,255,255,0.3);font-weight:300;}
+.footer-nav-bottom{display:flex;gap:20px;}
+.footer-nav-bottom a{font-size:12.5px;color:rgba(255,255,255,0.3);text-decoration:none;}
+.footer-nav-bottom a:hover{color:rgba(255,255,255,0.6);}
+
+/* WA FLOAT */
+.wa-float{position:fixed;bottom:28px;right:28px;z-index:999;background:#25D366;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);text-decoration:none;transition:transform var(--tr);}
+.wa-float:hover{transform:scale(1.08);}
+.wa-pulse{position:absolute;width:100%;height:100%;border-radius:50%;background:rgba(37,211,102,0.3);animation:wap 2s ease-out infinite;}
+@keyframes wap{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.55);opacity:0}}
+
+/* RESPONSIVE */
+@media(max-width:1024px){.footer-grid{grid-template-columns:1fr 1fr;gap:32px;}}
+@media(max-width:960px){
+  .hero-inner{grid-template-columns:1fr;}
+  .hero-snapshot{max-width:520px;}
+  .why-grid{grid-template-columns:1fr 1fr;}
+  .featured-grid{grid-template-columns:1fr;}
+  .steps-grid{grid-template-columns:1fr;}
+  .steps-grid::before{display:none;}
+  .partner-inner{grid-template-columns:1fr;}
+  .faq-layout{grid-template-columns:1fr;gap:36px;}
+  .cluster-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:640px){
+  .nav-links{display:none;}
+  .nav-toggle{display:flex;}
+  .section{padding:56px 0;}
+  .why-grid{grid-template-columns:1fr;}
+  .cluster-grid{grid-template-columns:1fr;}
+  .partner-types{grid-template-columns:1fr;}
+  .cta-band-inner{flex-direction:column;align-items:flex-start;}
+  .hero-stats-inner{flex-direction:column;}
+  .hstat{border-right:none;border-bottom:1px solid rgba(255,255,255,0.07);}
+  .hstat:last-child{border-bottom:none;}
+  .topbar .container{flex-direction:column;align-items:flex-start;gap:6px;}
+  .footer-grid{grid-template-columns:1fr;}
+  .footer-bottom{flex-direction:column;align-items:flex-start;}
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar"><div class="container">
+  <div class="topbar-left">
+    <a href="tel:+971561571514"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.8 19.8 0 01-3.07-8.67A2 2 0 012 1.24h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 9a16 16 0 006.29 6.29l1.12-1.12a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>+971 56 157 1514</a>
+    <a href="mailto:info@emaar-global.com"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>info@emaar-global.com</a>
+  </div>
+  <div class="topbar-right"><a href="https://wa.me/971561571514">WhatsApp Us</a></div>
+</div></div>
+
+<!-- NAVIGATION -->
+<div class="nav-wrapper"><div class="container">
+<nav class="nav">
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-mark"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2L3 6.5v9L11 20l8-4.5v-9L11 2z" stroke="#C9A84C" stroke-width="1.5" fill="none"/><path d="M11 6l-4.5 2.5v5L11 16l4.5-2.5v-5L11 6z" fill="#C9A84C" fill-opacity="0.3"/></svg></div>
+    <div><span class="nav-logo-name">Emaar Global</span><span class="nav-logo-sub">Business Solutions</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li class="has-drop"><a href="/business-setup/">Business Setup <span class="drop-arrow">&#9662;</span></a>
+      <div class="dropdown">
+        <div class="dropdown-section">&#128176; Low Cost</div>
+        <a href="/business-setup/#etrade">&#9889; eTrade License &mdash; AED 1,070</a>
+        <a href="/business-setup/#budget">&#127381; License + Visa &mdash; AED 9,800</a>
+        <div class="dropdown-section">&#127970; By Structure</div>
+        <a href="/business-setup/dubai-mainland/">Mainland Company</a>
+        <a href="/business-setup/free-zone/">Free Zone Company</a>
+        <a href="/business-setup/offshore/">Offshore Company</a>
+        <div class="dropdown-section">&#127757; By Emirate</div>
+        <a href="/business-setup/#dubai">&#127744; Dubai</a>
+        <a href="/business-setup/#abudhabi">&#127745; Abu Dhabi</a>
+        <a href="/business-setup/#sharjah">&#127746; Sharjah</a>
+        <a href="/business-setup/#rak">&#127747; RAK</a>
+        <a href="/business-setup/#others">&#127748; Ajman &middot; Fujairah &middot; UAQ</a>
+      </div>
+    </li>
+    <li class="has-drop"><a href="/services/" class="active">Services <span class="drop-arrow">&#9662;</span></a>
+      <div class="dropdown">
+        <a href="/services/license-services/">License Services</a>
+        <a href="/services/visa-services/">Visa Services</a>
+        <a href="/services/accounting-tax/">Accounting &amp; Tax</a>
+        <a href="/services/corporate-services/">Corporate Services</a>
+        <a href="/services/legal-services/">Legal Services</a>
+      </div>
+    </li>
+    <li><a href="/services/visa-services/golden-visa/" style="color:#8B6914;font-weight:600;">&#11088; Golden Visa</a></li>
+    <li><a href="/tools/uae-company-cost-calculator/">&#129518; Cost Calculator</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/contact/" class="nav-cta">Free Consultation</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="document.getElementById('mobile-nav').classList.toggle('open')"><span></span><span></span><span></span></button>
+</nav>
+</div>
+<!-- MOBILE MENU -->
+<div class="nav-mobile" id="mobile-nav">
+  <a href="/">Home</a>
+  <a href="/business-setup/">Business Setup Hub</a>
+  <a href="/business-setup/#etrade">eTrade License &mdash; AED 1,070</a>
+  <a href="/business-setup/dubai-mainland/">Mainland Company</a>
+  <a href="/business-setup/free-zone/">Free Zone Company</a>
+  <a href="/business-setup/offshore/">Offshore Company</a>
+  <a href="/services/">All Services</a>
+  <a href="/services/license-services/">License Services</a>
+  <a href="/services/visa-services/">Visa Services</a>
+  <a href="/services/accounting-tax/">Accounting &amp; Tax</a>
+  <a href="/services/corporate-services/">Corporate Services</a>
+  <a href="/services/legal-services/">Legal Services</a>
+  <a href="/services/visa-services/golden-visa/" style="color:#C9A84C;font-weight:600;">&#11088; Golden Visa</a>
+  <a href="/tools/uae-company-cost-calculator/">&#129518; Cost Calculator</a>
+  <a href="/about/">About Us</a>
+  <a href="/contact/" class="mobile-cta">Free Consultation &#8594;</a>
+</div>
+</div><!-- end nav-wrapper -->
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="page-h1">
+  <div class="container">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-badge"><div class="hero-badge-dot"></div>Dubai's Full-Service Business Consultancy</div>
+        <h1 id="page-h1">Business Made <em>Simple</em>,<br>From Start to Scale</h1>
+        <p class="hero-desc">One team. Eight service areas. 48 individual services. Whether you're a first-time founder or an established company expanding in the UAE &mdash; we handle the complex so you can focus on growth.</p>
+        <div class="hero-cta-row">
+          <a href="/contact/" class="btn-gold">Start Free Consultation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="#services" class="btn-ghost">Explore Services <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg></a>
+        </div>
+        <div class="cbls-badge">
+          <div class="cbls-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div class="cbls-text"><strong>Licensed UAE Business Consultancy</strong> &middot; CBLS No. 12491086 &middot; Verifiable on UAE National Economic Register</div>
+        </div>
+      </div>
+      <div class="hero-snapshot">
+        <div class="snap-cluster">
+          <div class="sc-head">
+            <div class="sc-icon sc-a"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <div class="sc-label">Start Your Business</div>
+            <div class="sc-count">20+ services</div>
+          </div>
+          <div class="sc-pills"><span class="sc-pill">Trade License</span><span class="sc-pill">Renewals</span><span class="sc-pill">Bank Account</span><span class="sc-pill">Notary</span><span class="sc-pill">Govt Approvals</span><span class="sc-pill">PRO Services</span></div>
+        </div>
+        <div class="snap-cluster">
+          <div class="sc-head">
+            <div class="sc-icon sc-b"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <div class="sc-label">Protect &amp; Grow</div>
+            <div class="sc-count">17 services</div>
+          </div>
+          <div class="sc-pills"><span class="sc-pill">VAT Filing</span><span class="sc-pill">Corporate Tax</span><span class="sc-pill">Trademark</span><span class="sc-pill">ISO Cert</span><span class="sc-pill">Dubai Courts</span><span class="sc-pill">Rental Dispute</span></div>
+        </div>
+        <div class="snap-cluster">
+          <div class="sc-head">
+            <div class="sc-icon sc-c"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+            <div class="sc-label">Live &amp; Stay in UAE</div>
+            <div class="sc-count">6 visa types</div>
+          </div>
+          <div class="sc-pills"><span class="sc-pill">Golden Visa</span><span class="sc-pill">Investor</span><span class="sc-pill">Employment</span><span class="sc-pill">Family</span><span class="sc-pill">Freelancer</span><span class="sc-pill">Multiple Entry</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="container">
+      <div class="hero-stats-inner">
+        <div class="hstat"><span class="hstat-num">8</span><span class="hstat-label">Service areas</span></div>
+        <div class="hstat"><span class="hstat-num">48</span><span class="hstat-label">Individual services</span></div>
+        <div class="hstat"><span class="hstat-num">2,000+</span><span class="hstat-label">Clients served</span></div>
+        <div class="hstat"><span class="hstat-num">80+</span><span class="hstat-label">Nationalities</span></div>
+        <div class="hstat"><span class="hstat-num">Same day</span><span class="hstat-label">Response guaranteed</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY EMAAR GLOBAL -->
+<section class="section section-alt" aria-labelledby="why-heading">
+  <div class="container">
+    <div class="hdr-c">
+      <div class="label">Why Choose Us</div>
+      <h2 class="h2" id="why-heading">Trusted by Global Entrepreneurs.<br>Built for the UAE Market.</h2>
+      <p class="lead">Here's what separates us from a typing centre, a one-service agent, or a legal firm that's never started a company.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8h10M7 12h6"/></svg></div>
+        <div class="why-title">360&deg; Services &mdash; All in One Place</div>
+        <p class="why-desc">From your first license to annual tax filings, visa renewals, and trademark protection &mdash; one team, one relationship, zero handoffs to third parties or agencies.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div class="why-title">Fast Turnaround. No Red Tape.</div>
+        <p class="why-desc">We're on the ground in Dubai. We know every authority, portal, and process &mdash; which means your work gets done faster, with fewer rejections and no unnecessary waiting.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10"/></svg></div>
+        <div class="why-title">Globally Trusted, Locally Expert</div>
+        <p class="why-desc">Clients from India, UK, Russia, Europe, China, and the USA trust us because we speak both languages &mdash; the language of international business and UAE government.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <div class="why-title">Real Experts. No Guesswork.</div>
+        <p class="why-desc">We don't just fill forms &mdash; we think strategically. You get certified consultants, custom advice, real-time updates, and transparent guidance at every step.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE CLUSTERS -->
+<section class="section" id="services" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="hdr-c">
+      <div class="label">All Services</div>
+      <h2 class="h2" id="services-heading">Everything You Need to Start,<br>Run, or Grow a Business in the UAE</h2>
+      <p class="lead">A full suite of services, each designed to simplify the complex. Organised by your business journey &mdash; click any cluster to explore.</p>
+    </div>
+    <div class="clusters-wrap">
+
+      <!-- A: START YOUR BUSINESS -->
+      <div class="cluster-block">
+        <div class="cluster-header" onclick="toggleCluster(this)">
+          <div class="cluster-num cn-green">A</div>
+          <div>
+            <div class="cluster-name">Start Your Business</div>
+            <div class="cluster-sub">Licensing &middot; Business Support &middot; Notary &middot; Government Approvals &mdash; 4 service areas &middot; 20+ services &middot; all handled in one place</div>
+          </div>
+          <div class="cluster-toggle open">&#9662;</div>
+        </div>
+        <div class="cluster-body open">
+          <div class="cluster-grid">
+            <a href="/services/license-services/" class="svc-card">
+              <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+              <div class="svc-name">Licensing Services</div>
+              <p class="svc-desc">New trade licenses, renewals, amendments, branch formation, e-commerce licenses, and company liquidation &mdash; all jurisdictions, all license types covered.</p>
+              <div class="svc-tags"><span class="svc-tag">New License</span><span class="svc-tag">Renewal</span><span class="svc-tag">Amendment</span><span class="svc-tag">Liquidation</span><span class="svc-tag">E-Commerce</span></div>
+              <div class="svc-link">View all licensing services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </a>
+            <a href="/services/license-services/#support" class="svc-card">
+              <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div>
+              <div class="svc-name">Business Support</div>
+              <p class="svc-desc">Bank account opening, office solutions, local sponsor services, legal translation, document attestation, and virtual receptionist.</p>
+              <div class="svc-tags"><span class="svc-tag">Banking</span><span class="svc-tag">Office</span><span class="svc-tag">Sponsor</span><span class="svc-tag">Translation</span><span class="svc-tag">Attestation</span></div>
+              <div class="svc-link">View all support services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </a>
+            <a href="/services/license-services/#notary" class="svc-card">
+              <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M17 3a2.828 2.828 0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></div>
+              <div class="svc-name">Notary Services</div>
+              <p class="svc-desc">Power of Attorney, MOA, board resolutions, non-Muslim wills, and legal agreements &mdash; drafted, translated, and notarized. Remote notarization available.</p>
+              <div class="svc-tags"><span class="svc-tag">POA</span><span class="svc-tag">MOA</span><span class="svc-tag">Remote</span><span class="svc-tag">Wills</span><span class="svc-tag">Agreements</span></div>
+              <div class="svc-link">View notary services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </a>
+            <a href="/services/license-services/#approvals" class="svc-card">
+              <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+              <div class="svc-name">Online Government Approvals</div>
+              <p class="svc-desc">DHA, Dubai Municipality, RTA, RERA, SIRA, Civil Defence, Customs, and TAMM &mdash; we navigate every UAE government portal accurately to avoid rejections.</p>
+              <div class="svc-tags"><span class="svc-tag">DHA</span><span class="svc-tag">DM</span><span class="svc-tag">RTA</span><span class="svc-tag">RERA</span><span class="svc-tag">SIRA</span><span class="svc-tag">Civil Defence</span></div>
+              <div class="svc-link">View all approvals <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- B: PROTECT & GROW -->
+      <div class="cluster-block">
+        <div class="cluster-header" onclick="toggleCluster(this)">
+          <div class="cluster-num cn-blue">B</div>
+          <div>
+            <div class="cluster-name">Protect &amp; Grow Your Business</div>
+            <div class="cluster-sub">Accounting &amp; Tax &middot; Corporate Compliance &amp; IP &middot; Legal Services &mdash; 3 service areas &middot; 17 services</div>
+          </div>
+          <div class="cluster-toggle open">&#9662;</div>
+        </div>
+        <div class="cluster-body open">
+          <div class="cluster-grid">
+            <a href="/services/accounting-tax/" class="svc-card">
+              <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+              <div class="svc-name">Accounting &amp; Tax</div>
+              <p class="svc-desc">VAT registration and filing, UAE corporate tax compliance, monthly bookkeeping, external auditing, and internal audit &mdash; for startups and corporations alike.</p>
+              <div class="svc-tags"><span class="svc-tag">VAT Filing</span><span class="svc-tag">Corporate Tax</span><span class="svc-tag">Bookkeeping</span><span class="svc-tag">External Audit</span></div>
+              <div class="svc-link">View accounting services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </a>
+            <a href="/services/corporate-services/" class="svc-card">
+              <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+              <div class="svc-name">Corporate Services</div>
+              <p class="svc-desc">Trademark registration, product registration, Halal and quality certification, agency registration, IP protection, and ISO certification across all categories.</p>
+              <div class="svc-tags"><span class="svc-tag">Trademark</span><span class="svc-tag">Product Reg</span><span class="svc-tag">Certification</span><span class="svc-tag">ISO</span><span class="svc-tag">IP</span></div>
+              <div class="svc-link">View corporate services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </a>
+            <a href="/services/legal-services/" class="svc-card">
+              <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/><path d="M13 8l4 4-4 4"/></svg></div>
+              <div class="svc-name">Legal Services</div>
+              <p class="svc-desc">Dubai Court case filing, police complaints, rental dispute committee, cheque execution for bounced cheques, document verification, and true copy attestation.</p>
+              <div class="svc-tags"><span class="svc-tag">Court Filing</span><span class="svc-tag">Rental Dispute</span><span class="svc-tag">Cheque Bounce</span><span class="svc-tag">Verification</span></div>
+              <div class="svc-link">View legal services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- C: LIVE & STAY -->
+      <div class="cluster-block">
+        <div class="cluster-header" onclick="toggleCluster(this)">
+          <div class="cluster-num cn-amber">C</div>
+          <div>
+            <div class="cluster-name">Live &amp; Stay in the UAE</div>
+            <div class="cluster-sub">Visa &amp; Residency Services &middot; 6 visa types &middot; Golden Visa &middot; Family Sponsorship &middot; Employment &middot; Freelancer Permits</div>
+          </div>
+          <div class="cluster-toggle open">&#9662;</div>
+        </div>
+        <div class="cluster-body open">
+          <div class="cluster-grid">
+            <a href="/services/visa-services/#golden" class="svc-card featured">
+              <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+              <div class="svc-name">UAE Golden Visa</div>
+              <p class="svc-desc">10-year long-term residency for investors, entrepreneurs, skilled professionals, property owners, and outstanding students. Eligibility check, documents, fast-track submission.</p>
+              <div class="svc-tags"><span class="svc-tag">10 Year Residency</span><span class="svc-tag">Investor</span><span class="svc-tag">Entrepreneur</span><span class="svc-tag">Professional</span></div>
+              <div class="svc-link">Learn about Golden Visa <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </a>
+            <a href="/services/visa-services/#investor" class="svc-card">
+              <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M22 11l-3 3-1.5-1.5"/></svg></div>
+              <div class="svc-name">Investor &amp; Partner Visa</div>
+              <p class="svc-desc">Own a UAE business and get residency. MOA to immigration file setup for mainland and free zone company owners. 3&ndash;5 year renewable residency.</p>
+              <div class="svc-tags"><span class="svc-tag">3-5 Year</span><span class="svc-tag">Mainland</span><span class="svc-tag">Free Zone</span></div>
+              <div class="svc-link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </a>
+            <a href="/services/visa-services/#employment" class="svc-card">
+              <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>
+              <div class="svc-name">Employment Visa</div>
+              <p class="svc-desc">Labour file, employment quota, work permit, medical examination, and Emirates ID &mdash; complete employment visa processing for UAE companies.</p>
+              <div class="svc-tags"><span class="svc-tag">Work Permit</span><span class="svc-tag">Emirates ID</span><span class="svc-tag">Labour File</span></div>
+              <div class="svc-link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </a>
+            <a href="/services/visa-services/#family" class="svc-card">
+              <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+              <div class="svc-name">Family Visa</div>
+              <p class="svc-desc">Sponsor your spouse, children, and parents in the UAE. Salary thresholds, tenancy requirements, documentation, and attestation &mdash; all managed for you.</p>
+              <div class="svc-tags"><span class="svc-tag">Spouse</span><span class="svc-tag">Children</span><span class="svc-tag">Parents</span></div>
+              <div class="svc-link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </a>
+            <a href="/services/visa-services/#freelancer" class="svc-card">
+              <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 11-7.778 7.778 5.5 5.5 0 017.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg></div>
+              <div class="svc-name">Freelancer Visa</div>
+              <p class="svc-desc">Live and work legally in the UAE without a company or local sponsor. Permit, establishment card, and full residency &mdash; we handle everything.</p>
+              <div class="svc-tags"><span class="svc-tag">No Sponsor</span><span class="svc-tag">Freelance Permit</span><span class="svc-tag">UAE Residency</span></div>
+              <div class="svc-link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </a>
+            <a href="/services/visa-services/#multiple-entry" class="svc-card">
+              <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+              <div class="svc-name">Multiple Entry Visa</div>
+              <p class="svc-desc">Short-term and multi-entry UAE visit visas for business travel, events, or scouting opportunities &mdash; with optional health insurance add-ons.</p>
+              <div class="svc-tags"><span class="svc-tag">Short-Term</span><span class="svc-tag">Business Travel</span><span class="svc-tag">Health Insurance</span></div>
+              <div class="svc-link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED -->
+<section class="featured-section" aria-labelledby="featured-heading">
+  <div class="container">
+    <div class="hdr-c">
+      <div class="label-light">Most Requested</div>
+      <h2 class="h2-light" id="featured-heading">What Our Clients Ask for Most</h2>
+      <p class="lead" style="color:rgba(255,255,255,0.55);margin:0 auto;">Three services that every UAE entrepreneur asks about &mdash; handled faster and more accurately than anywhere else.</p>
+    </div>
+    <div class="featured-grid">
+      <div class="feat-card feat-gold">
+        <div class="feat-badge">Most Popular</div>
+        <div class="feat-lbl">Visa Services</div>
+        <div class="feat-tag">10-Year Residency</div>
+        <div class="feat-title">UAE Golden Visa</div>
+        <p class="feat-desc">For investors, entrepreneurs, skilled professionals, and property owners. We manage eligibility checks, documentation, and government submissions from start to approval.</p>
+        <a href="/services/visa-services/#golden" class="feat-btn">Explore Golden Visa <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="feat-card feat-dark">
+        <div class="feat-badge">Time-Sensitive</div>
+        <div class="feat-lbl">Licensing</div>
+        <div class="feat-tag">Never Miss a Deadline</div>
+        <div class="feat-title">Trade License Renewal</div>
+        <p class="feat-desc">An expired UAE trade license means fines, banking issues, and visa problems. We send early reminders, clear outstanding fees, and complete the full renewal &mdash; you do nothing.</p>
+        <a href="/services/license-services/#renewal" class="feat-btn">Renew My License <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="feat-card feat-dark">
+        <div class="feat-badge">Mandatory</div>
+        <div class="feat-lbl">Accounting &amp; Tax</div>
+        <div class="feat-tag">FTA Compliant</div>
+        <div class="feat-title">VAT &amp; Corporate Tax Filing</div>
+        <p class="feat-desc">UAE Corporate Tax is mandatory for businesses over AED 375,000 annual profit. We handle registration, planning, and quarterly filing so you stay compliant and penalty-free.</p>
+        <a href="/services/accounting-tax/" class="feat-btn">Tax Compliance Services <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section section-alt" aria-labelledby="process-heading">
+  <div class="container">
+    <div class="hdr-c">
+      <div class="label">How It Works</div>
+      <h2 class="h2" id="process-heading">Fast, Stress-Free, and Legally Strong</h2>
+      <p class="lead">Whichever service you need &mdash; from a trade license to a court filing &mdash; the process is always the same: simple, transparent, and done for you.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-badge">Under 30 minutes</div>
+        <div class="step-title">Tell Us What You Need</div>
+        <p class="step-desc">Schedule a free consultation or send a WhatsApp message. We listen, understand your goals, and advise the best solution &mdash; zero obligation, zero jargon.</p>
+        <div class="step-time"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>We respond within 2 hours</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-badge">Same day</div>
+        <div class="step-title">Get a Tailored Plan</div>
+        <p class="step-desc">We design a clear step-by-step roadmap for your situation &mdash; whether it's a new company, a visa application, or a tax issue. Transparent pricing. No surprises.</p>
+        <div class="step-time"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Fixed quote before we start</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-badge">Days, not weeks</div>
+        <div class="step-title">We Execute Everything</div>
+        <p class="step-desc">You sit back. We handle paperwork, portal submissions, government follow-ups, and final delivery &mdash; with real-time updates throughout.</p>
+        <div class="step-time"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Business-ready in days</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px;">
+      <a href="/contact/" class="btn-navy">Book Your Free Consultation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNER SECTION -->
+<section class="partner-section" aria-labelledby="partner-heading">
+  <div class="container">
+    <div class="partner-inner">
+      <div>
+        <div class="label-light">For Business Partners</div>
+        <h2 class="h2-light" id="partner-heading">We Work With Firms as a<br>White-Label Back Office</h2>
+        <p style="font-size:16px;color:rgba(255,255,255,0.6);font-weight:300;line-height:1.7;margin-bottom:20px;">If you run a typing centre, law firm, business setup agency, or marketing consultancy &mdash; we can be your invisible operations team. You focus on clients and sales. We handle the government work behind the scenes.</p>
+        <div class="partner-types">
+          <div class="partner-type"><div class="pt-name">Typing Centres</div><div class="pt-desc">Document prep, submissions, and authority follow-ups at scale</div></div>
+          <div class="partner-type"><div class="pt-name">Business Setup Firms</div><div class="pt-desc">Capacity for licensing, PRO work, and government approvals</div></div>
+          <div class="partner-type"><div class="pt-name">Law Firms</div><div class="pt-desc">Court filings, attestation, and legal document processing</div></div>
+          <div class="partner-type"><div class="pt-name">Marketing Agencies</div><div class="pt-desc">License, brand protection, and trademark services for clients</div></div>
+        </div>
+      </div>
+      <div class="partner-offer">
+        <div class="partner-offer-title">What We Provide Partners</div>
+        <div class="partner-offer-sub">White-labelled, discreet, and delivered on time &mdash; your brand, our execution.</div>
+        <div class="pi-row"><span class="pi-tick">&#10003;</span>Document drafting and preparation</div>
+        <div class="pi-row"><span class="pi-tick">&#10003;</span>Online portal submissions (DM, DHA, RTA, RERA, SIRA and others)</div>
+        <div class="pi-row"><span class="pi-tick">&#10003;</span>PRO services and government follow-up</div>
+        <div class="pi-row"><span class="pi-tick">&#10003;</span>Attestation and legal translation</div>
+        <div class="pi-row"><span class="pi-tick">&#10003;</span>Licensing, amendments, and renewals</div>
+        <div class="pi-row"><span class="pi-tick">&#10003;</span>Dedicated account manager and SLA</div>
+        <a href="https://wa.me/971561571514?text=Hi%2C%20I%27m%20interested%20in%20a%20white-label%20back-office%20partnership." class="btn-wa" style="width:100%;justify-content:center;font-size:14px;padding:13px;margin-top:8px;" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.1.547 4.162 1.588 5.979L.043 24l6.24-1.637A11.969 11.969 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.999a9.94 9.94 0 01-5.063-1.378l-.363-.216-3.764.987.993-3.653-.237-.374A9.941 9.941 0 012.04 12c0-5.493 4.47-9.963 9.963-9.963 2.662 0 5.165 1.037 7.048 2.92a9.914 9.914 0 012.914 7.043c-.002 5.492-4.472 9.962-9.98 9.962l.015.037z"/></svg>
+          Discuss a Partnership
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="faq-layout">
+      <div>
+        <div class="label">FAQ</div>
+        <h2 class="h2" id="faq-heading">Questions We Answer<br>Every Single Day</h2>
+        <p style="font-size:15px;color:var(--slate);font-weight:300;line-height:1.65;margin-bottom:28px;">Six questions we're asked most often. If yours isn't here &mdash; one message is all it takes.</p>
+        <a href="https://wa.me/971561571514" class="btn-gold" style="font-size:14px;padding:12px 22px;">Ask on WhatsApp</a>
+        <div style="margin-top:24px;padding:18px;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.2);border-radius:var(--radius);">
+          <div style="font-size:13px;font-weight:600;color:var(--navy);margin-bottom:5px;">CBLS No. 12491086</div>
+          <p style="font-size:12.5px;color:var(--slate);font-weight:300;line-height:1.6;">Emaar Global Business Solutions is a duly licensed UAE business consultancy. All services are provided in full compliance with applicable UAE laws and verifiable through the UAE National Economic Register.</p>
+        </div>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item"><button class="faq-q active" onclick="faq(this)" aria-expanded="true">Do you provide a trade license with a visa included?<span class="faq-ico">+</span></button><div class="faq-a open"><div class="faq-a-inner">Yes &mdash; we offer packages that include the business license, UAE residency visa (investor, partner, or director), medical examination, Emirates ID, and health insurance. You can also choose a license-only package and add the visa later. We advise the best combination during your free consultation based on your nationality, business type, and budget.</div></div></div>
+
+        <div class="faq-item"><button class="faq-q" onclick="faq(this)" aria-expanded="false">Can you help me open a business bank account in the UAE?<span class="faq-ico">+</span></button><div class="faq-a"><div class="faq-a-inner">Yes. We assist with full documentation preparation, bank selection based on your business activity, and appointment coordination. We also work with challenging profiles &mdash; new startups, foreign-only shareholders, offshore companies, and higher-scrutiny sectors. We'll give you an honest assessment of which banks are most likely to approve your application before you invest time in the process.</div></div></div>
+
+        <div class="faq-item"><button class="faq-q" onclick="faq(this)" aria-expanded="false">What are your fees? Are there hidden charges?<span class="faq-ico">+</span></button><div class="faq-a"><div class="faq-a-inner">We offer completely transparent pricing. Before any work begins, you receive a clear written proposal itemising government fees, our service charges, and any optional add-ons. There are no hidden fees. Pricing varies by jurisdiction, license type, and the services included. Request a free quote and we explain every line item upfront.</div></div></div>
+
+        <div class="faq-item"><button class="faq-q" onclick="faq(this)" aria-expanded="false">Do you provide ongoing support after the company is formed?<span class="faq-ico">+</span></button><div class="faq-a"><div class="faq-a-inner">Absolutely &mdash; and this is where most of our clients see the most value. We provide renewal reminders for trade licenses, visa renewals and amendments, VAT and corporate tax filings, business expansion support, and ongoing PRO services. You have a long-term business partner, not just a one-time setup agent.</div></div></div>
+
+        <div class="faq-item"><button class="faq-q" onclick="faq(this)" aria-expanded="false">Can you work with my existing consultancy as a back-office partner?<span class="faq-ico">+</span></button><div class="faq-a"><div class="faq-a-inner">Yes &mdash; we actively partner with typing centres, business setup firms, law firms, and marketing agencies. We provide white-labelled back-office support including document drafting, online government approvals, PRO services, and licensing &mdash; all under your brand. You focus on client relationships; we handle operational execution. WhatsApp us to discuss a partnership arrangement.</div></div></div>
+
+        <div class="faq-item"><button class="faq-q" onclick="faq(this)" aria-expanded="false">Are your services legally approved in Dubai?<span class="faq-ico">+</span></button><div class="faq-a"><div class="faq-a-inner">Yes. Emaar Global Business Solutions is a duly licensed business consultancy operating in the United Arab Emirates under CBLS No. 12491086. Our credentials are verifiable through the UAE National Economic Register. All services are provided in full compliance with applicable UAE laws and regulations.</div></div></div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="container">
+    <div class="cta-band-inner">
+      <div>
+        <div class="cta-title">Not Sure Where to Start?<br>One Free Call Covers Everything.</div>
+        <div class="cta-sub">Tell us your situation &mdash; license, visa, tax, legal, or all of the above. We map out exactly what you need.</div>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="/contact/" class="btn-navy">Book Free Consultation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="https://wa.me/971561571514?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20your%20business%20services." class="btn-wa" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.1.547 4.162 1.588 5.979L.043 24l6.24-1.637A11.969 11.969 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.999a9.94 9.94 0 01-5.063-1.378l-.363-.216-3.764.987.993-3.653-.237-.374A9.941 9.941 0 012.04 12c0-5.493 4.47-9.963 9.963-9.963 2.662 0 5.165 1.037 7.048 2.92a9.914 9.914 0 012.914 7.043c-.002 5.492-4.472 9.962-9.98 9.962l.015.037z"/></svg>WhatsApp Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="/" class="footer-logo">
+          <div class="footer-logo-mark"><svg width="18" height="18" viewBox="0 0 22 22" fill="none"><path d="M11 2L3 6.5v9L11 20l8-4.5v-9L11 2z" stroke="#C9A84C" stroke-width="1.5" fill="none"/><path d="M11 6l-4.5 2.5v5L11 16l4.5-2.5v-5L11 6z" fill="#C9A84C" fill-opacity="0.3"/></svg></div>
+          <div><span class="footer-logo-name">Emaar Global</span><span class="footer-logo-sub">Business Solutions</span></div>
+        </a>
+        <p class="footer-tagline">Dubai's trusted partner for company formation, visa services, accounting, corporate compliance, legal services, and government approvals. Serving 80+ nationalities.</p>
+        <a href="tel:+971561571514" class="footer-contact"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.8 19.8 0 01-3.07-8.67A2 2 0 012 1.24h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 9a16 16 0 006.29 6.29l1.12-1.12a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>+971 56 157 1514</a>
+        <a href="mailto:info@emaar-global.com" class="footer-contact"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>info@emaar-global.com</a>
+        <a href="#" class="footer-contact"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Business Bay, Dubai, UAE</a>
+        <div class="footer-socials">
+          <a href="#" class="social-btn" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(255,255,255,0.5)"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(255,255,255,0.5)"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://wa.me/971561571514" class="social-btn" aria-label="WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(255,255,255,0.5)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.1.547 4.162 1.588 5.979L.043 24l6.24-1.637A11.969 11.969 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Business Setup</div>
+        <ul class="footer-links"><li><a href="/business-setup/dubai-mainland/">Mainland Company</a></li><li><a href="/business-setup/free-zone/">Free Zone Company</a></li><li><a href="#">Offshore Company</a></li><li><a href="/services/license-services/">License Services</a></li><li><a href="/services/license-services/#support">Business Support</a></li></ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links"><li><a href="/services/visa-services/">Visa Services</a></li><li><a href="/services/accounting-tax/">Accounting &amp; Tax</a></li><li><a href="/services/corporate-services/">Corporate Services</a></li><li><a href="/services/legal-services/">Legal Services</a></li><li><a href="/services/license-services/#notary">Notary Services</a></li><li><a href="/services/license-services/#approvals">Online Approvals</a></li></ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links"><li><a href="/about/">About Emaar Global</a></li><li><a href="#">Blog &amp; Resources</a></li><li><a href="/contact/">Contact Us</a></li><li><a href="#">Partner With Us</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2025 Emaar Global Business Solutions LLC. All rights reserved. CBLS No. 12491086 &middot; Dubai, UAE.</div>
+      <div class="footer-nav-bottom"><a href="#">Privacy</a><a href="#">Terms</a><a href="/sitemap.xml">Sitemap</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/971561571514?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20your%20business%20services." class="wa-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+  <div class="wa-pulse" aria-hidden="true"></div>
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.1.547 4.162 1.588 5.979L.043 24l6.24-1.637A11.969 11.969 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.999a9.94 9.94 0 01-5.063-1.378l-.363-.216-3.764.987.993-3.653-.237-.374A9.941 9.941 0 012.04 12c0-5.493 4.47-9.963 9.963-9.963 2.662 0 5.165 1.037 7.048 2.92a9.914 9.914 0 012.914 7.043c-.002 5.492-4.472 9.962-9.98 9.962l.015.037z"/></svg>
+</a>
+
+<script>
+function faq(btn){
+  var all=document.querySelectorAll('.faq-q');
+  var allA=document.querySelectorAll('.faq-a');
+  var ans=btn.parentElement.querySelector('.faq-a');
+  var open=ans.classList.contains('open');
+  all.forEach(function(b){b.classList.remove('active');b.setAttribute('aria-expanded','false');});
+  allA.forEach(function(a){a.classList.remove('open');});
+  if(!open){btn.classList.add('active');btn.setAttribute('aria-expanded','true');ans.classList.add('open');}
+}
+function toggleCluster(header){
+  var body=header.nextElementSibling;
+  var arrow=header.querySelector('.cluster-toggle');
+  var open=body.classList.contains('open');
+  if(open){body.classList.remove('open');arrow.classList.remove('open');}
+  else{body.classList.add('open');arrow.classList.add('open');}
+}
+</script>
+</body>
+</html>
