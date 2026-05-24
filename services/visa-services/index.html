@@ -12,8 +12,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does it take to get a UAE visa?","acceptedAnswer":{"@type":"Answer","text":"Processing time varies by visa type. Most investor and employment visas are issued within 5-14 working days after all documents are complete. Golden Visa can take 3-6 weeks. Multiple entry visit visas can be issued within 24-48 hours."}},{"@type":"Question","name":"Who qualifies for UAE Golden Visa?","acceptedAnswer":{"@type":"Answer","text":"UAE Golden Visa (10-year residency) is available to investors with AED 2M+ property or fund investments, entrepreneurs, outstanding professionals in medicine, science and engineering, PhD holders, top students, and exceptional talents in arts and sports."}},{"@type":"Question","name":"Can I sponsor my family in the UAE?","acceptedAnswer":{"@type":"Answer","text":"Yes. UAE residents earning above AED 4,000 per month (or AED 3,000 plus accommodation) can sponsor their spouse, children under 18, and in some cases parents. We guide you through salary thresholds, tenancy requirements, and all documentation."}},{"@type":"Question","name":"Do I need a local sponsor for a freelancer visa?","acceptedAnswer":{"@type":"Answer","text":"No. UAE freelancer visas through free zones like SHAMS, IFZA or Dubai Media City do not require a local sponsor. We help you get the freelance permit, establishment card, and full residency visa."}}]}
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
+<style>
 :root{
   --gold:#C9A84C;--gold-light:#E8D09A;--gold-dark:#8B6914;
   --navy:#0A1628;--navy-mid:#152340;--navy-light:#1E3460;
@@ -87,12 +86,55 @@ body{font-family:var(--fb);background:var(--cream);color:var(--navy);line-height
 .bc-sep{color:rgba(10,22,40,0.2);}
 .bc-cur{color:var(--navy);font-weight:500;}
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head><body>
+<!-- NAV START -->
+<style>
+
+/* Font rendering improvements */
+body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+.topbar{background:#0A1628;padding:9px 0;font-family:'DM Sans',-apple-system,sans-serif}
+.topbar .container{max-width:1160px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.topbar a{color:#E8D09A;text-decoration:none;font-size:13px;display:flex;align-items:center;gap:5px}
+.topbar a:hover{color:#fff}
+.topbar-left,.topbar-right{display:flex;gap:18px;align-items:center}
+.nav-wrapper{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid rgba(10,22,40,.08);box-shadow:0 2px 16px rgba(10,22,40,.06);font-family:'DM Sans',-apple-system,sans-serif}
+.nav-wrapper .container{max-width:1160px;margin:0 auto;padding:0 24px}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:13px 0;gap:16px}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo-mark{width:40px;height:40px;background:#0A1628;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.nav-logo-name{font-family:'Playfair Display',Georgia,serif;font-size:18px;font-weight:600;color:#0A1628;display:block;line-height:1.2}
+.nav-logo-sub{font-size:10px;font-weight:500;color:#8B6914;text-transform:uppercase;letter-spacing:.08em;display:block}
+.nav-links{display:flex;list-style:none;gap:2px;align-items:center}
+.nav-links li{position:relative}
+.nav-links a{text-decoration:none;color:#4A5568;font-size:14px;font-weight:500;padding:8px 13px;border-radius:8px;transition:all .2s;display:flex;align-items:center;gap:4px;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{color:#0A1628;background:#FAF8F3}
+.nav-links a.nav-cta{background:#C9A84C;color:#0A1628;font-weight:600;padding:10px 20px}
+.nav-links a.nav-cta:hover{background:#B8922F}
+.nav-links a.nav-cta.active{background:#B8922F;color:#0A1628}
+.drop-arrow{font-size:10px;color:#718096;transition:transform .2s;display:inline-block}
+.has-drop:hover .drop-arrow{transform:rotate(180deg)}
+.dropdown{position:absolute;top:calc(100% + 8px);left:0;background:#fff;border:1px solid rgba(10,22,40,.08);border-radius:12px;padding:8px;min-width:220px;box-shadow:0 4px 24px rgba(10,22,40,.1);opacity:0;pointer-events:none;transform:translateY(-6px);transition:opacity .2s,transform .2s;z-index:9999}
+.has-drop:hover .dropdown{opacity:1;pointer-events:all;transform:translateY(0)}
+.dropdown a{display:block;padding:9px 14px;font-size:14px;color:#4A5568;border-radius:8px;white-space:nowrap;text-decoration:none;font-weight:400}
+.dropdown a:hover{background:#FAF8F3;color:#0A1628}
+.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;background:none;border:none}
+.nav-toggle span{display:block;width:22px;height:2px;background:#0A1628;border-radius:2px}
+.nav-mobile{display:none;background:#fff;border-top:1px solid rgba(10,22,40,.07);padding:16px 24px 20px;max-height:80vh;overflow-y:auto}
+.nav-mobile.open{display:block}
+.nav-mobile a{display:block;padding:10px 0;font-size:15px;color:#4A5568;text-decoration:none;border-bottom:1px solid rgba(10,22,40,.05);font-weight:500}
+.nav-mobile a:hover{color:#0A1628}
+.nav-mobile a.mobile-cta{background:#C9A84C;color:#0A1628;font-weight:700;text-align:center;padding:12px;border-radius:8px;margin-top:10px;border-bottom:none}
+@media(max-width:900px){.nav-links{display:none}.nav-toggle{display:flex}}
+</style>
+
 <!-- TOPBAR -->
 <div class="topbar"><div class="container">
   <div class="topbar-left">
-    <a href="tel:+971561571514"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.8 19.8 0 01-3.07-8.67A2 2 0 012 1.24h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 9a16 16 0 006.29 6.29l1.12-1.12a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>+971 56 157 1514</a>
-    <a href="mailto:info@emaar-global.com"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>info@emaar-global.com</a>
+    <a href="tel:+971561571514"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.8 19.8 0 01-3.07-8.67A2 2 0 012 1.24h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 9a16 16 0 006.29 6.29l1.12-1.12a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>+971 56 157 1514</a>
+    <a href="mailto:info@emaar-global.com"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>info@emaar-global.com</a>
   </div>
   <div class="topbar-right"><a href="https://wa.me/971561571514">WhatsApp Us</a></div>
 </div></div>
@@ -106,24 +148,16 @@ body{font-family:var(--fb);background:var(--cream);color:var(--navy);line-height
   </a>
   <ul class="nav-links">
     <li><a href="/">Home</a></li>
-    <li class="has-drop"><a href="/business-setup/">Business Setup <span class="drop-arrow">&#9662;</span></a>
+    <li class="has-drop">
+      <a href="/business-setup/">Business Setup <span class="drop-arrow">&#9662;</span></a>
       <div class="dropdown">
-        <div class="dropdown-section">&#128176; Low Cost</div>
-        <a href="/business-setup/#etrade">&#9889; eTrade License &mdash; AED 1,070</a>
-        <a href="/business-setup/#budget">&#127381; License + Visa &mdash; AED 9,800</a>
-        <div class="dropdown-section">&#127970; By Structure</div>
         <a href="/business-setup/dubai-mainland/">Mainland Company</a>
         <a href="/business-setup/free-zone/">Free Zone Company</a>
         <a href="/business-setup/offshore/">Offshore Company</a>
-        <div class="dropdown-section">&#127757; By Emirate</div>
-        <a href="/business-setup/#dubai">&#127744; Dubai</a>
-        <a href="/business-setup/#abudhabi">&#127745; Abu Dhabi</a>
-        <a href="/business-setup/#sharjah">&#127746; Sharjah</a>
-        <a href="/business-setup/#rak">&#127747; RAK</a>
-        <a href="/business-setup/#others">&#127748; Ajman &middot; Fujairah &middot; UAQ</a>
       </div>
     </li>
-    <li class="has-drop"><a href="/services/" class="active">Services <span class="drop-arrow">&#9662;</span></a>
+    <li class="has-drop">
+      <a href="/services/" class="active">Services <span class="drop-arrow">&#9662;</span></a>
       <div class="dropdown">
         <a href="/services/license-services/">License Services</a>
         <a href="/services/visa-services/">Visa Services</a>
@@ -137,29 +171,30 @@ body{font-family:var(--fb);background:var(--cream);color:var(--navy);line-height
     <li><a href="/about/">About</a></li>
     <li><a href="/contact/" class="nav-cta">Free Consultation</a></li>
   </ul>
-  <button class="nav-toggle" onclick="document.getElementById('mobile-nav').classList.toggle('open')"><span></span><span></span><span></span></button>
+  <button class="nav-toggle" onclick="document.getElementById('mobile-nav').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 </div>
-<!-- MOBILE MENU -->
 <div class="nav-mobile" id="mobile-nav">
   <a href="/">Home</a>
   <a href="/business-setup/">Business Setup Hub</a>
-  <a href="/business-setup/#etrade">eTrade License &mdash; AED 1,070</a>
-  <a href="/business-setup/dubai-mainland/">Mainland Company</a>
-  <a href="/business-setup/free-zone/">Free Zone Company</a>
-  <a href="/business-setup/offshore/">Offshore Company</a>
+  <a href="/business-setup/dubai-mainland/">&#8227; Mainland Company</a>
+  <a href="/business-setup/free-zone/">&#8227; Free Zone Company</a>
+  <a href="/business-setup/offshore/">&#8227; Offshore Company</a>
   <a href="/services/">All Services</a>
-  <a href="/services/license-services/">License Services</a>
-  <a href="/services/visa-services/">Visa Services</a>
-  <a href="/services/accounting-tax/">Accounting &amp; Tax</a>
-  <a href="/services/corporate-services/">Corporate Services</a>
-  <a href="/services/legal-services/">Legal Services</a>
+  <a href="/services/license-services/">&#8227; License Services</a>
+  <a href="/services/visa-services/">&#8227; Visa Services</a>
+  <a href="/services/accounting-tax/">&#8227; Accounting &amp; Tax</a>
+  <a href="/services/corporate-services/">&#8227; Corporate Services</a>
+  <a href="/services/legal-services/">&#8227; Legal Services</a>
   <a href="/services/visa-services/golden-visa/" style="color:#C9A84C;font-weight:600;">&#11088; Golden Visa</a>
   <a href="/tools/uae-company-cost-calculator/">&#129518; Cost Calculator</a>
   <a href="/about/">About Us</a>
   <a href="/contact/" class="mobile-cta">Free Consultation &#8594;</a>
 </div>
-</div><!-- end nav-wrapper -->
+</div>
+<!-- NAV END -->
 
 <div class="breadcrumb"><div class="container"><div class="bc"><a href="/">Home</a><span class="bc-sep">&#8250;</span><a href="/services/">Services</a><span class="bc-sep">&#8250;</span><span class="bc-cur">Visa Services</span></div></div></div><style>
 /* HERO */
