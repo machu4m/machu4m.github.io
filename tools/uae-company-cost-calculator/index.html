@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UAE Business Setup Cost Calculator 2025 | Emaar Global</title>
+<meta name="description" content="Calculate your UAE business setup cost instantly. Free zone, mainland, eTrade and offshore options. Get a real quote in 60 seconds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #FAF8F3;
+  color: #0A1628;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* TOPBAR */
+.topbar { background: #0A1628; padding: 9px 0; }
+.topbar .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+.topbar a { color: #E8D09A; text-decoration: none; font-size: 13px; display: flex; align-items: center; gap: 5px; }
+.topbar a:hover { color: #fff; }
+.tb-l, .tb-r { display: flex; gap: 18px; align-items: center; }
+
+/* NAV */
+.nav-bar { background: #fff; border-bottom: 1px solid rgba(10,22,40,.1); padding: 12px 0; }
+.nav-bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.logo-mark { width: 38px; height: 38px; background: #0A1628; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.logo-name { font-family: 'Playfair Display', Georgia, serif; font-size: 17px; font-weight: 600; color: #0A1628; display: block; line-height: 1.2; }
+.logo-sub { font-size: 10px; color: #8B6914; text-transform: uppercase; letter-spacing: .08em; display: block; }
+.nav-actions { display: flex; align-items: center; gap: 12px; }
+.nav-back { font-size: 14px; color: #718096; text-decoration: none; display: flex; align-items: center; gap: 5px; }
+.nav-back:hover { color: #0A1628; }
+.nav-cta { background: #C9A84C; color: #0A1628; font-weight: 600; font-size: 14px; padding: 9px 20px; border-radius: 8px; text-decoration: none; }
+.nav-cta:hover { background: #B8922F; }
+
+/* PAGE HERO */
+.page-hero { background: linear-gradient(135deg, #0A1628 0%, #152340 100%); padding: 48px 0 0; position: relative; overflow: hidden; }
+.page-hero::before { content: ''; position: absolute; right: -60px; top: -60px; width: 400px; height: 400px; border-radius: 50%; border: 1px solid rgba(201,168,76,.1); }
+.page-hero .wrap { position: relative; z-index: 2; }
+.ph-label { display: inline-flex; align-items: center; gap: 7px; background: rgba(201,168,76,.15); border: 1px solid rgba(201,168,76,.3); border-radius: 100px; padding: 5px 14px; font-size: 12px; font-weight: 600; color: #E8D09A; text-transform: uppercase; letter-spacing: .07em; margin-bottom: 16px; }
+.ph-dot { width: 6px; height: 6px; border-radius: 50%; background: #C9A84C; animation: blink 2s infinite; }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:.4} }
+.ph-title { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(28px,4vw,48px); font-weight: 700; color: #fff; line-height: 1.15; margin-bottom: 10px; }
+.ph-title em { font-style: normal; color: #C9A84C; }
+.ph-sub { font-size: 16px; color: rgba(255,255,255,.6); font-weight: 300; line-height: 1.7; max-width: 560px; margin-bottom: 0; }
+.ph-stats { display: flex; flex-wrap: wrap; gap: 0; margin-top: 32px; background: rgba(255,255,255,.05); border-top: 1px solid rgba(255,255,255,.08); }
+.ph-stat { flex: 1; min-width: 120px; padding: 16px 24px; border-right: 1px solid rgba(255,255,255,.07); text-align: center; }
+.ph-stat:last-child { border-right: none; }
+.ph-stat-n { font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #C9A84C; display: block; margin-bottom: 3px; }
+.ph-stat-l { font-size: 12px; color: rgba(255,255,255,.4); font-weight: 300; }
+
+/* MAIN LAYOUT */
+.main-wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.layout { display: grid; grid-template-columns: 1fr 380px; gap: 32px; align-items: start; padding: 40px 0 80px; }
+
+/* ───── LEFT PANEL: WIZARD ───── */
+.wizard { background: #fff; border-radius: 16px; border: 1px solid rgba(10,22,40,.08); overflow: hidden; box-shadow: 0 4px 32px rgba(10,22,40,.07); }
+
+/* progress */
+.w-progress { padding: 24px 28px 0; border-bottom: 1px solid rgba(10,22,40,.07); }
+.w-prog-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.w-step-label { font-size: 12px; font-weight: 700; color: #8B6914; text-transform: uppercase; letter-spacing: .08em; }
+.w-step-count { font-size: 12px; color: #718096; font-weight: 300; }
+.w-track { height: 3px; background: rgba(10,22,40,.08); border-radius: 2px; overflow: hidden; margin-bottom: 16px; }
+.w-fill { height: 100%; background: linear-gradient(90deg, #C9A84C, #E8D09A); border-radius: 2px; transition: width .5s cubic-bezier(.4,0,.2,1); }
+.w-dots { display: flex; gap: 6px; margin-bottom: 20px; }
+.w-dot { height: 7px; border-radius: 4px; background: rgba(10,22,40,.1); transition: all .3s; width: 7px; }
+.w-dot.done { background: #C9A84C; }
+.w-dot.active { background: #0A1628; width: 18px; }
+
+/* step body */
+.w-body { padding: 28px; }
+.step-q { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(20px,2.5vw,28px); font-weight: 700; color: #0A1628; line-height: 1.25; margin-bottom: 8px; }
+.step-q em { font-style: normal; color: #8B6914; }
+.step-sub { font-size: 14px; color: #718096; font-weight: 300; line-height: 1.65; margin-bottom: 28px; }
+
+/* OPTION CARDS */
+.opts { display: flex; flex-direction: column; gap: 10px; }
+.opts-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.opt { border: 2px solid rgba(10,22,40,.08); border-radius: 12px; padding: 16px 18px; cursor: pointer; transition: all .22s; background: #FAF8F3; text-align: left; width: 100%; font-family: inherit; position: relative; }
+.opt:hover { border-color: rgba(201,168,76,.5); background: rgba(201,168,76,.04); transform: translateY(-2px); box-shadow: 0 4px 16px rgba(10,22,40,.08); }
+.opt.sel { border-color: #0A1628; background: #0A1628; }
+.opt.sel .opt-name { color: #fff; }
+.opt.sel .opt-desc { color: rgba(255,255,255,.5); }
+.opt.sel .opt-price { color: #C9A84C; }
+.opt.sel .opt-pnote { color: rgba(255,255,255,.35); }
+.opt.sel .opt-badge { background: rgba(255,255,255,.08); color: rgba(255,255,255,.6); }
+.opt.rec { border-color: rgba(201,168,76,.4); background: rgba(201,168,76,.03); }
+.opt.rec.sel { border-color: #C9A84C; background: #0A1628; }
+.opt-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+.opt-icon { font-size: 22px; flex-shrink: 0; }
+.opt-name { font-size: 15px; font-weight: 600; color: #0A1628; line-height: 1.3; }
+.opt-desc { font-size: 13px; color: #718096; font-weight: 300; line-height: 1.5; margin-bottom: 10px; }
+.opt-bottom { display: flex; align-items: baseline; gap: 6px; }
+.opt-price { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 700; color: #0A1628; }
+.opt-pnote { font-size: 11px; color: #718096; font-weight: 300; }
+.opt-badge { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 3px 9px; border-radius: 100px; white-space: nowrap; }
+.b-pop { background: rgba(239,159,39,.15); color: #7D4E0A; }
+.b-cheap { background: rgba(29,158,117,.1); color: #085041; }
+.b-prem { background: rgba(10,22,40,.08); color: #1E3460; }
+.opt-chk { position: absolute; top: 12px; right: 12px; width: 22px; height: 22px; border-radius: 50%; background: #C9A84C; display: flex; align-items: center; justify-content: center; opacity: 0; transform: scale(0); transition: all .2s; }
+.opt.sel .opt-chk { opacity: 1; transform: scale(1); }
+
+/* VISA COUNTER */
+.vc-wrap { display: flex; gap: 24px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 24px; }
+.vc { display: flex; align-items: center; border: 2px solid rgba(10,22,40,.1); border-radius: 12px; overflow: hidden; background: #fff; }
+.vc-btn { width: 52px; height: 52px; border: none; background: transparent; font-size: 24px; cursor: pointer; color: #0A1628; font-weight: 300; transition: background .15s; display: flex; align-items: center; justify-content: center; }
+.vc-btn:hover { background: #FAF8F3; }
+.vc-btn:disabled { color: rgba(10,22,40,.2); cursor: not-allowed; }
+.vc-mid { width: 72px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-left: 1px solid rgba(10,22,40,.08); border-right: 1px solid rgba(10,22,40,.08); }
+.vc-val { font-family: 'Playfair Display', Georgia, serif; font-size: 26px; font-weight: 700; color: #0A1628; line-height: 1; }
+.vc-lbl { font-size: 10px; color: #718096; font-weight: 300; margin-top: 2px; }
+.vc-note { padding: 12px 16px; background: rgba(201,168,76,.08); border: 1px solid rgba(201,168,76,.2); border-radius: 8px; font-size: 13px; color: #8B6914; font-weight: 300; line-height: 1.55; flex: 1; min-width: 200px; }
+.v-presets { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; margin-top: 16px; }
+.v-preset { border: 1.5px solid rgba(10,22,40,.1); border-radius: 8px; padding: 10px; cursor: pointer; background: #FAF8F3; text-align: center; transition: all .2s; font-family: inherit; }
+.v-preset:hover { border-color: rgba(201,168,76,.4); background: rgba(201,168,76,.04); }
+.v-preset.sel { border-color: #0A1628; background: #0A1628; }
+.v-preset.sel .vp-n, .v-preset.sel .vp-l { color: #fff; }
+.vp-l { font-size: 12px; color: #718096; font-weight: 300; }
+.vp-n { font-size: 13px; font-weight: 600; color: #0A1628; margin-top: 2px; }
+
+/* ADDONS */
+.addon-list { display: flex; flex-direction: column; gap: 8px; }
+.addon { display: flex; align-items: center; gap: 14px; padding: 14px 16px; background: #FAF8F3; border: 2px solid rgba(10,22,40,.07); border-radius: 12px; cursor: pointer; transition: all .22s; }
+.addon:hover { border-color: rgba(201,168,76,.3); background: rgba(201,168,76,.03); }
+.addon.sel { border-color: #1D9E75; background: rgba(29,158,117,.06); }
+.addon-cb { width: 22px; height: 22px; border-radius: 6px; border: 2px solid rgba(10,22,40,.18); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all .2s; }
+.addon.sel .addon-cb { background: #1D9E75; border-color: #1D9E75; }
+.addon-ico { font-size: 20px; flex-shrink: 0; }
+.addon-info { flex: 1; }
+.addon-name { font-size: 14px; font-weight: 600; color: #0A1628; margin-bottom: 2px; }
+.addon-desc { font-size: 12px; color: #718096; font-weight: 300; line-height: 1.4; }
+.addon-price { font-family: 'Playfair Display', Georgia, serif; font-size: 16px; font-weight: 700; color: #0A1628; text-align: right; white-space: nowrap; }
+.addon-freq { font-size: 11px; color: #718096; font-weight: 300; text-align: right; }
+
+/* STEP NAV */
+.step-nav { display: flex; align-items: center; gap: 10px; margin-top: 28px; flex-wrap: wrap; }
+.btn-next { background: #0A1628; color: #fff; font-family: inherit; font-size: 15px; font-weight: 600; padding: 13px 28px; border-radius: 8px; border: none; cursor: pointer; transition: all .22s; display: flex; align-items: center; gap: 7px; }
+.btn-next:hover { background: #1E3460; transform: translateY(-1px); }
+.btn-next:disabled { opacity: .35; cursor: not-allowed; transform: none; }
+.btn-back { background: transparent; color: #718096; font-family: inherit; font-size: 14px; font-weight: 500; padding: 13px 18px; border-radius: 8px; border: 1.5px solid rgba(10,22,40,.12); cursor: pointer; transition: all .22s; }
+.btn-back:hover { border-color: #0A1628; color: #0A1628; }
+.btn-skip { background: none; border: none; color: #718096; font-size: 13px; font-weight: 300; cursor: pointer; padding: 13px 8px; font-family: inherit; }
+.btn-skip:hover { color: #0A1628; }
+
+/* FORM STEP */
+.qform { border: 1px solid rgba(10,22,40,.08); border-radius: 12px; padding: 24px; background: #FAF8F3; margin-bottom: 4px; }
+.qf-t { font-family: 'Playfair Display', Georgia, serif; font-size: 20px; font-weight: 700; color: #0A1628; margin-bottom: 5px; }
+.qf-s { font-size: 13px; color: #718096; font-weight: 300; line-height: 1.6; margin-bottom: 20px; }
+.fg { margin-bottom: 12px; }
+.fl { display: block; font-size: 11px; font-weight: 600; color: #4A5568; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 5px; }
+.fi, .fs { width: 100%; padding: 11px 13px; border: 1.5px solid #E2E8F0; border-radius: 8px; font-family: inherit; font-size: 14px; color: #0A1628; background: #fff; transition: border-color .2s; outline: none; -webkit-appearance: none; }
+.fi:focus, .fs:focus { border-color: #C9A84C; }
+.fi.err { border-color: #E24B4A; }
+.fta { width: 100%; padding: 11px 13px; border: 1.5px solid #E2E8F0; border-radius: 8px; font-family: inherit; font-size: 14px; color: #0A1628; background: #fff; outline: none; resize: vertical; min-height: 72px; }
+.fta:focus { border-color: #C9A84C; }
+.f2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.sbtn { width: 100%; background: #C9A84C; color: #0A1628; font-family: inherit; font-size: 16px; font-weight: 700; padding: 15px; border-radius: 8px; border: none; cursor: pointer; transition: all .22s; display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 4px; }
+.sbtn:hover { background: #B8922F; transform: translateY(-1px); box-shadow: 0 6px 24px rgba(201,168,76,.3); }
+.or-line { text-align: center; font-size: 13px; color: #718096; margin: 14px 0; position: relative; }
+.or-line::before,.or-line::after { content: ''; position: absolute; top: 50%; width: 43%; height: 1px; background: rgba(10,22,40,.08); }
+.or-line::before{left:0} .or-line::after{right:0}
+.wa-btn { width: 100%; background: #25D366; color: #fff; font-family: inherit; font-size: 15px; font-weight: 600; padding: 13px; border-radius: 8px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: all .22s; }
+.wa-btn:hover { background: #1ebe5d; }
+.trust-row { display: flex; gap: 16px; margin-top: 14px; padding-top: 12px; border-top: 1px solid rgba(10,22,40,.06); flex-wrap: wrap; }
+.tr-i { display: flex; align-items: center; gap: 5px; font-size: 11px; color: #718096; }
+
+/* ───── RIGHT PANEL: ESTIMATE ───── */
+.estimate { position: sticky; top: 20px; }
+.est-box { background: #0A1628; border-radius: 16px; overflow: hidden; }
+.est-head { padding: 22px 24px 18px; border-bottom: 1px solid rgba(255,255,255,.07); }
+.est-lbl { font-size: 11px; font-weight: 700; color: rgba(201,168,76,.8); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 5px; }
+.est-title { font-family: 'Playfair Display', Georgia, serif; font-size: 17px; font-weight: 600; color: #fff; line-height: 1.3; }
+
+/* price ticker */
+.ticker { padding: 22px 24px; border-bottom: 1px solid rgba(255,255,255,.07); text-align: center; }
+.tick-from { font-size: 12px; color: rgba(255,255,255,.4); font-weight: 300; margin-bottom: 6px; }
+.tick-amt { font-family: 'Playfair Display', Georgia, serif; font-size: 46px; font-weight: 700; color: #C9A84C; line-height: 1; display: block; transition: all .3s; }
+.tick-cur { font-size: 13px; color: rgba(255,255,255,.4); font-weight: 300; margin-top: 5px; }
+.tick-note { font-size: 11px; color: rgba(255,255,255,.25); margin-top: 6px; }
+
+/* selections */
+.est-sels { padding: 16px 24px; border-bottom: 1px solid rgba(255,255,255,.07); min-height: 56px; }
+.est-pending { font-size: 13px; color: rgba(255,255,255,.35); font-weight: 300; line-height: 1.6; }
+.sel-tag { display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: rgba(255,255,255,.6); font-weight: 300; margin-bottom: 6px; }
+.sel-tag:last-child { margin-bottom: 0; }
+.sel-dot { width: 6px; height: 6px; border-radius: 50%; background: #C9A84C; flex-shrink: 0; }
+.sel-name { color: #fff; font-weight: 500; }
+
+/* breakdown */
+.est-bd { padding: 16px 24px; border-bottom: 1px solid rgba(255,255,255,.07); }
+.bd-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,.05); }
+.bd-row:last-child { border-bottom: none; }
+.bd-row.total { padding-top: 12px; border-top: 2px solid rgba(201,168,76,.3); border-bottom: none; margin-top: 4px; }
+.bd-lbl { font-size: 12.5px; color: rgba(255,255,255,.55); font-weight: 300; display: flex; align-items: center; gap: 6px; }
+.bd-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+.bd-dot-g { background: #C9A84C; }
+.bd-dot-ok { background: #1D9E75; }
+.bd-dot-sl { background: rgba(255,255,255,.25); }
+.bd-amt { font-family: 'DM Mono', 'Courier New', monospace; font-size: 12.5px; font-weight: 500; color: rgba(255,255,255,.75); white-space: nowrap; }
+.bd-row.total .bd-lbl { color: #fff; font-weight: 600; font-size: 13.5px; }
+.bd-row.total .bd-amt { color: #C9A84C; font-size: 15px; font-weight: 700; }
+
+/* tip badge */
+.tip-badge { margin: 0 24px 16px; background: rgba(29,158,117,.12); border: 1px solid rgba(29,158,117,.3); border-radius: 8px; padding: 12px 14px; display: flex; gap: 10px; }
+.tip-txt { font-size: 12px; color: rgba(255,255,255,.65); font-weight: 300; line-height: 1.55; }
+.tip-txt strong { color: #5DCAA5; font-weight: 600; }
+
+/* panel CTAs */
+.est-cta { padding: 16px 24px 20px; display: flex; flex-direction: column; gap: 8px; }
+.ep-cta { width: 100%; background: #C9A84C; color: #0A1628; font-family: inherit; font-size: 14px; font-weight: 700; padding: 12px; border-radius: 8px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 7px; transition: all .22s; }
+.ep-cta:hover { background: #B8922F; }
+.ep-wa { width: 100%; background: #25D366; color: #fff; font-family: inherit; font-size: 13px; font-weight: 600; padding: 11px; border-radius: 8px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 7px; transition: all .22s; }
+.ep-wa:hover { background: #1ebe5d; }
+
+/* success */
+.success { text-align: center; padding: 32px 0; }
+.suc-icon { width: 68px; height: 68px; border-radius: 50%; background: rgba(29,158,117,.1); border: 2px solid rgba(29,158,117,.3); display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; font-size: 30px; }
+.suc-t { font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #0A1628; margin-bottom: 8px; }
+.suc-s { font-size: 14px; color: #718096; font-weight: 300; line-height: 1.65; max-width: 400px; margin: 0 auto 24px; }
+.nxt-steps { background: #FAF8F3; border-radius: 12px; border: 1px solid rgba(10,22,40,.07); padding: 20px; text-align: left; }
+.nxt-t { font-size: 12px; font-weight: 700; color: #0A1628; text-transform: uppercase; letter-spacing: .07em; margin-bottom: 14px; }
+.nxt-row { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+.nxt-row:last-child { margin-bottom: 0; }
+.nxt-num { width: 26px; height: 26px; border-radius: 50%; background: #0A1628; color: #C9A84C; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+.nxt-txt { font-size: 13.5px; color: #4A5568; font-weight: 300; line-height: 1.55; }
+.nxt-txt strong { color: #0A1628; font-weight: 600; }
+.suc-btns { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 20px; }
+.suc-wa { background: #25D366; color: #fff; font-family: inherit; font-size: 14px; font-weight: 600; padding: 12px 22px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 7px; }
+.suc-home { background: #0A1628; color: #fff; font-family: inherit; font-size: 14px; font-weight: 600; padding: 12px 22px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 7px; }
+
+/* STEP ANIMATION */
+.step-anim { animation: fadeSlide .3s ease; }
+@keyframes fadeSlide { from{opacity:0;transform:translateX(14px)} to{opacity:1;transform:translateX(0)} }
+
+/* WA SVG */
+.wa-svg { width: 17px; height: 17px; fill: currentColor; flex-shrink: 0; }
+
+/* MOBILE */
+.mob-bar { display: none; }
+@media(max-width:900px) {
+  .layout { grid-template-columns: 1fr; gap: 20px; padding: 24px 0 120px; }
+  .estimate { position: static; display: none; }
+  .mob-bar { display: flex; position: fixed; bottom: 0; left: 0; right: 0; background: #0A1628; border-top: 1px solid rgba(255,255,255,.1); padding: 12px 20px; gap: 12px; align-items: center; z-index: 99; }
+  .mob-price { flex: 1; }
+  .mob-from { font-size: 11px; color: rgba(255,255,255,.4); font-weight: 300; }
+  .mob-amt { font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #C9A84C; line-height: 1; }
+  .mob-cta { background: #C9A84C; color: #0A1628; font-family: inherit; font-size: 14px; font-weight: 700; padding: 11px 20px; border-radius: 8px; border: none; cursor: pointer; white-space: nowrap; }
+  .ph-stats { flex-direction: column; }
+  .ph-stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,.07); text-align: left; }
+  .ph-stat:last-child { border-bottom: none; }
+  .v-presets { grid-template-columns: 1fr 1fr; }
+  .opts-2 { grid-template-columns: 1fr; }
+}
+@media(max-width:600px) {
+  .f2 { grid-template-columns: 1fr; }
+  .step-q { font-size: 20px; }
+  .tb-l { flex-direction: column; gap: 4px; align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar"><div class="container">
+  <div class="topbar-left">
+    <a href="tel:+971561571514"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.8 19.8 0 01-3.07-8.67A2 2 0 012 1.24h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 9a16 16 0 006.29 6.29l1.12-1.12a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>+971 56 157 1514</a>
+    <a href="mailto:info@emaar-global.com"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>info@emaar-global.com</a>
+  </div>
+  <div class="topbar-right"><a href="https://wa.me/971561571514">WhatsApp Us</a></div>
+</div></div>
+
+<!-- NAVIGATION -->
+<div class="nav-wrapper"><div class="container">
+<nav class="nav">
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-mark"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2L3 6.5v9L11 20l8-4.5v-9L11 2z" stroke="#C9A84C" stroke-width="1.5" fill="none"/><path d="M11 6l-4.5 2.5v5L11 16l4.5-2.5v-5L11 6z" fill="#C9A84C" fill-opacity="0.3"/></svg></div>
+    <div><span class="nav-logo-name">Emaar Global</span><span class="nav-logo-sub">Business Solutions</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li class="has-drop"><a href="/business-setup/">Business Setup <span class="drop-arrow">&#9662;</span></a>
+      <div class="dropdown">
+        <div class="dropdown-section">&#128176; Low Cost</div>
+        <a href="/business-setup/#etrade">&#9889; eTrade License &mdash; AED 1,070</a>
+        <a href="/business-setup/#budget">&#127381; License + Visa &mdash; AED 9,800</a>
+        <div class="dropdown-section">&#127970; By Structure</div>
+        <a href="/business-setup/dubai-mainland/">Mainland Company</a>
+        <a href="/business-setup/free-zone/">Free Zone Company</a>
+        <a href="/business-setup/offshore/">Offshore Company</a>
+        <div class="dropdown-section">&#127757; By Emirate</div>
+        <a href="/business-setup/#dubai">&#127744; Dubai</a>
+        <a href="/business-setup/#abudhabi">&#127745; Abu Dhabi</a>
+        <a href="/business-setup/#sharjah">&#127746; Sharjah</a>
+        <a href="/business-setup/#rak">&#127747; RAK</a>
+        <a href="/business-setup/#others">&#127748; Ajman &middot; Fujairah &middot; UAQ</a>
+      </div>
+    </li>
+    <li class="has-drop"><a href="/services/">Services <span class="drop-arrow">&#9662;</span></a>
+      <div class="dropdown">
+        <a href="/services/license-services/">License Services</a>
+        <a href="/services/visa-services/">Visa Services</a>
+        <a href="/services/accounting-tax/">Accounting &amp; Tax</a>
+        <a href="/services/corporate-services/">Corporate Services</a>
+        <a href="/services/legal-services/">Legal Services</a>
+      </div>
+    </li>
+    <li><a href="/services/visa-services/golden-visa/" style="color:#8B6914;font-weight:600;">&#11088; Golden Visa</a></li>
+    <li><a href="/tools/uae-company-cost-calculator/" class="active">&#129518; Cost Calculator</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/contact/" class="nav-cta">Free Consultation</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="document.getElementById('mobile-nav').classList.toggle('open')"><span></span><span></span><span></span></button>
+</nav>
+</div>
+<!-- MOBILE MENU -->
+<div class="nav-mobile" id="mobile-nav">
+  <a href="/">Home</a>
+  <a href="/business-setup/">Business Setup Hub</a>
+  <a href="/business-setup/#etrade">eTrade License &mdash; AED 1,070</a>
+  <a href="/business-setup/dubai-mainland/">Mainland Company</a>
+  <a href="/business-setup/free-zone/">Free Zone Company</a>
+  <a href="/business-setup/offshore/">Offshore Company</a>
+  <a href="/services/">All Services</a>
+  <a href="/services/license-services/">License Services</a>
+  <a href="/services/visa-services/">Visa Services</a>
+  <a href="/services/accounting-tax/">Accounting &amp; Tax</a>
+  <a href="/services/corporate-services/">Corporate Services</a>
+  <a href="/services/legal-services/">Legal Services</a>
+  <a href="/services/visa-services/golden-visa/" style="color:#C9A84C;font-weight:600;">&#11088; Golden Visa</a>
+  <a href="/tools/uae-company-cost-calculator/">&#129518; Cost Calculator</a>
+  <a href="/about/">About Us</a>
+  <a href="/contact/" class="mobile-cta">Free Consultation &#8594;</a>
+</div>
+</div><!-- end nav-wrapper -->
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="main-wrap">
+    <div class="wrap" style="padding:0;">
+      <div class="ph-label"><div class="ph-dot"></div>Free Interactive Tool</div>
+      <h1 class="ph-title">UAE Business Setup<br><em>Cost Calculator</em></h1>
+      <p class="ph-sub">Answer 4 quick questions and get a real estimate — broken down line by line. No sign-up, no obligation.</p>
+      <div class="ph-stats">
+        <div class="ph-stat"><span class="ph-stat-n">60 sec</span><span class="ph-stat-l">Average completion time</span></div>
+        <div class="ph-stat"><span class="ph-stat-n">AED 1,070</span><span class="ph-stat-l">Cheapest option (eTrade)</span></div>
+        <div class="ph-stat"><span class="ph-stat-n">AED 9,800</span><span class="ph-stat-l">License + visa package</span></div>
+        <div class="ph-stat"><span class="ph-stat-n">40+</span><span class="ph-stat-l">Free zones covered</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="main-wrap">
+<div class="layout">
+
+  <!-- ─── WIZARD (LEFT) ─── -->
+  <div class="wizard" id="wizard">
+    <div class="w-progress">
+      <div class="w-prog-top">
+        <div class="w-step-label" id="stepLbl">Structure</div>
+        <div class="w-step-count" id="stepCnt">Step 1 of 5</div>
+      </div>
+      <div class="w-track"><div class="w-fill" id="wFill" style="width:20%"></div></div>
+      <div class="w-dots" id="wDots"></div>
+    </div>
+    <div class="w-body" id="wBody"></div>
+  </div>
+
+  <!-- ─── ESTIMATE PANEL (RIGHT) ─── -->
+  <div class="estimate">
+    <div class="est-box">
+      <div class="est-head">
+        <div class="est-lbl">Live Estimate</div>
+        <div class="est-title">Your UAE Setup Cost</div>
+      </div>
+      <div class="ticker">
+        <div class="tick-from">Estimated total from</div>
+        <span class="tick-amt" id="tickAmt">—</span>
+        <div class="tick-cur">AED &nbsp;(all-inclusive)</div>
+        <div class="tick-note">Updates as you answer</div>
+      </div>
+      <div class="est-sels" id="estSels">
+        <div class="est-pending">Answer the steps on the left — your personalised estimate will build here in real time.</div>
+      </div>
+      <div class="est-bd" id="estBd" style="display:none"></div>
+      <div id="tipBadge" style="display:none" class="tip-badge">
+        <span style="font-size:18px;">💡</span>
+        <div class="tip-txt" id="tipTxt"></div>
+      </div>
+      <div class="est-cta" id="estCta" style="display:none">
+        <button class="ep-cta" onclick="goTo(5)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Get My Exact Quote
+        </button>
+        <button class="ep-wa" onclick="sendWA()">
+          <svg class="wa-svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.1.547 4.162 1.588 5.979L.043 24l6.24-1.637A11.969 11.969 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.999a9.94 9.94 0 01-5.063-1.378l-.363-.216-3.764.987.993-3.653-.237-.374A9.941 9.941 0 012.04 12c0-5.493 4.47-9.963 9.963-9.963 2.662 0 5.165 1.037 7.048 2.92a9.914 9.914 0 012.914 7.043c-.002 5.492-4.472 9.962-9.98 9.962l.015.037z"/></svg>
+          WhatsApp Quote
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end layout -->
+</div><!-- end main-wrap -->
+
+<!-- MOBILE BOTTOM BAR -->
+<div class="mob-bar">
+  <div class="mob-price">
+    <div class="mob-from">Estimate from</div>
+    <div class="mob-amt" id="mobAmt">—</div>
+  </div>
+  <button class="mob-cta" onclick="goTo(5)">Get Quote ›</button>
+</div>
+
+<script>
+// ═════════════════════════════════
+//  DATA
+// ═════════════════════════════════
+const LABELS = ['Structure','Emirate','Visas','Add-ons','Your Quote'];
+
+const STRUCTS = [
+  {id:'et',  icon:'🛒', name:'eTrade License',    price:1070,  note:'per year',     badge:'Cheapest',  bc:'b-cheap', desc:'Sell products or services 100% online — website, Instagram, WhatsApp. No office, no visa included.', rec:false},
+  {id:'fz',  icon:'🏢', name:'Free Zone Company', price:9800,  note:'inc. 1 visa',  badge:'Most Popular', bc:'b-pop', desc:'100% foreign ownership, 0% tax, investor visa included. Best for international business and remote setup.', rec:true},
+  {id:'ml',  icon:'🏙️', name:'Mainland Company',  price:18000, note:'starting from', badge:'Full Access', bc:'b-prem', desc:'Trade freely with UAE clients, shops and government. Unlimited visa quota tied to office size.', rec:false},
+  {id:'off', icon:'🌍', name:'Offshore Company',   price:8500,  note:'no visa',       badge:'Holding Only', bc:'b-prem', desc:'Asset protection, holding structures, 0% tax on all income. Cannot trade inside UAE.', rec:false},
+];
+
+const EMFZ = [
+  {id:'aj',  name:'Ajman',          zone:'Ajman Free Zone',      price:8000,  tag:'UAE\'s cheapest free zone'},
+  {id:'uq',  name:'UAQ',            zone:'UAQ Free Trade Zone',  price:8500,  tag:'Very affordable'},
+  {id:'rk',  name:'RAK',            zone:'RAKEZ',                 price:9000,  tag:'Low cost + industrial'},
+  {id:'sh',  name:'Sharjah',        zone:'SHAMS / SAIF Zone',    price:9500,  tag:'SHAMS = cheapest UAE FZ'},
+  {id:'dxb', name:'Dubai (Budget)', zone:'IFZA / Dubai South',   price:12500, tag:'Affordable Dubai option'},
+  {id:'dxp', name:'Dubai (Premium)',zone:'DMCC / DIFC',          price:18500, tag:'World #1 free zone'},
+  {id:'ad',  name:'Abu Dhabi',      zone:'ADGM / KIZAD',         price:14000, tag:'UAE capital — govt contracts'},
+];
+
+const EMML = [
+  {id:'rk_m', name:'RAK',        auth:'RAK DED',   price:10000, tag:'Most affordable mainland'},
+  {id:'aj_m', name:'Ajman',      auth:'Ajman DED', price:8500,  tag:'Cheapest mainland DED in UAE'},
+  {id:'sh_m', name:'Sharjah',    auth:'SEDD',       price:12000, tag:'Near Dubai, lower cost'},
+  {id:'ad_m', name:'Abu Dhabi',  auth:'ADDED',      price:15000, tag:'Government tender access'},
+  {id:'dxb_m',name:'Dubai',      auth:'Dubai DET',  price:18000, tag:'Full UAE market access'},
+];
+
+const ADDONS = [
+  {id:'acc',  ico:'📊', name:'Monthly Bookkeeping & VAT Filing', desc:'FTA-compliant accounting, quarterly VAT returns', price:800,  freq:'/month'},
+  {id:'vat',  ico:'📋', name:'VAT Registration',                  desc:'Register with the Federal Tax Authority',        price:1500, freq:'one-time'},
+  {id:'gv',   ico:'⭐', name:'UAE Golden Visa (10-year)',         desc:'Long-term residency — 1–2 week package',          price:11800,freq:'one-time'},
+  {id:'tm',   ico:'™️', name:'Trademark Registration',            desc:'Protect your brand with UAE Ministry of Economy', price:4500, freq:'one-time'},
+  {id:'ct',   ico:'🧾', name:'Corporate Tax Annual Filing',       desc:'Annual CT return preparation & FTA submission',   price:2500, freq:'/year'},
+];
+
+// ═════════════════════════════════
+//  STATE
+// ═════════════════════════════════
+const S = { step:1, struct:null, emirate:null, visas:1, addons:[] };
+
+// ═════════════════════════════════
+//  PRICE CALC
+// ═════════════════════════════════
+function calc() {
+  if (!S.struct) return null;
+  let total = 0, items = [];
+
+  if (S.struct === 'et') {
+    total = 1070;
+    items.push({l:'eTrade License (Dubai DET)', a:1070, d:'g'});
+  } else if (S.struct === 'fz') {
+    const em = S.emirate ? EMFZ.find(e=>e.id===S.emirate) : null;
+    const base = em ? em.price : 9800;
+    items.push({l:'Free Zone License' + (em?' ('+em.zone+')':''), a:base, d:'g'});
+    const v1 = 2500;
+    items.push({l:'Investor Visa + Emirates ID', a:v1, d:'ok'});
+    total = base + v1;
+    const extra = Math.max(0, S.visas - 1);
+    if (extra > 0) { const ea = extra*2800; items.push({l:`Additional Visas ×${extra}`, a:ea, d:'sl'}); total += ea; }
+  } else if (S.struct === 'ml') {
+    const em = S.emirate ? EMML.find(e=>e.id===S.emirate) : null;
+    const base = em ? em.price : 18000;
+    items.push({l:'Mainland License' + (em?' ('+em.auth+')':''), a:base, d:'g'});
+    const va = S.visas * 2800;
+    items.push({l:`Investor Visa${S.visas>1?' ×'+S.visas:''}`, a:va, d:'ok'});
+    total = base + va;
+  } else {
+    total = 8500;
+    items.push({l:'RAK ICC Offshore Company', a:8500, d:'g'});
+  }
+
+  S.addons.forEach(id => {
+    const a = ADDONS.find(x=>x.id===id);
+    if (!a) return;
+    if (!a.freq.includes('month') && !a.freq.includes('year')) { total += a.price; items.push({l:a.name, a:a.price, d:'sl'}); }
+    else items.push({l:a.name+' '+a.freq, a:a.price, d:'sl', extra:true});
+  });
+
+  items.push({l:'Total Setup Cost', a:total, total:true, d:'g'});
+  return {total, items};
+}
+
+// ═════════════════════════════════
+//  ANIMATE NUMBER
+// ═════════════════════════════════
+let prevAmt = 0;
+function animNum(el, target) {
+  const start = prevAmt; const dur = 600; const t0 = performance.now();
+  function tick(t) {
+    const p = Math.min((t-t0)/dur,1), e = 1-Math.pow(1-p,3);
+    el.textContent = Math.round(start+(target-start)*e).toLocaleString();
+    if (p<1) requestAnimationFrame(tick); else { el.textContent = target.toLocaleString(); prevAmt = target; }
+  }
+  requestAnimationFrame(tick);
+}
+
+// ═════════════════════════════════
+//  UPDATE PANEL
+// ═════════════════════════════════
+function updatePanel() {
+  const r = calc();
+  const ta = document.getElementById('tickAmt');
+  const ma = document.getElementById('mobAmt');
+  const sels = document.getElementById('estSels');
+  const bd = document.getElementById('estBd');
+  const tip = document.getElementById('tipBadge');
+  const cta = document.getElementById('estCta');
+
+  if (!r) {
+    ta.textContent = '—'; if(ma) ma.textContent='—';
+    sels.innerHTML = '<div class="est-pending">Answer the steps on the left — your estimate will build here in real time.</div>';
+    bd.style.display = 'none'; tip.style.display = 'none'; cta.style.display = 'none';
+    return;
+  }
+
+  animNum(ta, r.total);
+  if (ma) ma.textContent = r.total.toLocaleString();
+  cta.style.display = 'flex'; cta.style.flexDirection = 'column';
+
+  // selections
+  let tags = [];
+  if (S.struct) tags.push(STRUCTS.find(x=>x.id===S.struct)?.name);
+  if (S.emirate) {
+    const em = S.struct==='fz' ? EMFZ.find(e=>e.id===S.emirate) : EMML.find(e=>e.id===S.emirate);
+    if (em) tags.push(S.struct==='fz' ? em.zone : em.name+' ('+em.auth+')');
+  }
+  if (S.struct!=='et'&&S.struct!=='off') tags.push(S.visas+' Visa'+(S.visas>1?'s':''));
+  if (S.addons.length) tags.push(S.addons.length+' Add-on'+(S.addons.length>1?'s':''));
+  sels.innerHTML = tags.map(t=>`<div class="sel-tag"><div class="sel-dot"></div><span class="sel-name">${t}</span></div>`).join('');
+
+  // breakdown
+  bd.style.display = 'block';
+  bd.innerHTML = r.items.map(item=>`
+    <div class="bd-row ${item.total?'total':''}">
+      <div class="bd-lbl"><div class="bd-dot bd-dot-${item.d}"></div>${item.l}</div>
+      <div class="bd-amt">AED ${item.a.toLocaleString()}${item.extra?' *':''}</div>
+    </div>`).join('');
+
+  // tip
+  if (S.struct==='ml' && S.emirate && S.emirate==='dxb_m') {
+    tip.style.display='flex'; document.getElementById('tipTxt').innerHTML='<strong>Save up to AED 8,000:</strong> Sharjah or RAK mainland offers the same legal structure for significantly less than Dubai DET.';
+  } else if (S.struct==='fz' && S.emirate==='dxp') {
+    tip.style.display='flex'; document.getElementById('tipTxt').innerHTML='<strong>Budget option:</strong> SHAMS (Sharjah) gives you the same company structure for AED 9,500 — about AED 9,000 less than DMCC.';
+  } else { tip.style.display='none'; }
+}
+
+// ═════════════════════════════════
+//  RENDER WIZARD
+// ═════════════════════════════════
+const NAMES = ['Structure','Emirate','Visas','Add-ons','Your Quote'];
+
+function goTo(n) { S.step=n; render(); window.scrollTo({top:0,behavior:'smooth'}); }
+
+function render() {
+  const n = S.step;
+  // progress
+  document.getElementById('wFill').style.width = (n/5*100)+'%';
+  document.getElementById('stepLbl').textContent = NAMES[n-1];
+  document.getElementById('stepCnt').textContent = `Step ${n} of 5`;
+  document.getElementById('wDots').innerHTML = NAMES.map((_,i)=>`<div class="w-dot ${i+1===n?'active':i+1<n?'done':''}"></div>`).join('');
+
+  const body = document.getElementById('wBody');
+  body.innerHTML = '';
+  const div = document.createElement('div');
+  div.className = 'step-anim';
+  div.innerHTML = buildStep(n);
+  body.appendChild(div);
+
+  // post-render setup
+  if (n===1) { document.querySelectorAll('.sc').forEach(c=>c.classList.toggle('sel',c.dataset.id===S.struct)); }
+  if (n===2) { document.querySelectorAll('.ec').forEach(c=>c.classList.toggle('sel',c.dataset.id===S.emirate)); }
+  if (n===3 && S.struct!=='et'&&S.struct!=='off') renderVisa();
+  if (n===4) renderAddons();
+  updatePanel();
+}
+
+// ─── STEP 1 ───
+function buildStep(n) {
+  if (n===1) return `
+    <div class="step-q">What kind of UAE business<br>do you want to set up?</div>
+    <p class="step-sub">This determines where your company is registered and what it can do. You can always upgrade later.</p>
+    <div class="opts">
+      ${STRUCTS.map(s=>`
+      <button class="opt ${s.rec?'rec':''} sc" data-id="${s.id}" onclick="pickStruct('${s.id}')">
+        <div class="opt-chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#0A1628" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="opt-top">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div class="opt-icon">${s.icon}</div>
+            <div class="opt-name">${s.name}</div>
+          </div>
+          <span class="opt-badge ${s.bc}">${s.badge}</span>
+        </div>
+        <div class="opt-desc">${s.desc}</div>
+        <div class="opt-bottom"><div class="opt-price">AED ${s.price.toLocaleString()}</div><div class="opt-pnote">${s.note}</div></div>
+      </button>`).join('')}
+    </div>
+    <div class="step-nav">
+      <button class="btn-next" id="n1" onclick="nextFrom1()" ${S.struct?'':'disabled'}>Continue <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+    </div>`;
+
+  if (n===2) {
+    const list = S.struct==='fz' ? EMFZ : EMML;
+    const isFZ = S.struct==='fz';
+    return `
+    <div class="step-q">${isFZ?'Which free zone?':'Which emirate for your mainland?'}</div>
+    <p class="step-sub">${isFZ?'SHAMS (Sharjah) and RAKEZ (RAK) are cheapest. DMCC (Dubai) is most prestigious. All legally equivalent.':'Each emirate has its own DED. RAK and Ajman are cheapest; Dubai gives the most credibility and market access.'}</p>
+    <div class="opts">
+      ${list.map(e=>`
+      <button class="opt ec" data-id="${e.id}" onclick="pickEm('${e.id}')">
+        <div class="opt-chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#0A1628" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="opt-top" style="margin-bottom:4px;">
+          <div><div class="opt-name">${e.name}</div><div class="opt-pnote" style="font-size:12px;margin-top:2px;">${isFZ?e.zone:e.auth}</div></div>
+          <div class="opt-price" style="font-size:16px;">AED ${e.price.toLocaleString()}+</div>
+        </div>
+        <div class="opt-desc" style="margin-bottom:0;">${e.tag}</div>
+      </button>`).join('')}
+    </div>
+    <div class="step-nav">
+      <button class="btn-back" onclick="goTo(1)">&#8592; Back</button>
+      <button class="btn-next" id="n2" onclick="goTo(3)" ${S.emirate?'':'disabled'}>Continue <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      <button class="btn-skip" onclick="goTo(3)">Skip — advise me</button>
+    </div>`;
+  }
+
+  if (n===3) {
+    if (S.struct==='et'||S.struct==='off') return noVisaStep();
+    return `
+    <div class="step-q">How many <em>UAE visas</em> do you need?</div>
+    <p class="step-sub">Each visa = 1 person's UAE residency. Free zone package already includes 1 investor visa. Extra visas are AED 2,800 each.</p>
+    <div class="vc-wrap">
+      <div class="vc">
+        <button class="vc-btn" id="vcm" onclick="chVisa(-1)">−</button>
+        <div class="vc-mid"><div class="vc-val" id="vcv">${S.visas}</div><div class="vc-lbl">visa${S.visas>1?'s':''}</div></div>
+        <button class="vc-btn" id="vcp" onclick="chVisa(1)">+</button>
+      </div>
+      <div class="vc-note" id="vcn">${visaNote()}</div>
+    </div>
+    <div class="v-presets" id="vpreset">
+      ${[['Just me',1],['Me + partner',2],['Small team',4],['6+ people',6]].map(([l,n])=>`
+      <button class="v-preset ${S.visas===n?'sel':''}" onclick="setVisa(${n})">
+        <div class="vp-l">${l}</div>
+        <div class="vp-n">${n} visa${n>1?'s':''}</div>
+      </button>`).join('')}
+    </div>
+    <div class="step-nav" style="margin-top:24px;">
+      <button class="btn-back" onclick="goTo(${S.struct==='fz'||S.struct==='ml'?2:1})">&#8592; Back</button>
+      <button class="btn-next" onclick="goTo(4)">Continue <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+    </div>`;
+  }
+
+  if (n===4) return `
+    <div class="step-q">Any additional services?</div>
+    <p class="step-sub">Optional — but commonly needed. Select any now for a complete cost picture. You can always add them later.</p>
+    <div class="addon-list" id="addonList"></div>
+    <div class="step-nav">
+      <button class="btn-back" onclick="goTo(3)">&#8592; Back</button>
+      <button class="btn-next" onclick="goTo(5)">See My Quote <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      <button class="btn-skip" onclick="goTo(5)">Skip</button>
+    </div>`;
+
+  if (n===5) return step5();
+  return '';
+}
+
+function noVisaStep() {
+  const isET = S.struct==='et';
+  return `
+  <div class="step-q">${isET?'eTrade License':'Offshore'} — no UAE visa</div>
+  <p class="step-sub">${isET?'The eTrade License does not include a residency visa. It\'s a business license only — perfect if you already have UAE residency or don\'t need one yet.':'Offshore companies are designed for holding structures. They don\'t include UAE residency visas.'}</p>
+  <div style="padding:22px;background:#FAF8F3;border-radius:12px;border:1px solid rgba(10,22,40,.08);margin-bottom:8px;">
+    <div style="font-size:13px;font-weight:600;color:#0A1628;margin-bottom:8px;">💡 Want a visa with your business?</div>
+    <p style="font-size:13.5px;color:#718096;font-weight:300;line-height:1.65;margin-bottom:16px;">Our most popular package is a <strong style="color:#0A1628;">Free Zone License + Investor Visa</strong> for AED 9,800 all-inclusive via RAKEZ or SHAMS — includes company documents, 1 investor visa, and Emirates ID.</p>
+    <button class="btn-next" style="width:100%;justify-content:center;" onclick="S.struct='fz';S.emirate=null;goTo(2)">Switch to Free Zone + Visa Package</button>
+  </div>
+  <div class="step-nav">
+    <button class="btn-back" onclick="goTo(1)">&#8592; Back</button>
+    <button class="btn-next" onclick="goTo(4)">Continue as ${isET?'eTrade':'Offshore'} <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+  </div>`;
+}
+
+function step5() {
+  const r = calc();
+  return `
+  <div class="step-q">You're <em>one step away</em> from your exact quote</div>
+  <p class="step-sub">Enter your details and we'll send a full itemised quote with exact government fees within 2 hours. Or skip the form and WhatsApp us directly.</p>
+  <div class="qform">
+    <div class="qf-t">Send Me My Quote</div>
+    <p class="qf-s">Free. No commitment. We respond within 2 hours — often much faster.</p>
+    <div class="f2">
+      <div class="fg"><label class="fl">First name</label><input class="fi" id="fn" type="text" placeholder="First name"></div>
+      <div class="fg"><label class="fl">Last name</label><input class="fi" id="ln" type="text" placeholder="Last name"></div>
+    </div>
+    <div class="fg"><label class="fl">WhatsApp number</label><input class="fi" id="ph" type="tel" placeholder="+971 50 123 4567"></div>
+    <div class="fg"><label class="fl">Email address</label><input class="fi" id="em" type="email" placeholder="you@email.com"></div>
+    <div class="f2">
+      <div class="fg"><label class="fl">Nationality</label><input class="fi" id="nat" type="text" placeholder="e.g. Indian, British..."></div>
+      <div class="fg"><label class="fl">Currently in UAE?</label>
+        <select class="fs"><option value="">Select...</option><option>Yes — valid residency</option><option>Yes — on visit visa</option><option>No — outside UAE</option></select>
+      </div>
+    </div>
+    <div class="fg"><label class="fl">Any questions for us?</label>
+      <textarea class="fta" placeholder="Tell us anything specific about your situation..."></textarea>
+    </div>
+    <button class="sbtn" onclick="doSubmit()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      Send My Quote Request — Free
+    </button>
+    <div class="or-line">or skip the form</div>
+    <button class="wa-btn" onclick="sendWA()">
+      <svg class="wa-svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.1.547 4.162 1.588 5.979L.043 24l6.24-1.637A11.969 11.969 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.999a9.94 9.94 0 01-5.063-1.378l-.363-.216-3.764.987.993-3.653-.237-.374A9.941 9.941 0 012.04 12c0-5.493 4.47-9.963 9.963-9.963 2.662 0 5.165 1.037 7.048 2.92a9.914 9.914 0 012.914 7.043c-.002 5.492-4.472 9.962-9.98 9.962l.015.037z"/></svg>
+      WhatsApp My Quote to Emaar Global
+    </button>
+    <div class="trust-row">
+      <div class="tr-i"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>CBLS No. 12491086</div>
+      <div class="tr-i"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Response in 2 hours</div>
+      <div class="tr-i"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Zero commitment</div>
+    </div>
+  </div>
+  <div class="step-nav"><button class="btn-back" onclick="goTo(4)">&#8592; Back</button></div>`;
+}
+
+// ─── ACTIONS ───
+function pickStruct(id) {
+  S.struct=id; S.emirate=null; S.visas=1;
+  document.querySelectorAll('.sc').forEach(c=>c.classList.toggle('sel',c.dataset.id===id));
+  const nb=document.getElementById('n1'); if(nb) nb.disabled=false;
+  updatePanel();
+}
+function nextFrom1() {
+  if(!S.struct) return;
+  if(S.struct==='et'||S.struct==='off') goTo(3); else goTo(2);
+}
+function pickEm(id) {
+  S.emirate=id;
+  document.querySelectorAll('.ec').forEach(c=>c.classList.toggle('sel',c.dataset.id===id));
+  const nb=document.getElementById('n2'); if(nb) nb.disabled=false;
+  updatePanel();
+}
+function chVisa(d) {
+  S.visas=Math.max(1,Math.min(8,S.visas+d));
+  const v=document.getElementById('vcv'); if(v) v.textContent=S.visas;
+  const note=document.getElementById('vcn'); if(note) note.textContent=visaNote();
+  const m=document.getElementById('vcm'); if(m) m.disabled=S.visas<=1;
+  const p=document.getElementById('vcp'); if(p) p.disabled=S.visas>=8;
+  document.querySelectorAll('.v-preset').forEach((c,i)=>c.classList.toggle('sel',[1,2,4,6][i]===S.visas));
+  updatePanel();
+}
+function setVisa(n) { S.visas=n; document.querySelectorAll('.v-preset').forEach((c,i)=>c.classList.toggle('sel',[1,2,4,6][i]===n)); const v=document.getElementById('vcv'); if(v)v.textContent=n; const note=document.getElementById('vcn'); if(note)note.textContent=visaNote(); updatePanel(); }
+function renderVisa() { const m=document.getElementById('vcm'); if(m)m.disabled=S.visas<=1; }
+function visaNote() {
+  if(S.visas===1) return '1 investor visa is included in your free zone package.';
+  if(S.visas<=3) return `${S.visas} visas: 1 included + ${S.visas-1} additional at AED 2,800 each.`;
+  return `${S.visas} visas: may require a flexi-desk or office upgrade. We advise during setup.`;
+}
+function renderAddons() {
+  const list = document.getElementById('addonList');
+  if (!list) return;
+  list.innerHTML = ADDONS.map(a=>`
+    <div class="addon ${S.addons.includes(a.id)?'sel':''}" id="ad-${a.id}" onclick="togAddon('${a.id}')">
+      <div class="addon-cb" id="acb-${a.id}">${S.addons.includes(a.id)?'<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>':''}</div>
+      <div class="addon-ico">${a.ico}</div>
+      <div class="addon-info"><div class="addon-name">${a.name}</div><div class="addon-desc">${a.desc}</div></div>
+      <div><div class="addon-price">AED ${a.price.toLocaleString()}</div><div class="addon-freq">${a.freq}</div></div>
+    </div>`).join('');
+}
+function togAddon(id) {
+  const i=S.addons.indexOf(id); if(i>-1)S.addons.splice(i,1); else S.addons.push(id);
+  const sel=S.addons.includes(id);
+  document.getElementById('ad-'+id)?.classList.toggle('sel',sel);
+  const cb=document.getElementById('acb-'+id);
+  if(cb) cb.innerHTML=sel?'<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>':'';
+  updatePanel();
+}
+function doSubmit() {
+  const fn=document.getElementById('fn')?.value?.trim();
+  const ph=document.getElementById('ph')?.value?.trim();
+  if(!fn){document.getElementById('fn')?.classList.add('err');return;}
+  if(!ph){document.getElementById('ph')?.classList.add('err');return;}
+  showSuccess(fn);
+}
+function showSuccess(name) {
+  const r=calc();
+  document.getElementById('wFill').style.width='100%';
+  document.querySelectorAll('.w-dot').forEach(d=>d.className='w-dot done');
+  document.getElementById('wBody').innerHTML=`
+  <div class="success step-anim">
+    <div class="suc-icon">✅</div>
+    <div class="suc-t">Quote sent, ${name}!</div>
+    <p class="suc-s">Your estimate of <strong>AED ${r?.total?.toLocaleString()}</strong> has been received. We'll send your full itemised quote within 2 hours — usually much faster.</p>
+    <div class="nxt-steps">
+      <div class="nxt-t">What happens next</div>
+      <div class="nxt-row"><div class="nxt-num">1</div><div class="nxt-txt"><strong>Quote email</strong> — full itemised breakdown with exact government fees, timeline and everything included.</div></div>
+      <div class="nxt-row"><div class="nxt-num">2</div><div class="nxt-txt"><strong>Free consultation</strong> — 20-min call to confirm activities, visas and the best free zone or mainland for your needs.</div></div>
+      <div class="nxt-row"><div class="nxt-num">3</div><div class="nxt-txt"><strong>Same-day start</strong> — once confirmed we begin immediately. Most FZ licenses issue within 24–72 hours.</div></div>
+    </div>
+    <div class="suc-btns">
+      <a href="https://wa.me/971561571514?text=Hi%2C%20I%20just%20completed%20the%20cost%20calculator.%20Ready%20to%20proceed." class="suc-wa" target="_blank" rel="noopener">
+        <svg class="wa-svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.1.547 4.162 1.588 5.979L.043 24l6.24-1.637A11.969 11.969 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.999a9.94 9.94 0 01-5.063-1.378l-.363-.216-3.764.987.993-3.653-.237-.374A9.941 9.941 0 012.04 12c0-5.493 4.47-9.963 9.963-9.963 2.662 0 5.165 1.037 7.048 2.92a9.914 9.914 0 012.914 7.043c-.002 5.492-4.472 9.962-9.98 9.962l.015.037z"/></svg>
+        WhatsApp Now
+      </a>
+      <a href="/" class="suc-home">Back to Home</a>
+    </div>
+  </div>`;
+}
+function sendWA() {
+  const r=calc(); const st=STRUCTS.find(x=>x.id===S.struct);
+  let msg=`Hi, I used the UAE Cost Calculator.\n\nType: ${st?.name||'Not selected'}\n`;
+  if(S.emirate){ const em=S.struct==='fz'?EMFZ.find(e=>e.id===S.emirate):EMML.find(e=>e.id===S.emirate); if(em) msg+=`Zone/Emirate: ${S.struct==='fz'?em.zone:em.name}\n`; }
+  if(S.struct!=='et'&&S.struct!=='off') msg+=`Visas: ${S.visas}\n`;
+  if(S.addons.length) msg+=`Add-ons: ${S.addons.map(id=>ADDONS.find(a=>a.id===id)?.name).join(', ')}\n`;
+  if(r) msg+=`\nEstimate: AED ${r.total.toLocaleString()}\n`;
+  msg+='\nPlease send me a full quote.';
+  window.open('https://wa.me/971561571514?text='+encodeURIComponent(msg),'_blank');
+}
+
+// INIT
+render();
+</script>
+</body>
+</html>
