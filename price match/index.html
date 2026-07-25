@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Price Match Guarantee — Emaar Global Business Solutions</title>
+<meta name="description" content="Found a cheaper UAE business setup quote? Show us and we match it — plus AED 200 cashback. Emaar Global Price Match Guarantee on selected services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',-apple-system,sans-serif;background:#F0F5FF;color:#0D2258;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+
+/* ── CHALLENGE HERO ── */
+.pc-hero{background:linear-gradient(135deg,#0D2258 0%,#152B6E 100%);padding:72px 0;position:relative;overflow:hidden}
+.pc-hero::before{content:'';position:absolute;right:-80px;top:-80px;width:500px;height:500px;border-radius:50%;border:1px solid rgba(0,140,60,.1)}
+.pc-hero::after{content:'';position:absolute;left:-100px;bottom:-60px;width:380px;height:380px;border-radius:50%;border:1px solid rgba(0,140,60,.06)}
+.w{max-width:1100px;margin:0 auto;padding:0 24px}
+.pc-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,140,60,.12);border:1px solid rgba(0,140,60,.3);border-radius:100px;padding:5px 14px;font-size:12px;font-weight:600;color:#D4E8FF;margin-bottom:20px;text-transform:uppercase;letter-spacing:.07em}
+.pc-badge-dot{width:6px;height:6px;border-radius:50%;background:#008C3C;animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+.pc-hero-inner{display:grid;grid-template-columns:1fr 420px;gap:64px;align-items:center;position:relative;z-index:2}
+.pc-hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(32px,4vw,54px);font-weight:700;color:#fff;line-height:1.1;margin-bottom:16px}
+.pc-hero h1 em{font-style:normal;color:#008C3C}
+.pc-hero-sub{font-size:17px;color:rgba(255,255,255,.6);font-weight:300;line-height:1.7;margin-bottom:28px;max-width:500px}
+.pc-hero-promise{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+.php{display:flex;align-items:center;gap:10px;font-size:15px;color:rgba(255,255,255,.8);font-weight:300}
+.php-icon{width:22px;height:22px;border-radius:50%;background:rgba(0,140,60,.2);border:1px solid rgba(0,140,60,.4);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#008C3C;font-size:11px;font-weight:700}
+
+/* CASHBACK CARD */
+.cashback-card{background:#008C3C;border-radius:20px;padding:36px 32px;text-align:center;position:relative;overflow:hidden}
+.cashback-card::before{content:'';position:absolute;right:-40px;top:-40px;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,.1)}
+.cashback-card::after{content:'';position:absolute;left:-30px;bottom:-30px;width:140px;height:140px;border-radius:50%;background:rgba(10,22,40,.08)}
+.cc-inner{position:relative;z-index:1}
+.cc-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(10,22,40,.5);margin-bottom:6px}
+.cc-amount{font-family:'Playfair Display',Georgia,serif;font-size:72px;font-weight:700;color:#0D2258;line-height:1;margin-bottom:0}
+.cc-currency{font-family:'Playfair Display',Georgia,serif;font-size:24px;font-weight:600;color:#0D2258;margin-bottom:4px;display:block}
+.cc-title{font-size:20px;font-weight:700;color:#0D2258;margin-bottom:8px}
+.cc-sub{font-size:14px;color:rgba(10,22,40,.6);font-weight:300;line-height:1.55;margin-bottom:20px}
+.cc-divider{height:1px;background:rgba(10,22,40,.15);margin:16px 0}
+.cc-condition{font-size:12px;color:rgba(10,22,40,.5);font-weight:300;font-style:italic}
+
+/* HOW IT WORKS */
+.hw-section{background:#fff;padding:80px 0}
+.sec-badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:#006B2E;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px}
+.sec-badge::before{content:'';display:block;width:18px;height:2px;background:#008C3C;border-radius:2px}
+.h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(26px,3vw,38px);font-weight:700;color:#0D2258;line-height:1.2;margin-bottom:12px}
+.lead{font-size:16px;color:#718096;font-weight:300;line-height:1.7;max-width:580px}
+.hc{text-align:center;margin-bottom:52px}.hc .lead{margin:0 auto}
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative}
+.steps-grid::before{content:'';position:absolute;top:28px;left:10%;right:10%;height:2px;background:linear-gradient(90deg,rgba(0,140,60,.3) 0%,rgba(0,140,60,.6) 50%,rgba(0,140,60,.3) 100%);z-index:0}
+.step-card{background:#F0F5FF;border-radius:14px;padding:28px 20px;text-align:center;border:1px solid rgba(10,22,40,.07);position:relative;z-index:1;transition:all .25s}
+.step-card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(10,22,40,.08);border-color:rgba(0,140,60,.3)}
+.step-num{width:54px;height:54px;border-radius:50%;background:#0D2258;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-family:'Playfair Display',Georgia,serif;font-size:20px;font-weight:700;color:#008C3C;border:3px solid #F0F5FF;box-shadow:0 0 0 2px #0D2258}
+.step-icon{font-size:22px;margin-bottom:6px}
+.step-title{font-size:15px;font-weight:600;color:#0D2258;margin-bottom:8px}
+.step-desc{font-size:13px;color:#718096;font-weight:300;line-height:1.6}
+
+/* ELIGIBLE SERVICES */
+.services-section{background:#F0F5FF;padding:80px 0}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.svc-card{background:#fff;border:1.5px solid rgba(10,22,40,.08);border-radius:12px;padding:20px;display:flex;align-items:flex-start;gap:14px;transition:all .25s}
+.svc-card:hover{border-color:rgba(0,140,60,.4);transform:translateX(3px)}
+.svc-card.eligible{border-left:4px solid #1D9E75}
+.svc-card.partial{border-left:4px solid #EF9F27}
+.svc-icon{font-size:24px;flex-shrink:0}
+.svc-info{}
+.svc-name{font-size:15px;font-weight:600;color:#0D2258;margin-bottom:4px}
+.svc-desc{font-size:13px;color:#718096;font-weight:300;line-height:1.5}
+.svc-tag{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:100px;margin-top:6px;text-transform:uppercase;letter-spacing:.05em}
+.tag-yes{background:rgba(29,158,117,.1);color:#085041}
+.tag-partial{background:rgba(239,159,39,.12);color:#7D4E0A}
+
+/* SUBMIT SECTION */
+.submit-section{background:#0D2258;padding:80px 0;position:relative;overflow:hidden}
+.submit-section::before{content:'';position:absolute;right:-60px;top:-60px;width:400px;height:400px;border-radius:50%;border:1px solid rgba(0,140,60,.08)}
+.submit-grid{display:grid;grid-template-columns:1fr 480px;gap:64px;align-items:start;position:relative;z-index:2}
+.submit-left h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(24px,3vw,36px);font-weight:700;color:#fff;line-height:1.2;margin-bottom:14px}
+.submit-left p{font-size:15px;color:rgba(255,255,255,.55);font-weight:300;line-height:1.7;margin-bottom:28px}
+.review-promise{display:flex;flex-direction:column;gap:12px}
+.rp{display:flex;gap:12px;align-items:flex-start}
+.rp-icon{width:32px;height:32px;border-radius:8px;background:rgba(0,140,60,.12);border:1px solid rgba(0,140,60,.2);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;margin-top:1px}
+.rp-text{font-size:13.5px;color:rgba(255,255,255,.65);font-weight:300;line-height:1.55}
+.rp-text strong{color:#D4E8FF;font-weight:500}
+
+/* SUBMIT FORM */
+.submit-form{background:#fff;border-radius:16px;padding:28px}
+.sf-title{font-family:'Playfair Display',Georgia,serif;font-size:20px;font-weight:700;color:#0D2258;margin-bottom:5px}
+.sf-sub{font-size:13px;color:#718096;font-weight:300;margin-bottom:22px;line-height:1.6}
+.fg{margin-bottom:14px}
+.fl{display:block;font-size:11px;font-weight:600;color:#4A5568;text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}
+.fi,.fs{width:100%;padding:11px 14px;border:1.5px solid #E2E8F0;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;color:#0D2258;background:#fff;transition:border-color .2s;outline:none;-webkit-appearance:none}
+.fi:focus,.fs:focus{border-color:#008C3C}
+.fta{width:100%;padding:11px 14px;border:1.5px solid #E2E8F0;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;color:#0D2258;background:#fff;outline:none;resize:vertical;min-height:80px;transition:border-color .2s}
+.fta:focus{border-color:#008C3C}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.upload-box{border:2px dashed #E2E8F0;border-radius:8px;padding:16px;text-align:center;cursor:pointer;transition:all .2s;background:#F0F5FF}
+.upload-box:hover{border-color:#008C3C;background:rgba(0,140,60,.04)}
+.upload-icon{font-size:24px;margin-bottom:6px;display:block}
+.upload-text{font-size:13px;color:#718096;font-weight:300}
+.upload-text strong{color:#0D2258;font-weight:600}
+.sbtn{width:100%;background:#008C3C;color:#0D2258;font-family:'DM Sans',sans-serif;font-size:16px;font-weight:700;padding:14px;border-radius:8px;border:none;cursor:pointer;transition:all .22s;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:4px}
+.sbtn:hover{background:#006B2E;transform:translateY(-1px);box-shadow:0 6px 24px rgba(0,140,60,.3)}
+.or-line{text-align:center;font-size:13px;color:#718096;margin:14px 0;position:relative}
+.or-line::before,.or-line::after{content:'';position:absolute;top:50%;width:44%;height:1px;background:rgba(10,22,40,.08)}
+.or-line::before{left:0}.or-line::after{right:0}
+.wa-btn{width:100%;background:#25D366;color:#fff;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;padding:13px;border-radius:8px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .22s}
+.wa-btn:hover{background:#1ebe5d}
+
+/* TERMS */
+.terms-section{background:#fff;padding:60px 0}
+.terms-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.terms-box{background:#F0F5FF;border:1px solid rgba(10,22,40,.07);border-radius:12px;padding:24px}
+.tb-title{font-size:14px;font-weight:700;color:#0D2258;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.tb-title span{font-size:18px}
+.terms-list{display:flex;flex-direction:column;gap:9px}
+.tl{display:flex;gap:9px;font-size:13.5px;color:#4A5568;font-weight:300;line-height:1.55}
+.tl::before{content:'•';color:#008C3C;font-weight:700;flex-shrink:0;margin-top:1px}
+.terms-note{margin-top:28px;padding:16px 20px;background:rgba(0,140,60,.07);border:1px solid rgba(0,140,60,.2);border-radius:10px;font-size:13px;color:#006B2E;font-weight:300;line-height:1.65}
+.terms-note strong{font-weight:600}
+
+/* SUCCESS */
+.success-state{display:none;text-align:center;padding:24px 0}
+.ss-icon{font-size:48px;margin-bottom:14px;display:block}
+.ss-title{font-family:'Playfair Display',Georgia,serif;font-size:22px;font-weight:700;color:#0D2258;margin-bottom:8px}
+.ss-sub{font-size:14px;color:#718096;font-weight:300;line-height:1.65;margin-bottom:20px}
+
+/* WA FLOAT */
+.waf{position:fixed;bottom:28px;right:28px;z-index:999;background:#25D366;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);text-decoration:none;transition:transform .2s}
+.waf:hover{transform:scale(1.08)}
+.wap{position:absolute;width:100%;height:100%;border-radius:50%;background:rgba(37,211,102,.3);animation:wapul 2s ease-out infinite}
+@keyframes wapul{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.55);opacity:0}}
+
+@media(max-width:960px){
+  .pc-hero-inner,.submit-grid{grid-template-columns:1fr;gap:40px}
+  .cashback-card{max-width:360px}
+  .steps-grid{grid-template-columns:1fr 1fr;gap:16px}
+  .steps-grid::before{display:none}
+  .services-grid{grid-template-columns:1fr 1fr}
+  .terms-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .steps-grid{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:1fr}
+  .f2{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="pc-hero">
+<div style="background:#fff;padding:14px 24px;text-align:left">
+  <a href="/" style="display:inline-block;text-decoration:none"><img src="data:image/png;base64,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" alt="Emaar Global Business Solutions" height="38" style="display:block;max-width:200px"></a>
+</div>
+<div class="w">
+<div class="pc-hero-inner">
+  <div>
+    <div class="pc-badge"><div class="pc-badge-dot"></div>Emaar Global Price Guarantee</div>
+    <h1>Found It<br>Cheaper? <em>We Match It.</em><br>Plus AED&nbsp;200 Back.</h1>
+    <p class="pc-hero-sub">We&rsquo;re confident our prices are the most competitive in the UAE for the quality of service we deliver. If you find a genuine, like-for-like quote cheaper — we will match it and give you AED&nbsp;200 cashback after service completion.</p>
+    <div class="pc-hero-promise">
+      <div class="php"><div class="php-icon">✓</div>Price matched to the dirham</div>
+      <div class="php"><div class="php-icon">✓</div>AED 200 cashback on completion</div>
+      <div class="php"><div class="php-icon">✓</div>Decision within 24 hours of receiving your quote</div>
+      <div class="php"><div class="php-icon">✓</div>No pressure — your choice to proceed</div>
+    </div>
+  </div>
+  <div class="cashback-card">
+    <div class="cc-inner">
+      <div class="cc-label">Your cashback</div>
+      <span class="cc-currency">AED</span>
+      <div class="cc-amount">200</div>
+      <div class="cc-divider"></div>
+      <div class="cc-title">Price Match + Cashback</div>
+      <p class="cc-sub">Show us a written quote from any licensed UAE business setup consultancy. We review it within 24 hours. If it qualifies — we match the price and commit AED 200 back to you on completion.</p>
+      <div class="cc-condition">&#9432; Selected services only &middot; T&amp;Cs apply &middot; see below</div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="hw-section">
+<div class="w">
+  <div class="hc">
+    <div class="sec-badge">How It Works</div>
+    <h2 class="h2">Four Steps to Claim</h2>
+    <p class="lead">Simple and transparent. No lengthy forms, no back-and-forth. Submit your quote, we review it, we confirm — or we explain why it doesn&rsquo;t qualify. Honest either way.</p>
+  </div>
+  <div class="steps-grid">
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <div class="step-icon">📋</div>
+      <div class="step-title">Get a competitor quote</div>
+      <p class="step-desc">Obtain a written, itemised quote from any other licensed UAE business consultancy. Must be on their official letterhead, email or invoice.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">2</div>
+      <div class="step-icon">📤</div>
+      <div class="step-title">Submit it to us</div>
+      <p class="step-desc">Send the quote via the form below or WhatsApp. Include the competitor name, quoted price, service scope and your contact details.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">3</div>
+      <div class="step-icon">🔍</div>
+      <div class="step-title">We review within 24 hrs</div>
+      <p class="step-desc">Our team verifies the quote is genuine, like-for-like and from a licensed provider. We confirm acceptance or explain what doesn&rsquo;t qualify — no vague rejections.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">4</div>
+      <div class="step-icon">💰</div>
+      <div class="step-title">Price matched + AED 200 back</div>
+      <p class="step-desc">If approved, we match the price exactly. AED 200 cashback is credited to your account after successful service completion.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ELIGIBLE SERVICES -->
+<section class="services-section">
+<div class="w">
+  <div class="hc">
+    <div class="sec-badge">Eligible Services</div>
+    <h2 class="h2">Which Services Are Covered</h2>
+    <p class="lead">The Price Match Guarantee applies to our core business setup and compliance services. Specialist government liaison, complex legal matters and bespoke packages are handled case by case.</p>
+  </div>
+  <div class="services-grid">
+    <div class="svc-card eligible">
+      <div class="svc-icon">🏢</div>
+      <div class="svc-info">
+        <div class="svc-name">Free Zone Company Setup</div>
+        <p class="svc-desc">Any free zone license + investor visa package. Must be same free zone authority and same activity count.</p>
+        <span class="svc-tag tag-yes">✓ Fully eligible</span>
+      </div>
+    </div>
+    <div class="svc-card eligible">
+      <div class="svc-icon">🏙️</div>
+      <div class="svc-info">
+        <div class="svc-name">Mainland Company Setup</div>
+        <p class="svc-desc">DET, ADDED, SEDD or any emirate mainland company formation. Must match same authority and activity type.</p>
+        <span class="svc-tag tag-yes">✓ Fully eligible</span>
+      </div>
+    </div>
+    <div class="svc-card eligible">
+      <div class="svc-icon">🛂</div>
+      <div class="svc-info">
+        <div class="svc-name">Investor &amp; Residence Visas</div>
+        <p class="svc-desc">Investor visa, employment visa and family/dependent visa packages. Must be same visa type and quantity.</p>
+        <span class="svc-tag tag-yes">✓ Fully eligible</span>
+      </div>
+    </div>
+    <div class="svc-card eligible">
+      <div class="svc-icon">⭐</div>
+      <div class="svc-info">
+        <div class="svc-name">UAE Golden Visa</div>
+        <p class="svc-desc">10-year Golden Visa processing. Must be same eligibility route (property, investor, professional) and same processing tier.</p>
+        <span class="svc-tag tag-yes">✓ Fully eligible</span>
+      </div>
+    </div>
+    <div class="svc-card eligible">
+      <div class="svc-icon">📄</div>
+      <div class="svc-info">
+        <div class="svc-name">License Renewal</div>
+        <p class="svc-desc">Annual trade license renewals for mainland and free zone companies. Same authority, same license type.</p>
+        <span class="svc-tag tag-yes">✓ Fully eligible</span>
+      </div>
+    </div>
+    <div class="svc-card eligible">
+      <div class="svc-icon">📊</div>
+      <div class="svc-info">
+        <div class="svc-name">Accounting &amp; VAT Filing</div>
+        <p class="svc-desc">Monthly bookkeeping packages and quarterly VAT filing. Must be same transaction volume and filing frequency.</p>
+        <span class="svc-tag tag-yes">✓ Fully eligible</span>
+      </div>
+    </div>
+    <div class="svc-card partial">
+      <div class="svc-icon">™️</div>
+      <div class="svc-info">
+        <div class="svc-name">Trademark Registration</div>
+        <p class="svc-desc">UAE Ministry of Economy trademark filing. Eligible on service fee only — government filing fees are fixed and cannot be matched.</p>
+        <span class="svc-tag tag-partial">~ Service fee only</span>
+      </div>
+    </div>
+    <div class="svc-card partial">
+      <div class="svc-icon">🌍</div>
+      <div class="svc-info">
+        <div class="svc-name">Offshore Company</div>
+        <p class="svc-desc">RAK ICC and JAFZA offshore formations. Eligible subject to review — offshore pricing varies significantly by package scope.</p>
+        <span class="svc-tag tag-partial">~ Subject to review</span>
+      </div>
+    </div>
+    <div class="svc-card" style="border-left:4px solid rgba(10,22,40,.15)">
+      <div class="svc-icon">⚖️</div>
+      <div class="svc-info">
+        <div class="svc-name">Legal &amp; Court Services</div>
+        <p class="svc-desc">Dubai Court filings, RDC disputes, cheque recovery. Not eligible — complexity and scope vary too significantly between providers.</p>
+        <span class="svc-tag" style="background:rgba(10,22,40,.07);color:#718096">✗ Not eligible</span>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- SUBMIT QUOTE -->
+<section class="submit-section" id="submit">
+<div class="w">
+<div class="submit-grid">
+  <div class="submit-left">
+    <div class="sec-badge" style="color:#D4E8FF">Submit Your Quote</div>
+    <h2>Send Us the Quote.<br>We&rsquo;ll Respond in 24 Hours.</h2>
+    <p>We review every submission seriously. If your quote qualifies, we confirm the price match in writing before you commit to anything. If it doesn&rsquo;t qualify, we tell you exactly why — not a vague &ldquo;it doesn&rsquo;t meet our criteria.&rdquo;</p>
+    <div class="review-promise">
+      <div class="rp">
+        <div class="rp-icon">📋</div>
+        <div class="rp-text"><strong>What we need from you:</strong> The competitor&rsquo;s written quote, invoice or proposal — on their letterhead or official email. Screenshots accepted. WhatsApp messages not accepted as they can be edited.</div>
+      </div>
+      <div class="rp">
+        <div class="rp-icon">🔍</div>
+        <div class="rp-text"><strong>What we check:</strong> That the competitor is a licensed UAE consultancy, the quote covers the same service scope, and the price difference is genuine — not a promotional rate with hidden fees or exclusions.</div>
+      </div>
+      <div class="rp">
+        <div class="rp-icon">✅</div>
+        <div class="rp-text"><strong>What happens if approved:</strong> We confirm the matched price in writing, you proceed at that price, and AED 200 is credited back to you on service completion — no chasing needed.</div>
+      </div>
+      <div class="rp">
+        <div class="rp-icon">⏱️</div>
+        <div class="rp-text"><strong>Response time:</strong> Within 24 hours on business days. Urgent cases (same-day setup) responded to within 2 hours — WhatsApp us directly.</div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="submit-form" id="submitForm">
+      <div class="sf-title">Submit a Price Match Claim</div>
+      <p class="sf-sub">All fields required. We respond within 24 hours on business days.</p>
+      <div class="f2">
+        <div class="fg"><label class="fl">Your name</label><input class="fi" id="pc-name" type="text" placeholder="Full name"></div>
+        <div class="fg"><label class="fl">WhatsApp number</label><input class="fi" id="pc-phone" type="tel" placeholder="+971 ..."></div>
+      </div>
+      <div class="fg"><label class="fl">Email address</label><input class="fi" id="pc-email" type="email" placeholder="your@email.com"></div>
+      <div class="fg"><label class="fl">Service you want</label>
+        <select class="fs" id="pc-service">
+          <option value="">Select the service...</option>
+          <option>Free Zone Company Setup</option>
+          <option>Mainland Company Setup</option>
+          <option>Investor / Residence Visa</option>
+          <option>UAE Golden Visa</option>
+          <option>License Renewal</option>
+          <option>Accounting &amp; VAT Filing</option>
+          <option>Trademark Registration</option>
+          <option>Offshore Company</option>
+        </select>
+      </div>
+      <div class="fg"><label class="fl">Competitor name &amp; their quoted price</label>
+        <input class="fi" id="pc-competitor" type="text" placeholder="e.g. XYZ Consultancy — AED 8,500 all-in">
+      </div>
+      <div class="fg"><label class="fl">Upload their quote / invoice</label>
+        <div class="upload-box" onclick="document.getElementById('pc-file').click()">
+          <span class="upload-icon">📎</span>
+          <div class="upload-text"><strong>Click to attach file</strong><br>PDF, image or screenshot accepted &middot; max 10MB</div>
+          <input type="file" id="pc-file" style="display:none" accept=".pdf,.jpg,.jpeg,.png,.webp">
+          <div id="pc-file-name" style="font-size:12px;color:#1D9E75;margin-top:8px;font-weight:500;"></div>
+        </div>
+      </div>
+      <div class="fg"><label class="fl">Anything else we should know?</label>
+        <textarea class="fta" id="pc-notes" placeholder="e.g. timeline, specific free zone preference, what's included in their quote..."></textarea>
+      </div>
+      <button class="sbtn" type="button" onclick="submitClaim()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        Submit My Price Match Claim
+      </button>
+      <div class="or-line">or skip the form</div>
+      <button class="wa-btn" onclick="sendWA()">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.1.547 4.162 1.588 5.979L.043 24l6.24-1.637A11.969 11.969 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.999a9.94 9.94 0 01-5.063-1.378l-.363-.216-3.764.987.993-3.653-.237-.374A9.941 9.941 0 012.04 12c0-5.493 4.47-9.963 9.963-9.963 2.662 0 5.165 1.037 7.048 2.92a9.914 9.914 0 012.914 7.043c-.002 5.492-4.472 9.962-9.98 9.962l.015.037z"/></svg>
+        WhatsApp Your Quote to Emaar Global
+      </button>
+    </div>
+    <!-- SUCCESS STATE -->
+    <div class="success-state" id="successState" style="background:#fff;border-radius:16px;padding:40px 32px">
+      <span class="ss-icon">✅</span>
+      <div class="ss-title" id="ss-name-target">Claim submitted!</div>
+      <p class="ss-sub" id="ss-sub">Your price match claim has been received. We&rsquo;ll review the quote and come back to you within 24 hours with a clear decision in writing.</p>
+      <a href="https://wa.me/971561571514?text=Hi%2C%20I%20just%20submitted%20a%20price%20match%20claim%20on%20your%20website." target="_blank" rel="noopener" style="background:#25D366;color:#fff;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;padding:12px 24px;border-radius:8px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;margin-top:8px;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.1.547 4.162 1.588 5.979L.043 24l6.24-1.637A11.969 11.969 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.999a9.94 9.94 0 01-5.063-1.378l-.363-.216-3.764.987.993-3.653-.237-.374A9.941 9.941 0 012.04 12c0-5.493 4.47-9.963 9.963-9.963 2.662 0 5.165 1.037 7.048 2.92a9.914 9.914 0 012.914 7.043c-.002 5.492-4.472 9.962-9.98 9.962l.015.037z"/></svg>
+        Follow Up on WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- TERMS & CONDITIONS -->
+<section class="terms-section">
+<div class="w">
+  <div class="hc" style="margin-bottom:36px">
+    <div class="sec-badge">Terms &amp; Conditions</div>
+    <h2 class="h2">Price Match Terms — Read Before Submitting</h2>
+    <p class="lead">We want this to be fair for you and for us. These terms exist so there are no surprises either way.</p>
+  </div>
+  <div class="terms-grid">
+    <div class="terms-box">
+      <div class="tb-title"><span>✅</span> What qualifies</div>
+      <div class="terms-list">
+        <div class="tl">The competitor must be a UAE-licensed business setup consultancy — not a freelancer, informal agent or unregistered operator.</div>
+        <div class="tl">The quote must be written — on official letterhead, email, PDF invoice or formal proposal. WhatsApp messages, verbal quotes or social media DMs are not accepted.</div>
+        <div class="tl">The quote must be for the same service and same scope — same free zone authority, same visa count, same activity type.</div>
+        <div class="tl">The quote must include all fees — government fees, service charges and any mandatory extras. Quotes that exclude government fees are not comparable.</div>
+        <div class="tl">The quote must be current — issued within the last 30 days and not an expired promotional offer.</div>
+        <div class="tl">The quoted price must be lower than our published rate for the equivalent service.</div>
+      </div>
+    </div>
+    <div class="terms-box">
+      <div class="tb-title"><span>❌</span> What does not qualify</div>
+      <div class="terms-list">
+        <div class="tl">Introductory or promotional rates that are not available to all clients — e.g. &ldquo;first month free&rdquo; or &ldquo;launch offer.&rdquo;</div>
+        <div class="tl">Quotes that exclude mandatory government fees, medical fees or Emirates ID costs that we include as standard.</div>
+        <div class="tl">Quotes from providers operating without a valid UAE business licence or professional licence.</div>
+        <div class="tl">Quotes for a different free zone, different mainland authority or different visa type to what you are requesting from us.</div>
+        <div class="tl">Services not listed in the eligible services section — including legal, court and complex bespoke packages.</div>
+        <div class="tl">More than one price match claim per client per 12-month period.</div>
+      </div>
+    </div>
+    <div class="terms-box">
+      <div class="tb-title"><span>💰</span> Cashback conditions</div>
+      <div class="terms-list">
+        <div class="tl">AED 200 cashback is issued after full service completion — not at the time of booking.</div>
+        <div class="tl">Cashback is applied as a credit against your next service invoice, or paid as a bank transfer — your choice.</div>
+        <div class="tl">Cashback applies only when the price match claim is formally approved in writing by Emaar Global before the service commences.</div>
+        <div class="tl">Cashback cannot be combined with any other promotional offer, discount or referral credit.</div>
+        <div class="tl">If a service is cancelled before completion, cashback is forfeited.</div>
+      </div>
+    </div>
+    <div class="terms-box">
+      <div class="tb-title"><span>📋</span> Our review process</div>
+      <div class="terms-list">
+        <div class="tl">We review all submissions within 24 business hours. Urgent cases submitted via WhatsApp are reviewed within 2 hours.</div>
+        <div class="tl">Emaar Global reserves the right to accept or decline any price match claim at its sole discretion. Decisions are final.</div>
+        <div class="tl">If we decline, we will explain exactly why in writing — not just &ldquo;the claim does not qualify.&rdquo;</div>
+        <div class="tl">We may contact the competing provider directly to verify the quote is genuine and currently available.</div>
+        <div class="tl">Submitting a false or altered quote is considered a breach of good faith and will disqualify the claim permanently.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="terms-note">
+    <strong>Important:</strong> The Emaar Global Price Match Guarantee is a genuine commitment, not a marketing claim. We offer it because we are confident in our pricing. However, it is not an open-ended obligation — it applies to the services listed, under the conditions stated, for genuine like-for-like comparisons. We review every claim seriously and respond honestly whether we can match it or not.
+    <br><br>
+    For questions about eligibility before submitting: <a href="https://wa.me/971561571514?text=I%20have%20a%20question%20about%20the%20price%20match%20guarantee." style="color:#006B2E;font-weight:600;text-decoration:none;">WhatsApp us first</a> — we&rsquo;ll tell you within the hour whether your situation qualifies.
+  </div>
+</div>
+</section>
+
+<a href="https://wa.me/971561571514" class="waf" aria-label="WhatsApp" target="_blank" rel="noopener">
+  <div class="wap"></div>
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.1.547 4.162 1.588 5.979L.043 24l6.24-1.637A11.969 11.969 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.999a9.94 9.94 0 01-5.063-1.378l-.363-.216-3.764.987.993-3.653-.237-.374A9.941 9.941 0 012.04 12c0-5.493 4.47-9.963 9.963-9.963 2.662 0 5.165 1.037 7.048 2.92a9.914 9.914 0 012.914 7.043c-.002 5.492-4.472 9.962-9.98 9.962l.015.037z"/></svg>
+</a>
+
+<script>
+document.getElementById('pc-file').addEventListener('change', function() {
+  const fn = document.getElementById('pc-file-name');
+  fn.textContent = this.files[0] ? '📎 ' + this.files[0].name : '';
+});
+
+function submitClaim() {
+  const name    = document.getElementById('pc-name')?.value?.trim();
+  const phone   = document.getElementById('pc-phone')?.value?.trim();
+  const service = document.getElementById('pc-service')?.value;
+  const comp    = document.getElementById('pc-competitor')?.value?.trim();
+
+  if (!name)    { document.getElementById('pc-name').style.borderColor = '#E24B4A'; return; }
+  if (!phone)   { document.getElementById('pc-phone').style.borderColor = '#E24B4A'; return; }
+  if (!service) { document.getElementById('pc-service').style.borderColor = '#E24B4A'; return; }
+  if (!comp)    { document.getElementById('pc-competitor').style.borderColor = '#E24B4A'; return; }
+
+  document.getElementById('submitForm').style.display = 'none';
+  const ss = document.getElementById('successState');
+  ss.style.display = 'block';
+  document.getElementById('ss-name-target').textContent = 'Claim received, ' + name + '!';
+}
+
+function sendWA() {
+  const name    = document.getElementById('pc-name')?.value?.trim() || '';
+  const service = document.getElementById('pc-service')?.value || '';
+  const comp    = document.getElementById('pc-competitor')?.value?.trim() || '';
+  let msg = 'Hi, I\'d like to submit a Price Match claim.\n\n';
+  if (name)    msg += 'Name: ' + name + '\n';
+  if (service) msg += 'Service: ' + service + '\n';
+  if (comp)    msg += 'Competitor quote: ' + comp + '\n';
+  msg += '\nI\'ll send the written quote in this chat.';
+  window.open('https://wa.me/971561571514?text=' + encodeURIComponent(msg), '_blank');
+}
+</script>
+</body>
+</html>
