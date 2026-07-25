@@ -10,16 +10,16 @@
 html { scroll-behavior: smooth; }
 body {
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: #FAF8F3;
-  color: #0A1628;
+  background: #F0F5FF;
+  color: #0D2258;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
 }
 
 /* TOPBAR */
-.topbar { background: #0A1628; padding: 9px 0; }
+.topbar { background: #0D2258; padding: 9px 0; }
 .topbar .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
-.topbar a { color: #E8D09A; text-decoration: none; font-size: 13px; display: flex; align-items: center; gap: 5px; }
+.topbar a { color: #D4E8FF; text-decoration: none; font-size: 13px; display: flex; align-items: center; gap: 5px; }
 .topbar a:hover { color: #fff; }
 .tb-l, .tb-r { display: flex; gap: 18px; align-items: center; }
 
@@ -27,29 +27,29 @@ body {
 .nav-bar { background: #fff; border-bottom: 1px solid rgba(10,22,40,.1); padding: 12px 0; }
 .nav-bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.logo-mark { width: 38px; height: 38px; background: #0A1628; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.logo-name { font-family: 'Playfair Display', Georgia, serif; font-size: 17px; font-weight: 600; color: #0A1628; display: block; line-height: 1.2; }
-.logo-sub { font-size: 10px; color: #8B6914; text-transform: uppercase; letter-spacing: .08em; display: block; }
+.logo-mark { width: 38px; height: 38px; background: #0D2258; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.logo-name { font-family: 'Playfair Display', Georgia, serif; font-size: 17px; font-weight: 600; color: #0D2258; display: block; line-height: 1.2; }
+.logo-sub { font-size: 10px; color: #006B2E; text-transform: uppercase; letter-spacing: .08em; display: block; }
 .nav-actions { display: flex; align-items: center; gap: 12px; }
 .nav-back { font-size: 14px; color: #718096; text-decoration: none; display: flex; align-items: center; gap: 5px; }
-.nav-back:hover { color: #0A1628; }
-.nav-cta { background: #C9A84C; color: #0A1628; font-weight: 600; font-size: 14px; padding: 9px 20px; border-radius: 8px; text-decoration: none; }
-.nav-cta:hover { background: #B8922F; }
+.nav-back:hover { color: #0D2258; }
+.nav-cta { background: #008C3C; color: #0D2258; font-weight: 600; font-size: 14px; padding: 9px 20px; border-radius: 8px; text-decoration: none; }
+.nav-cta:hover { background: #006B2E; }
 
 /* PAGE HERO */
-.page-hero { background: linear-gradient(135deg, #0A1628 0%, #152340 100%); padding: 48px 0 0; position: relative; overflow: hidden; }
-.page-hero::before { content: ''; position: absolute; right: -60px; top: -60px; width: 400px; height: 400px; border-radius: 50%; border: 1px solid rgba(201,168,76,.1); }
+.page-hero { background: linear-gradient(135deg, #0D2258 0%, #152B6E 100%); padding: 48px 0 0; position: relative; overflow: hidden; }
+.page-hero::before { content: ''; position: absolute; right: -60px; top: -60px; width: 400px; height: 400px; border-radius: 50%; border: 1px solid rgba(0,140,60,.1); }
 .page-hero .wrap { position: relative; z-index: 2; }
-.ph-label { display: inline-flex; align-items: center; gap: 7px; background: rgba(201,168,76,.15); border: 1px solid rgba(201,168,76,.3); border-radius: 100px; padding: 5px 14px; font-size: 12px; font-weight: 600; color: #E8D09A; text-transform: uppercase; letter-spacing: .07em; margin-bottom: 16px; }
-.ph-dot { width: 6px; height: 6px; border-radius: 50%; background: #C9A84C; animation: blink 2s infinite; }
+.ph-label { display: inline-flex; align-items: center; gap: 7px; background: rgba(0,140,60,.15); border: 1px solid rgba(0,140,60,.3); border-radius: 100px; padding: 5px 14px; font-size: 12px; font-weight: 600; color: #D4E8FF; text-transform: uppercase; letter-spacing: .07em; margin-bottom: 16px; }
+.ph-dot { width: 6px; height: 6px; border-radius: 50%; background: #008C3C; animation: blink 2s infinite; }
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.4} }
 .ph-title { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(28px,4vw,48px); font-weight: 700; color: #fff; line-height: 1.15; margin-bottom: 10px; }
-.ph-title em { font-style: normal; color: #C9A84C; }
+.ph-title em { font-style: normal; color: #008C3C; }
 .ph-sub { font-size: 16px; color: rgba(255,255,255,.6); font-weight: 300; line-height: 1.7; max-width: 560px; margin-bottom: 0; }
 .ph-stats { display: flex; flex-wrap: wrap; gap: 0; margin-top: 32px; background: rgba(255,255,255,.05); border-top: 1px solid rgba(255,255,255,.08); }
 .ph-stat { flex: 1; min-width: 120px; padding: 16px 24px; border-right: 1px solid rgba(255,255,255,.07); text-align: center; }
 .ph-stat:last-child { border-right: none; }
-.ph-stat-n { font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #C9A84C; display: block; margin-bottom: 3px; }
+.ph-stat-n { font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #008C3C; display: block; margin-bottom: 3px; }
 .ph-stat-l { font-size: 12px; color: rgba(255,255,255,.4); font-weight: 300; }
 
 /* MAIN LAYOUT */
@@ -62,104 +62,104 @@ body {
 /* progress */
 .w-progress { padding: 24px 28px 0; border-bottom: 1px solid rgba(10,22,40,.07); }
 .w-prog-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
-.w-step-label { font-size: 12px; font-weight: 700; color: #8B6914; text-transform: uppercase; letter-spacing: .08em; }
+.w-step-label { font-size: 12px; font-weight: 700; color: #006B2E; text-transform: uppercase; letter-spacing: .08em; }
 .w-step-count { font-size: 12px; color: #718096; font-weight: 300; }
 .w-track { height: 3px; background: rgba(10,22,40,.08); border-radius: 2px; overflow: hidden; margin-bottom: 16px; }
-.w-fill { height: 100%; background: linear-gradient(90deg, #C9A84C, #E8D09A); border-radius: 2px; transition: width .5s cubic-bezier(.4,0,.2,1); }
+.w-fill { height: 100%; background: linear-gradient(90deg, #008C3C, #D4E8FF); border-radius: 2px; transition: width .5s cubic-bezier(.4,0,.2,1); }
 .w-dots { display: flex; gap: 6px; margin-bottom: 20px; }
 .w-dot { height: 7px; border-radius: 4px; background: rgba(10,22,40,.1); transition: all .3s; width: 7px; }
-.w-dot.done { background: #C9A84C; }
-.w-dot.active { background: #0A1628; width: 18px; }
+.w-dot.done { background: #008C3C; }
+.w-dot.active { background: #0D2258; width: 18px; }
 
 /* step body */
 .w-body { padding: 28px; }
-.step-q { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(20px,2.5vw,28px); font-weight: 700; color: #0A1628; line-height: 1.25; margin-bottom: 8px; }
-.step-q em { font-style: normal; color: #8B6914; }
+.step-q { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(20px,2.5vw,28px); font-weight: 700; color: #0D2258; line-height: 1.25; margin-bottom: 8px; }
+.step-q em { font-style: normal; color: #006B2E; }
 .step-sub { font-size: 14px; color: #718096; font-weight: 300; line-height: 1.65; margin-bottom: 28px; }
 
 /* OPTION CARDS */
 .opts { display: flex; flex-direction: column; gap: 10px; }
 .opts-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.opt { border: 2px solid rgba(10,22,40,.08); border-radius: 12px; padding: 16px 18px; cursor: pointer; transition: all .22s; background: #FAF8F3; text-align: left; width: 100%; font-family: inherit; position: relative; }
-.opt:hover { border-color: rgba(201,168,76,.5); background: rgba(201,168,76,.04); transform: translateY(-2px); box-shadow: 0 4px 16px rgba(10,22,40,.08); }
-.opt.sel { border-color: #0A1628; background: #0A1628; }
+.opt { border: 2px solid rgba(10,22,40,.08); border-radius: 12px; padding: 16px 18px; cursor: pointer; transition: all .22s; background: #F0F5FF; text-align: left; width: 100%; font-family: inherit; position: relative; }
+.opt:hover { border-color: rgba(0,140,60,.5); background: rgba(0,140,60,.04); transform: translateY(-2px); box-shadow: 0 4px 16px rgba(10,22,40,.08); }
+.opt.sel { border-color: #0D2258; background: #0D2258; }
 .opt.sel .opt-name { color: #fff; }
 .opt.sel .opt-desc { color: rgba(255,255,255,.5); }
-.opt.sel .opt-price { color: #C9A84C; }
+.opt.sel .opt-price { color: #008C3C; }
 .opt.sel .opt-pnote { color: rgba(255,255,255,.35); }
 .opt.sel .opt-badge { background: rgba(255,255,255,.08); color: rgba(255,255,255,.6); }
-.opt.rec { border-color: rgba(201,168,76,.4); background: rgba(201,168,76,.03); }
-.opt.rec.sel { border-color: #C9A84C; background: #0A1628; }
+.opt.rec { border-color: rgba(0,140,60,.4); background: rgba(0,140,60,.03); }
+.opt.rec.sel { border-color: #008C3C; background: #0D2258; }
 .opt-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
 .opt-icon { font-size: 22px; flex-shrink: 0; }
-.opt-name { font-size: 15px; font-weight: 600; color: #0A1628; line-height: 1.3; }
+.opt-name { font-size: 15px; font-weight: 600; color: #0D2258; line-height: 1.3; }
 .opt-desc { font-size: 13px; color: #718096; font-weight: 300; line-height: 1.5; margin-bottom: 10px; }
 .opt-bottom { display: flex; align-items: baseline; gap: 6px; }
-.opt-price { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 700; color: #0A1628; }
+.opt-price { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 700; color: #0D2258; }
 .opt-pnote { font-size: 11px; color: #718096; font-weight: 300; }
 .opt-badge { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 3px 9px; border-radius: 100px; white-space: nowrap; }
 .b-pop { background: rgba(239,159,39,.15); color: #7D4E0A; }
 .b-cheap { background: rgba(29,158,117,.1); color: #085041; }
 .b-prem { background: rgba(10,22,40,.08); color: #1E3460; }
-.opt-chk { position: absolute; top: 12px; right: 12px; width: 22px; height: 22px; border-radius: 50%; background: #C9A84C; display: flex; align-items: center; justify-content: center; opacity: 0; transform: scale(0); transition: all .2s; }
+.opt-chk { position: absolute; top: 12px; right: 12px; width: 22px; height: 22px; border-radius: 50%; background: #008C3C; display: flex; align-items: center; justify-content: center; opacity: 0; transform: scale(0); transition: all .2s; }
 .opt.sel .opt-chk { opacity: 1; transform: scale(1); }
 
 /* VISA COUNTER */
 .vc-wrap { display: flex; gap: 24px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 24px; }
 .vc { display: flex; align-items: center; border: 2px solid rgba(10,22,40,.1); border-radius: 12px; overflow: hidden; background: #fff; }
-.vc-btn { width: 52px; height: 52px; border: none; background: transparent; font-size: 24px; cursor: pointer; color: #0A1628; font-weight: 300; transition: background .15s; display: flex; align-items: center; justify-content: center; }
-.vc-btn:hover { background: #FAF8F3; }
+.vc-btn { width: 52px; height: 52px; border: none; background: transparent; font-size: 24px; cursor: pointer; color: #0D2258; font-weight: 300; transition: background .15s; display: flex; align-items: center; justify-content: center; }
+.vc-btn:hover { background: #F0F5FF; }
 .vc-btn:disabled { color: rgba(10,22,40,.2); cursor: not-allowed; }
 .vc-mid { width: 72px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-left: 1px solid rgba(10,22,40,.08); border-right: 1px solid rgba(10,22,40,.08); }
-.vc-val { font-family: 'Playfair Display', Georgia, serif; font-size: 26px; font-weight: 700; color: #0A1628; line-height: 1; }
+.vc-val { font-family: 'Playfair Display', Georgia, serif; font-size: 26px; font-weight: 700; color: #0D2258; line-height: 1; }
 .vc-lbl { font-size: 10px; color: #718096; font-weight: 300; margin-top: 2px; }
-.vc-note { padding: 12px 16px; background: rgba(201,168,76,.08); border: 1px solid rgba(201,168,76,.2); border-radius: 8px; font-size: 13px; color: #8B6914; font-weight: 300; line-height: 1.55; flex: 1; min-width: 200px; }
+.vc-note { padding: 12px 16px; background: rgba(0,140,60,.08); border: 1px solid rgba(0,140,60,.2); border-radius: 8px; font-size: 13px; color: #006B2E; font-weight: 300; line-height: 1.55; flex: 1; min-width: 200px; }
 .v-presets { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; margin-top: 16px; }
-.v-preset { border: 1.5px solid rgba(10,22,40,.1); border-radius: 8px; padding: 10px; cursor: pointer; background: #FAF8F3; text-align: center; transition: all .2s; font-family: inherit; }
-.v-preset:hover { border-color: rgba(201,168,76,.4); background: rgba(201,168,76,.04); }
-.v-preset.sel { border-color: #0A1628; background: #0A1628; }
+.v-preset { border: 1.5px solid rgba(10,22,40,.1); border-radius: 8px; padding: 10px; cursor: pointer; background: #F0F5FF; text-align: center; transition: all .2s; font-family: inherit; }
+.v-preset:hover { border-color: rgba(0,140,60,.4); background: rgba(0,140,60,.04); }
+.v-preset.sel { border-color: #0D2258; background: #0D2258; }
 .v-preset.sel .vp-n, .v-preset.sel .vp-l { color: #fff; }
 .vp-l { font-size: 12px; color: #718096; font-weight: 300; }
-.vp-n { font-size: 13px; font-weight: 600; color: #0A1628; margin-top: 2px; }
+.vp-n { font-size: 13px; font-weight: 600; color: #0D2258; margin-top: 2px; }
 
 /* ADDONS */
 .addon-list { display: flex; flex-direction: column; gap: 8px; }
-.addon { display: flex; align-items: center; gap: 14px; padding: 14px 16px; background: #FAF8F3; border: 2px solid rgba(10,22,40,.07); border-radius: 12px; cursor: pointer; transition: all .22s; }
-.addon:hover { border-color: rgba(201,168,76,.3); background: rgba(201,168,76,.03); }
+.addon { display: flex; align-items: center; gap: 14px; padding: 14px 16px; background: #F0F5FF; border: 2px solid rgba(10,22,40,.07); border-radius: 12px; cursor: pointer; transition: all .22s; }
+.addon:hover { border-color: rgba(0,140,60,.3); background: rgba(0,140,60,.03); }
 .addon.sel { border-color: #1D9E75; background: rgba(29,158,117,.06); }
 .addon-cb { width: 22px; height: 22px; border-radius: 6px; border: 2px solid rgba(10,22,40,.18); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all .2s; }
 .addon.sel .addon-cb { background: #1D9E75; border-color: #1D9E75; }
 .addon-ico { font-size: 20px; flex-shrink: 0; }
 .addon-info { flex: 1; }
-.addon-name { font-size: 14px; font-weight: 600; color: #0A1628; margin-bottom: 2px; }
+.addon-name { font-size: 14px; font-weight: 600; color: #0D2258; margin-bottom: 2px; }
 .addon-desc { font-size: 12px; color: #718096; font-weight: 300; line-height: 1.4; }
-.addon-price { font-family: 'Playfair Display', Georgia, serif; font-size: 16px; font-weight: 700; color: #0A1628; text-align: right; white-space: nowrap; }
+.addon-price { font-family: 'Playfair Display', Georgia, serif; font-size: 16px; font-weight: 700; color: #0D2258; text-align: right; white-space: nowrap; }
 .addon-freq { font-size: 11px; color: #718096; font-weight: 300; text-align: right; }
 
 /* STEP NAV */
 .step-nav { display: flex; align-items: center; gap: 10px; margin-top: 28px; flex-wrap: wrap; }
-.btn-next { background: #0A1628; color: #fff; font-family: inherit; font-size: 15px; font-weight: 600; padding: 13px 28px; border-radius: 8px; border: none; cursor: pointer; transition: all .22s; display: flex; align-items: center; gap: 7px; }
+.btn-next { background: #0D2258; color: #fff; font-family: inherit; font-size: 15px; font-weight: 600; padding: 13px 28px; border-radius: 8px; border: none; cursor: pointer; transition: all .22s; display: flex; align-items: center; gap: 7px; }
 .btn-next:hover { background: #1E3460; transform: translateY(-1px); }
 .btn-next:disabled { opacity: .35; cursor: not-allowed; transform: none; }
 .btn-back { background: transparent; color: #718096; font-family: inherit; font-size: 14px; font-weight: 500; padding: 13px 18px; border-radius: 8px; border: 1.5px solid rgba(10,22,40,.12); cursor: pointer; transition: all .22s; }
-.btn-back:hover { border-color: #0A1628; color: #0A1628; }
+.btn-back:hover { border-color: #0D2258; color: #0D2258; }
 .btn-skip { background: none; border: none; color: #718096; font-size: 13px; font-weight: 300; cursor: pointer; padding: 13px 8px; font-family: inherit; }
-.btn-skip:hover { color: #0A1628; }
+.btn-skip:hover { color: #0D2258; }
 
 /* FORM STEP */
-.qform { border: 1px solid rgba(10,22,40,.08); border-radius: 12px; padding: 24px; background: #FAF8F3; margin-bottom: 4px; }
-.qf-t { font-family: 'Playfair Display', Georgia, serif; font-size: 20px; font-weight: 700; color: #0A1628; margin-bottom: 5px; }
+.qform { border: 1px solid rgba(10,22,40,.08); border-radius: 12px; padding: 24px; background: #F0F5FF; margin-bottom: 4px; }
+.qf-t { font-family: 'Playfair Display', Georgia, serif; font-size: 20px; font-weight: 700; color: #0D2258; margin-bottom: 5px; }
 .qf-s { font-size: 13px; color: #718096; font-weight: 300; line-height: 1.6; margin-bottom: 20px; }
 .fg { margin-bottom: 12px; }
 .fl { display: block; font-size: 11px; font-weight: 600; color: #4A5568; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 5px; }
-.fi, .fs { width: 100%; padding: 11px 13px; border: 1.5px solid #E2E8F0; border-radius: 8px; font-family: inherit; font-size: 14px; color: #0A1628; background: #fff; transition: border-color .2s; outline: none; -webkit-appearance: none; }
-.fi:focus, .fs:focus { border-color: #C9A84C; }
+.fi, .fs { width: 100%; padding: 11px 13px; border: 1.5px solid #E2E8F0; border-radius: 8px; font-family: inherit; font-size: 14px; color: #0D2258; background: #fff; transition: border-color .2s; outline: none; -webkit-appearance: none; }
+.fi:focus, .fs:focus { border-color: #008C3C; }
 .fi.err { border-color: #E24B4A; }
-.fta { width: 100%; padding: 11px 13px; border: 1.5px solid #E2E8F0; border-radius: 8px; font-family: inherit; font-size: 14px; color: #0A1628; background: #fff; outline: none; resize: vertical; min-height: 72px; }
-.fta:focus { border-color: #C9A84C; }
+.fta { width: 100%; padding: 11px 13px; border: 1.5px solid #E2E8F0; border-radius: 8px; font-family: inherit; font-size: 14px; color: #0D2258; background: #fff; outline: none; resize: vertical; min-height: 72px; }
+.fta:focus { border-color: #008C3C; }
 .f2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.sbtn { width: 100%; background: #C9A84C; color: #0A1628; font-family: inherit; font-size: 16px; font-weight: 700; padding: 15px; border-radius: 8px; border: none; cursor: pointer; transition: all .22s; display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 4px; }
-.sbtn:hover { background: #B8922F; transform: translateY(-1px); box-shadow: 0 6px 24px rgba(201,168,76,.3); }
+.sbtn { width: 100%; background: #008C3C; color: #0D2258; font-family: inherit; font-size: 16px; font-weight: 700; padding: 15px; border-radius: 8px; border: none; cursor: pointer; transition: all .22s; display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 4px; }
+.sbtn:hover { background: #006B2E; transform: translateY(-1px); box-shadow: 0 6px 24px rgba(0,140,60,.3); }
 .or-line { text-align: center; font-size: 13px; color: #718096; margin: 14px 0; position: relative; }
 .or-line::before,.or-line::after { content: ''; position: absolute; top: 50%; width: 43%; height: 1px; background: rgba(10,22,40,.08); }
 .or-line::before{left:0} .or-line::after{right:0}
@@ -170,15 +170,15 @@ body {
 
 /* ───── RIGHT PANEL: ESTIMATE ───── */
 .estimate { position: sticky; top: 20px; }
-.est-box { background: #0A1628; border-radius: 16px; overflow: hidden; }
+.est-box { background: #0D2258; border-radius: 16px; overflow: hidden; }
 .est-head { padding: 22px 24px 18px; border-bottom: 1px solid rgba(255,255,255,.07); }
-.est-lbl { font-size: 11px; font-weight: 700; color: rgba(201,168,76,.8); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 5px; }
+.est-lbl { font-size: 11px; font-weight: 700; color: rgba(0,140,60,.8); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 5px; }
 .est-title { font-family: 'Playfair Display', Georgia, serif; font-size: 17px; font-weight: 600; color: #fff; line-height: 1.3; }
 
 /* price ticker */
 .ticker { padding: 22px 24px; border-bottom: 1px solid rgba(255,255,255,.07); text-align: center; }
 .tick-from { font-size: 12px; color: rgba(255,255,255,.4); font-weight: 300; margin-bottom: 6px; }
-.tick-amt { font-family: 'Playfair Display', Georgia, serif; font-size: 46px; font-weight: 700; color: #C9A84C; line-height: 1; display: block; transition: all .3s; }
+.tick-amt { font-family: 'Playfair Display', Georgia, serif; font-size: 46px; font-weight: 700; color: #008C3C; line-height: 1; display: block; transition: all .3s; }
 .tick-cur { font-size: 13px; color: rgba(255,255,255,.4); font-weight: 300; margin-top: 5px; }
 .tick-note { font-size: 11px; color: rgba(255,255,255,.25); margin-top: 6px; }
 
@@ -187,22 +187,22 @@ body {
 .est-pending { font-size: 13px; color: rgba(255,255,255,.35); font-weight: 300; line-height: 1.6; }
 .sel-tag { display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: rgba(255,255,255,.6); font-weight: 300; margin-bottom: 6px; }
 .sel-tag:last-child { margin-bottom: 0; }
-.sel-dot { width: 6px; height: 6px; border-radius: 50%; background: #C9A84C; flex-shrink: 0; }
+.sel-dot { width: 6px; height: 6px; border-radius: 50%; background: #008C3C; flex-shrink: 0; }
 .sel-name { color: #fff; font-weight: 500; }
 
 /* breakdown */
 .est-bd { padding: 16px 24px; border-bottom: 1px solid rgba(255,255,255,.07); }
 .bd-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,.05); }
 .bd-row:last-child { border-bottom: none; }
-.bd-row.total { padding-top: 12px; border-top: 2px solid rgba(201,168,76,.3); border-bottom: none; margin-top: 4px; }
+.bd-row.total { padding-top: 12px; border-top: 2px solid rgba(0,140,60,.3); border-bottom: none; margin-top: 4px; }
 .bd-lbl { font-size: 12.5px; color: rgba(255,255,255,.55); font-weight: 300; display: flex; align-items: center; gap: 6px; }
 .bd-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
-.bd-dot-g { background: #C9A84C; }
+.bd-dot-g { background: #008C3C; }
 .bd-dot-ok { background: #1D9E75; }
 .bd-dot-sl { background: rgba(255,255,255,.25); }
 .bd-amt { font-family: 'DM Mono', 'Courier New', monospace; font-size: 12.5px; font-weight: 500; color: rgba(255,255,255,.75); white-space: nowrap; }
 .bd-row.total .bd-lbl { color: #fff; font-weight: 600; font-size: 13.5px; }
-.bd-row.total .bd-amt { color: #C9A84C; font-size: 15px; font-weight: 700; }
+.bd-row.total .bd-amt { color: #008C3C; font-size: 15px; font-weight: 700; }
 
 /* tip badge */
 .tip-badge { margin: 0 24px 16px; background: rgba(29,158,117,.12); border: 1px solid rgba(29,158,117,.3); border-radius: 8px; padding: 12px 14px; display: flex; gap: 10px; }
@@ -211,26 +211,26 @@ body {
 
 /* panel CTAs */
 .est-cta { padding: 16px 24px 20px; display: flex; flex-direction: column; gap: 8px; }
-.ep-cta { width: 100%; background: #C9A84C; color: #0A1628; font-family: inherit; font-size: 14px; font-weight: 700; padding: 12px; border-radius: 8px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 7px; transition: all .22s; }
-.ep-cta:hover { background: #B8922F; }
+.ep-cta { width: 100%; background: #008C3C; color: #0D2258; font-family: inherit; font-size: 14px; font-weight: 700; padding: 12px; border-radius: 8px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 7px; transition: all .22s; }
+.ep-cta:hover { background: #006B2E; }
 .ep-wa { width: 100%; background: #25D366; color: #fff; font-family: inherit; font-size: 13px; font-weight: 600; padding: 11px; border-radius: 8px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 7px; transition: all .22s; }
 .ep-wa:hover { background: #1ebe5d; }
 
 /* success */
 .success { text-align: center; padding: 32px 0; }
 .suc-icon { width: 68px; height: 68px; border-radius: 50%; background: rgba(29,158,117,.1); border: 2px solid rgba(29,158,117,.3); display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; font-size: 30px; }
-.suc-t { font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #0A1628; margin-bottom: 8px; }
+.suc-t { font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #0D2258; margin-bottom: 8px; }
 .suc-s { font-size: 14px; color: #718096; font-weight: 300; line-height: 1.65; max-width: 400px; margin: 0 auto 24px; }
-.nxt-steps { background: #FAF8F3; border-radius: 12px; border: 1px solid rgba(10,22,40,.07); padding: 20px; text-align: left; }
-.nxt-t { font-size: 12px; font-weight: 700; color: #0A1628; text-transform: uppercase; letter-spacing: .07em; margin-bottom: 14px; }
+.nxt-steps { background: #F0F5FF; border-radius: 12px; border: 1px solid rgba(10,22,40,.07); padding: 20px; text-align: left; }
+.nxt-t { font-size: 12px; font-weight: 700; color: #0D2258; text-transform: uppercase; letter-spacing: .07em; margin-bottom: 14px; }
 .nxt-row { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
 .nxt-row:last-child { margin-bottom: 0; }
-.nxt-num { width: 26px; height: 26px; border-radius: 50%; background: #0A1628; color: #C9A84C; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+.nxt-num { width: 26px; height: 26px; border-radius: 50%; background: #0D2258; color: #008C3C; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
 .nxt-txt { font-size: 13.5px; color: #4A5568; font-weight: 300; line-height: 1.55; }
-.nxt-txt strong { color: #0A1628; font-weight: 600; }
+.nxt-txt strong { color: #0D2258; font-weight: 600; }
 .suc-btns { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 20px; }
 .suc-wa { background: #25D366; color: #fff; font-family: inherit; font-size: 14px; font-weight: 600; padding: 12px 22px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 7px; }
-.suc-home { background: #0A1628; color: #fff; font-family: inherit; font-size: 14px; font-weight: 600; padding: 12px 22px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 7px; }
+.suc-home { background: #0D2258; color: #fff; font-family: inherit; font-size: 14px; font-weight: 600; padding: 12px 22px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 7px; }
 
 /* STEP ANIMATION */
 .step-anim { animation: fadeSlide .3s ease; }
@@ -244,11 +244,11 @@ body {
 @media(max-width:900px) {
   .layout { grid-template-columns: 1fr; gap: 20px; padding: 24px 0 120px; }
   .estimate { position: static; display: none; }
-  .mob-bar { display: flex; position: fixed; bottom: 0; left: 0; right: 0; background: #0A1628; border-top: 1px solid rgba(255,255,255,.1); padding: 12px 20px; gap: 12px; align-items: center; z-index: 99; }
+  .mob-bar { display: flex; position: fixed; bottom: 0; left: 0; right: 0; background: #0D2258; border-top: 1px solid rgba(255,255,255,.1); padding: 12px 20px; gap: 12px; align-items: center; z-index: 99; }
   .mob-price { flex: 1; }
   .mob-from { font-size: 11px; color: rgba(255,255,255,.4); font-weight: 300; }
-  .mob-amt { font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #C9A84C; line-height: 1; }
-  .mob-cta { background: #C9A84C; color: #0A1628; font-family: inherit; font-size: 14px; font-weight: 700; padding: 11px 20px; border-radius: 8px; border: none; cursor: pointer; white-space: nowrap; }
+  .mob-amt { font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #008C3C; line-height: 1; }
+  .mob-cta { background: #008C3C; color: #0D2258; font-family: inherit; font-size: 14px; font-weight: 700; padding: 11px 20px; border-radius: 8px; border: none; cursor: pointer; white-space: nowrap; }
   .ph-stats { flex-direction: column; }
   .ph-stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,.07); text-align: left; }
   .ph-stat:last-child { border-bottom: none; }
@@ -272,39 +272,59 @@ body {
 
 /* Font rendering improvements */
 body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
-.topbar{background:#0A1628;padding:9px 0;font-family:'DM Sans',-apple-system,sans-serif}
+.topbar{background:#0D2258;padding:9px 0;font-family:'DM Sans',-apple-system,sans-serif}
 .topbar .container{max-width:1160px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
-.topbar a{color:#E8D09A;text-decoration:none;font-size:13px;display:flex;align-items:center;gap:5px}
+.topbar a{color:#D4E8FF;text-decoration:none;font-size:13px;display:flex;align-items:center;gap:5px}
 .topbar a:hover{color:#fff}
 .topbar-left,.topbar-right{display:flex;gap:18px;align-items:center}
 .nav-wrapper{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid rgba(10,22,40,.08);box-shadow:0 2px 16px rgba(10,22,40,.06);font-family:'DM Sans',-apple-system,sans-serif}
 .nav-wrapper .container{max-width:1160px;margin:0 auto;padding:0 24px}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:13px 0;gap:16px}
 .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.nav-logo-mark{width:40px;height:40px;background:#0A1628;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.nav-logo-name{font-family:'Playfair Display',Georgia,serif;font-size:18px;font-weight:600;color:#0A1628;display:block;line-height:1.2}
-.nav-logo-sub{font-size:10px;font-weight:500;color:#8B6914;text-transform:uppercase;letter-spacing:.08em;display:block}
+.nav-logo-mark{width:40px;height:40px;background:#0D2258;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.nav-logo-name{font-family:'Playfair Display',Georgia,serif;font-size:18px;font-weight:600;color:#0D2258;display:block;line-height:1.2}
+.nav-logo-sub{font-size:10px;font-weight:500;color:#006B2E;text-transform:uppercase;letter-spacing:.08em;display:block}
 .nav-links{display:flex;list-style:none;gap:2px;align-items:center}
 .nav-links li{position:relative}
 .nav-links a{text-decoration:none;color:#4A5568;font-size:14px;font-weight:500;padding:8px 13px;border-radius:8px;transition:all .2s;display:flex;align-items:center;gap:4px;white-space:nowrap}
-.nav-links a:hover,.nav-links a.active{color:#0A1628;background:#FAF8F3}
-.nav-links a.nav-cta{background:#C9A84C;color:#0A1628;font-weight:600;padding:10px 20px}
-.nav-links a.nav-cta:hover{background:#B8922F}
-.nav-links a.nav-cta.active{background:#B8922F;color:#0A1628}
+.nav-links a:hover,.nav-links a.active{color:#0D2258;background:#F0F5FF}
+.nav-links a.nav-cta{background:#008C3C;color:#0D2258;font-weight:600;padding:10px 20px}
+.nav-links a.nav-cta:hover{background:#006B2E}
+.nav-links a.nav-cta.active{background:#006B2E;color:#0D2258}
 .drop-arrow{font-size:10px;color:#718096;transition:transform .2s;display:inline-block}
 .has-drop:hover .drop-arrow{transform:rotate(180deg)}
 .dropdown{position:absolute;top:calc(100% + 8px);left:0;background:#fff;border:1px solid rgba(10,22,40,.08);border-radius:12px;padding:8px;min-width:220px;box-shadow:0 4px 24px rgba(10,22,40,.1);opacity:0;pointer-events:none;transform:translateY(-6px);transition:opacity .2s,transform .2s;z-index:9999}
 .has-drop:hover .dropdown{opacity:1;pointer-events:all;transform:translateY(0)}
 .dropdown a{display:block;padding:9px 14px;font-size:14px;color:#4A5568;border-radius:8px;white-space:nowrap;text-decoration:none;font-weight:400}
-.dropdown a:hover{background:#FAF8F3;color:#0A1628}
+.dropdown a:hover{background:#F0F5FF;color:#0D2258}
 .nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;background:none;border:none}
-.nav-toggle span{display:block;width:22px;height:2px;background:#0A1628;border-radius:2px}
+.nav-toggle span{display:block;width:22px;height:2px;background:#0D2258;border-radius:2px}
 .nav-mobile{display:none;background:#fff;border-top:1px solid rgba(10,22,40,.07);padding:16px 24px 20px;max-height:80vh;overflow-y:auto}
 .nav-mobile.open{display:block}
 .nav-mobile a{display:block;padding:10px 0;font-size:15px;color:#4A5568;text-decoration:none;border-bottom:1px solid rgba(10,22,40,.05);font-weight:500}
-.nav-mobile a:hover{color:#0A1628}
-.nav-mobile a.mobile-cta{background:#C9A84C;color:#0A1628;font-weight:700;text-align:center;padding:12px;border-radius:8px;margin-top:10px;border-bottom:none}
+.nav-mobile a:hover{color:#0D2258}
+.nav-mobile a.mobile-cta{background:#008C3C;color:#0D2258;font-weight:700;text-align:center;padding:12px;border-radius:8px;margin-top:10px;border-bottom:none}
 @media(max-width:900px){.nav-links{display:none}.nav-toggle{display:flex}}
+/* WA FLOAT */
+.waf{position:fixed;bottom:28px;right:28px;z-index:9999;background:#25D366;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);text-decoration:none;transition:transform .2s}
+.waf:hover{transform:scale(1.08)}
+.wap{position:absolute;width:100%;height:100%;border-radius:50%;background:rgba(37,211,102,.3);animation:wapul 2s ease-out infinite}
+@keyframes wapul{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.55);opacity:0}}
+
+
+/* ── PRICE MATCH BADGE ── */
+.pm-strip{background:linear-gradient(135deg,#0D2258 0%,#152B6E 100%);border:1px solid rgba(0,140,60,.3);border-radius:12px;padding:18px 20px;margin-top:12px;display:none}
+.pm-strip.visible{display:block}
+.pm-strip-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;flex-wrap:wrap}
+.pm-strip-left{display:flex;align-items:center;gap:10px}
+.pm-strip-icon{font-size:22px;flex-shrink:0}
+.pm-strip-headline{font-size:14px;font-weight:700;color:#fff;line-height:1.3}
+.pm-strip-headline em{font-style:normal;color:#008C3C}
+.pm-strip-cashback{background:#008C3C;color:#0D2258;font-family:'Playfair Display',Georgia,serif;font-size:18px;font-weight:700;padding:6px 14px;border-radius:8px;white-space:nowrap;flex-shrink:0}
+.pm-strip-desc{font-size:12.5px;color:rgba(255,255,255,.5);font-weight:300;line-height:1.55;margin-bottom:12px}
+.pm-strip-btn{width:100%;background:#25D366;color:#fff;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;padding:11px;border-radius:8px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;transition:background .2s}
+.pm-strip-btn:hover{background:#1ebe5d}
+.pm-strip-tc{font-size:11px;color:rgba(255,255,255,.25);text-align:center;margin-top:8px;font-weight:300}
 </style>
 
 <!-- TOPBAR -->
@@ -319,9 +339,8 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
 <!-- NAVIGATION -->
 <div class="nav-wrapper"><div class="container">
 <nav class="nav">
-  <a href="/" class="nav-logo">
-    <div class="nav-logo-mark"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2L3 6.5v9L11 20l8-4.5v-9L11 2z" stroke="#C9A84C" stroke-width="1.5" fill="none"/><path d="M11 6l-4.5 2.5v5L11 16l4.5-2.5v-5L11 6z" fill="#C9A84C" fill-opacity="0.3"/></svg></div>
-    <div><span class="nav-logo-name">Emaar Global</span><span class="nav-logo-sub">Business Solutions</span></div>
+  <a href="/" class="nav-logo" style="display:flex;align-items:center;text-decoration:none;gap:0">
+    <img src="data:image/png;base64,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" alt="Emaar Global Business Solutions" height="40" style="display:block">
   </a>
   <ul class="nav-links">
     <li><a href="/">Home</a></li>
@@ -343,7 +362,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
         <a href="/services/legal-services/">Legal Services</a>
       </div>
     </li>
-    <li><a href="/services/visa-services/golden-visa/" style="color:#8B6914;font-weight:600;">&#11088; Golden Visa</a></li>
+    <li><a href="/services/visa-services/golden-visa/" style="color:#1450B4;font-weight:600;">&#11088; Golden Visa</a></li>
     <li><a href="/tools/uae-company-cost-calculator/" class="active">&#129518; Cost Calculator</a></li>
     <li><a href="/about/">About</a></li>
     <li><a href="/contact/" class="nav-cta">Free Consultation</a></li>
@@ -365,13 +384,22 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
   <a href="/services/accounting-tax/">&#8227; Accounting &amp; Tax</a>
   <a href="/services/corporate-services/">&#8227; Corporate Services</a>
   <a href="/services/legal-services/">&#8227; Legal Services</a>
-  <a href="/services/visa-services/golden-visa/" style="color:#C9A84C;font-weight:600;">&#11088; Golden Visa</a>
+  <a href="/services/visa-services/golden-visa/" style="color:#008C3C;font-weight:600;">&#11088; Golden Visa</a>
   <a href="/tools/uae-company-cost-calculator/">&#129518; Cost Calculator</a>
   <a href="/about/">About Us</a>
   <a href="/contact/" class="mobile-cta">Free Consultation &#8594;</a>
 </div>
 </div>
 <!-- NAV END -->
+
+<!-- BREADCRUMB -->
+<div style="background:#fff;border-bottom:1px solid rgba(10,22,40,.06);padding:10px 0">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:6px;font-size:12px;color:#718096;font-family:'DM Sans',-apple-system,sans-serif">
+    <a href="/" style="color:#718096;text-decoration:none;font-weight:300" onmouseover="this.style.color='#0D2258'" onmouseout="this.style.color='#718096'">Home</a>
+    <span style="color:rgba(10,22,40,.2)">›</span>
+    <span style="color:#0D2258;font-weight:500">Cost Calculator</span>
+  </div>
+</div>
 
 <!-- HERO -->
 <div class="page-hero">
@@ -438,6 +466,24 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
           WhatsApp Quote
         </button>
       </div>
+
+          <!-- PRICE MATCH STRIP -->
+          <div class="pm-strip" id="pmStrip">
+            <div class="pm-strip-top">
+              <div class="pm-strip-left">
+                <div class="pm-strip-icon">🛡️</div>
+                <div class="pm-strip-headline">Found it cheaper elsewhere?<br><em>We match it + AED 200 back.</em></div>
+              </div>
+              <div class="pm-strip-cashback">AED 200</div>
+            </div>
+            <div class="pm-strip-desc">Show us a written quote from any licensed UAE consultancy for the same service. We review within 24 hours and match the price in writing before you commit.</div>
+            <button class="pm-strip-btn" onclick="pmWA()">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.1.547 4.162 1.588 5.979L.043 24l6.24-1.637A11.969 11.969 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.999a9.94 9.94 0 01-5.063-1.378l-.363-.216-3.764.987.993-3.653-.237-.374A9.941 9.941 0 012.04 12c0-5.493 4.47-9.963 9.963-9.963 2.662 0 5.165 1.037 7.048 2.92a9.914 9.914 0 012.914 7.043c-.002 5.492-4.472 9.962-9.98 9.962l.015.037z"/></svg>
+              Send Us Their Quote on WhatsApp
+            </button>
+            <div class="pm-strip-tc">Written quote required &middot; Licensed providers only &middot; Like-for-like service</div>
+          </div>
+
     </div>
   </div>
 
@@ -506,7 +552,7 @@ function calc() {
 
   if (S.struct === 'et') {
     total = 2070;
-    items.push({l:'eTrade License (Dubai DET)', a:1070, d:'g'});
+    items.push({l:'eTrade License (Dubai DET)', a:2070, d:'g'});
   } else if (S.struct === 'fz') {
     const em = S.emirate ? EMFZ.find(e=>e.id===S.emirate) : null;
     const base = em ? em.price : 9800;
@@ -575,6 +621,7 @@ function updatePanel() {
   animNum(ta, r.total);
   if (ma) ma.textContent = r.total.toLocaleString();
   cta.style.display = 'flex'; cta.style.flexDirection = 'column';
+  showPMStrip();
 
   // selections
   let tags = [];
@@ -641,7 +688,7 @@ function buildStep(n) {
     <div class="opts">
       ${STRUCTS.map(s=>`
       <button class="opt ${s.rec?'rec':''} sc" data-id="${s.id}" onclick="pickStruct('${s.id}')">
-        <div class="opt-chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#0A1628" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="opt-chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#0D2258" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
         <div class="opt-top">
           <div style="display:flex;align-items:center;gap:10px;">
             <div class="opt-icon">${s.icon}</div>
@@ -666,7 +713,7 @@ function buildStep(n) {
     <div class="opts">
       ${list.map(e=>`
       <button class="opt ec" data-id="${e.id}" onclick="pickEm('${e.id}')">
-        <div class="opt-chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#0A1628" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="opt-chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#0D2258" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
         <div class="opt-top" style="margin-bottom:4px;">
           <div><div class="opt-name">${e.name}</div><div class="opt-pnote" style="font-size:12px;margin-top:2px;">${isFZ?e.zone:e.auth}</div></div>
           <div class="opt-price" style="font-size:16px;">AED ${e.price.toLocaleString()}+</div>
@@ -726,9 +773,9 @@ function noVisaStep() {
   return `
   <div class="step-q">${isET?'eTrade License':'Offshore'} — no UAE visa</div>
   <p class="step-sub">${isET?'The eTrade License does not include a residency visa. It\'s a business license only — perfect if you already have UAE residency or don\'t need one yet.':'Offshore companies are designed for holding structures. They don\'t include UAE residency visas.'}</p>
-  <div style="padding:22px;background:#FAF8F3;border-radius:12px;border:1px solid rgba(10,22,40,.08);margin-bottom:8px;">
-    <div style="font-size:13px;font-weight:600;color:#0A1628;margin-bottom:8px;">💡 Want a visa with your business?</div>
-    <p style="font-size:13.5px;color:#718096;font-weight:300;line-height:1.65;margin-bottom:16px;">Our most popular package is a <strong style="color:#0A1628;">Free Zone License + Investor Visa</strong> for AED 9,800 all-inclusive via RAKEZ or SHAMS — includes company documents, 1 investor visa, and Emirates ID.</p>
+  <div style="padding:22px;background:#F0F5FF;border-radius:12px;border:1px solid rgba(10,22,40,.08);margin-bottom:8px;">
+    <div style="font-size:13px;font-weight:600;color:#0D2258;margin-bottom:8px;">💡 Want a visa with your business?</div>
+    <p style="font-size:13.5px;color:#718096;font-weight:300;line-height:1.65;margin-bottom:16px;">Our most popular package is a <strong style="color:#0D2258;">Free Zone License + Investor Visa</strong> for AED 9,800 all-inclusive via RAKEZ or SHAMS — includes company documents, 1 investor visa, and Emirates ID.</p>
     <button class="btn-next" style="width:100%;justify-content:center;" onclick="S.struct='fz';S.emirate=null;goTo(2)">Switch to Free Zone + Visa Package</button>
   </div>
   <div class="step-nav">
@@ -872,8 +919,87 @@ function sendWA() {
   window.open('https://wa.me/971561571514?text='+encodeURIComponent(msg),'_blank');
 }
 
+
+// Show price match strip when estimate is ready
+function showPMStrip() {
+  const strip = document.getElementById('pmStrip');
+  if (strip) strip.classList.add('visible');
+}
+function pmWA() {
+  const r = calc();
+  const amt = r ? r.total.toLocaleString() : '';
+  const msg = 'Hi, I used your Cost Calculator. My estimate is AED ' + amt + '. I have a competitor quote for the same service that is cheaper. I would like to submit it for your Price Match Guarantee.';
+  window.open('https://wa.me/971561571514?text=' + encodeURIComponent(msg), '_blank');
+}
+
 // INIT
 render();
 </script>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/971561571514?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20UAE%20business%20setup." class="waf" aria-label="WhatsApp" target="_blank" rel="noopener">
+  <div class="wap"></div>
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.1.547 4.162 1.588 5.979L.043 24l6.24-1.637A11.969 11.969 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.999a9.94 9.94 0 01-5.063-1.378l-.363-.216-3.764.987.993-3.653-.237-.374A9.941 9.941 0 012.04 12c0-5.493 4.47-9.963 9.963-9.963 2.662 0 5.165 1.037 7.048 2.92a9.914 9.914 0 012.914 7.043c-.002 5.492-4.472 9.962-9.98 9.962l.015.037z"/></svg>
+</a>
+
+<!-- FOOTER -->
+<footer style="background:#0D2258;color:rgba(255,255,255,.55);font-family:'DM Sans',-apple-system,sans-serif;padding:52px 0 0;margin-top:0">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px">
+    <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.08)">
+      <!-- Brand -->
+      <div>
+        <div style="font-family:'Playfair Display',Georgia,serif;font-size:20px;font-weight:700;color:#fff;margin-bottom:3px">Emaar Global</div>
+        <div style="font-size:11px;font-weight:600;color:#008C3C;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px">Business Solutions</div>
+        <p style="font-size:13px;font-weight:300;line-height:1.7;margin-bottom:18px">Dubai&rsquo;s trusted business setup consultancy. CBLS No. 12491086. Serving 80+ nationalities across all 7 UAE emirates.</p>
+        <a href="https://wa.me/971561571514" style="display:inline-flex;align-items:center;gap:7px;background:#25D366;color:#fff;text-decoration:none;font-size:13px;font-weight:600;padding:9px 16px;border-radius:8px">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.1.547 4.162 1.588 5.979L.043 24l6.24-1.637A11.969 11.969 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+          +971 56 157 1514
+        </a>
+      </div>
+      <!-- Business Setup -->
+      <div>
+        <div style="font-size:12px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.07em;margin-bottom:16px">Business Setup</div>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <a href="/business-setup/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Business Setup Hub</a>
+          <a href="/business-setup/dubai-mainland/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Mainland Company</a>
+          <a href="/business-setup/free-zone/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Free Zone Company</a>
+          <a href="/business-setup/offshore/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Offshore Company</a>
+          <a href="/tools/uae-company-cost-calculator/" style="color:#008C3C;text-decoration:none;font-size:13px;font-weight:500">&#129518; Cost Calculator</a>
+        </div>
+      </div>
+      <!-- Services -->
+      <div>
+        <div style="font-size:12px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.07em;margin-bottom:16px">Services</div>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <a href="/services/license-services/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">License Services</a>
+          <a href="/services/visa-services/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Visa Services</a>
+          <a href="/services/visa-services/golden-visa/" style="color:#008C3C;text-decoration:none;font-size:13px;font-weight:500">&#11088; Golden Visa</a>
+          <a href="/services/accounting-tax/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Accounting &amp; Tax</a>
+          <a href="/services/corporate-services/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Corporate Services</a>
+          <a href="/services/legal-services/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Legal Services</a>
+        </div>
+      </div>
+      <!-- Company -->
+      <div>
+        <div style="font-size:12px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.07em;margin-bottom:16px">Company</div>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <a href="/about/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">About Us</a>
+          <a href="/contact/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Contact Us</a>
+          <a href="tel:+971561571514" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">+971 56 157 1514</a>
+          <a href="mailto:info@emaar-global.com" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">info@emaar-global.com</a>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom bar -->
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 0;flex-wrap:wrap;gap:12px">
+      <div style="font-size:12px;font-weight:300;color:rgba(255,255,255,.3)">&copy; 2025 Emaar Global Business Solutions LLC. CBLS No. 12491086 &middot; Dubai, UAE &middot; All rights reserved.</div>
+      <div style="display:flex;gap:20px">
+        <a href="/contact/" style="color:rgba(255,255,255,.35);text-decoration:none;font-size:12px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.35)'">Privacy Policy</a>
+        <a href="/contact/" style="color:rgba(255,255,255,.35);text-decoration:none;font-size:12px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.35)'">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
