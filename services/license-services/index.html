@@ -31,16 +31,16 @@
 <style>
 /* ═══ TOKENS ═══ */
 :root {
-  --gold:#C9A84C;--gold-light:#E8D09A;--gold-dark:#8B6914;
-  --navy:#0A1628;--navy-mid:#152340;--navy-light:#1E3460;
+  --gold:#008C3C;--gold-light:#D4E8FF;--gold-dark:#006B2E;
+  --navy:#0D2258;--navy-mid:#152B6E;--navy-light:#1E3460;
   --slate:#4A5568;--slate-light:#718096;
-  --cream:#FAF8F3;--white:#FFFFFF;
+  --cream:#F0F5FF;--white:#FFFFFF;
   --success:#1D9E75;--success-bg:#E1F5EE;
   --warn:#EF9F27;
   --border-soft:rgba(255,255,255,0.08);
   --radius:12px;--radius-sm:8px;
   --shadow:0 4px 24px rgba(10,22,40,0.08);
-  --shadow-gold:0 8px 32px rgba(201,168,76,0.2);
+  --shadow-gold:0 8px 32px rgba(0,140,60,0.2);
   --fd:'Playfair Display',Georgia,serif;
   --fb:'DM Sans',-apple-system,sans-serif;
   --tr:0.22s cubic-bezier(0.4,0,0.2,1);
@@ -86,7 +86,7 @@ body{font-family:var(--fb);background:var(--cream);color:var(--navy);line-height
 
 /* ═══ BUTTONS ═══ */
 .btn-gold{background:var(--gold);color:var(--navy);font-family:var(--fb);font-size:15px;font-weight:600;padding:14px 28px;border-radius:var(--radius-sm);text-decoration:none;border:none;cursor:pointer;transition:all var(--tr);display:inline-flex;align-items:center;gap:8px;}
-.btn-gold:hover{background:#B8922F;transform:translateY(-1px);box-shadow:var(--shadow-gold);}
+.btn-gold:hover{background:#006B2E;transform:translateY(-1px);box-shadow:var(--shadow-gold);}
 .btn-navy{background:var(--navy);color:var(--white);font-family:var(--fb);font-size:15px;font-weight:600;padding:14px 28px;border-radius:var(--radius-sm);text-decoration:none;border:none;cursor:pointer;transition:all var(--tr);display:inline-flex;align-items:center;gap:8px;}
 .btn-navy:hover{background:var(--navy-light);transform:translateY(-1px);}
 .btn-ghost{background:transparent;color:rgba(255,255,255,0.8);font-family:var(--fb);font-size:15px;font-weight:500;padding:14px 28px;border-radius:var(--radius-sm);border:1px solid rgba(255,255,255,0.2);text-decoration:none;cursor:pointer;transition:all var(--tr);display:inline-flex;align-items:center;gap:8px;}
@@ -117,10 +117,10 @@ body{font-family:var(--fb);background:var(--cream);color:var(--navy);line-height
 
 /* ═══ PAGE HERO ═══ */
 .page-hero{background:var(--navy);padding:72px 0 0;position:relative;overflow:hidden;}
-.page-hero::before{content:'';position:absolute;right:-80px;top:-80px;width:480px;height:480px;border-radius:50%;border:1px solid rgba(201,168,76,0.08);pointer-events:none;}
-.page-hero::after{content:'';position:absolute;left:-150px;bottom:-60px;width:400px;height:400px;border-radius:50%;border:1px solid rgba(201,168,76,0.04);pointer-events:none;}
+.page-hero::before{content:'';position:absolute;right:-80px;top:-80px;width:480px;height:480px;border-radius:50%;border:1px solid rgba(0,140,60,0.08);pointer-events:none;}
+.page-hero::after{content:'';position:absolute;left:-150px;bottom:-60px;width:400px;height:400px;border-radius:50%;border:1px solid rgba(0,140,60,0.04);pointer-events:none;}
 .hero-inner{display:grid;grid-template-columns:1fr 400px;gap:56px;align-items:start;position:relative;z-index:2;}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,0.12);border:1px solid rgba(201,168,76,0.3);border-radius:100px;padding:5px 14px;font-size:12px;font-weight:500;color:var(--gold-light);margin-bottom:20px;text-transform:uppercase;letter-spacing:0.06em;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,140,60,0.12);border:1px solid rgba(0,140,60,0.3);border-radius:100px;padding:5px 14px;font-size:12px;font-weight:500;color:var(--gold-light);margin-bottom:20px;text-transform:uppercase;letter-spacing:0.06em;}
 .hero-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:blink 2s ease-in-out infinite;}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.5}}
 .page-hero h1{font-family:var(--fd);font-size:clamp(30px,4vw,50px);font-weight:700;color:var(--white);line-height:1.15;margin-bottom:18px;}
@@ -160,7 +160,7 @@ body{font-family:var(--fb);background:var(--cream);color:var(--navy);line-height
 /* ═══ SERVICE CATEGORIES TABS ═══ */
 .service-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px;}
 .svc-tab{padding:10px 20px;border-radius:100px;font-size:14px;font-weight:500;cursor:pointer;transition:all var(--tr);border:1.5px solid rgba(10,22,40,0.1);background:var(--cream);color:var(--slate);display:flex;align-items:center;gap:7px;}
-.svc-tab:hover{border-color:rgba(201,168,76,0.4);color:var(--navy);}
+.svc-tab:hover{border-color:rgba(0,140,60,0.4);color:var(--navy);}
 .svc-tab.active{background:var(--navy);color:var(--white);border-color:var(--navy);}
 .svc-tab-icon{font-size:15px;}
 .svc-count{background:rgba(255,255,255,0.15);color:inherit;font-size:11px;font-weight:600;padding:1px 7px;border-radius:100px;}
@@ -173,9 +173,9 @@ body{font-family:var(--fb);background:var(--cream);color:var(--navy);line-height
 .svc-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform var(--tr);}
 .svc-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:transparent;}
 .svc-card:hover::after{transform:scaleX(1);}
-.svc-card-icon{width:44px;height:44px;border-radius:var(--radius-sm);background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:14px;flex-shrink:0;}
+.svc-card-icon{width:44px;height:44px;border-radius:var(--radius-sm);background:rgba(0,140,60,0.1);border:1px solid rgba(0,140,60,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:14px;flex-shrink:0;}
 .svc-cat-badge{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:4px;margin-bottom:10px;text-transform:uppercase;letter-spacing:0.05em;}
-.badge-lic{background:rgba(201,168,76,0.1);color:var(--gold-dark);}
+.badge-lic{background:rgba(0,140,60,0.1);color:var(--gold-dark);}
 .badge-biz{background:rgba(29,158,117,0.1);color:#085041;}
 .badge-not{background:rgba(21,35,64,0.08);color:var(--navy-light);}
 .badge-app{background:rgba(239,159,39,0.12);color:#633806;}
@@ -186,11 +186,11 @@ body{font-family:var(--fb);background:var(--cream);color:var(--navy);line-height
 
 /* ═══ WHY US STRIP ═══ */
 .why-strip{background:var(--navy);padding:56px 0;position:relative;overflow:hidden;}
-.why-strip::before{content:'';position:absolute;right:-100px;top:-100px;width:400px;height:400px;border-radius:50%;border:1px solid rgba(201,168,76,0.06);pointer-events:none;}
+.why-strip::before{content:'';position:absolute;right:-100px;top:-100px;width:400px;height:400px;border-radius:50%;border:1px solid rgba(0,140,60,0.06);pointer-events:none;}
 .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.06);border-radius:var(--radius);overflow:hidden;position:relative;z-index:2;}
 .why-block{background:var(--navy-mid);padding:28px 24px;transition:background var(--tr);}
 .why-block:hover{background:var(--navy-light);}
-.why-block-icon{width:40px;height:40px;border-radius:var(--radius-sm);background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:14px;}
+.why-block-icon{width:40px;height:40px;border-radius:var(--radius-sm);background:rgba(0,140,60,0.1);border:1px solid rgba(0,140,60,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:14px;}
 .why-block-title{font-size:14px;font-weight:600;color:var(--white);margin-bottom:6px;line-height:1.3;}
 .why-block-desc{font-size:13px;color:rgba(255,255,255,0.45);font-weight:300;line-height:1.55;}
 
@@ -205,7 +205,7 @@ body{font-family:var(--fb);background:var(--cream);color:var(--navy);line-height
 /* Category selector tabs */
 .form-cats{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:22px;}
 .form-cat-btn{padding:11px 10px;border-radius:var(--radius-sm);border:1.5px solid rgba(10,22,40,0.09);background:var(--cream);font-family:var(--fb);font-size:13px;font-weight:500;color:var(--slate);cursor:pointer;transition:all var(--tr);text-align:center;display:flex;align-items:center;justify-content:center;gap:6px;}
-.form-cat-btn:hover{border-color:rgba(201,168,76,0.4);color:var(--navy);}
+.form-cat-btn:hover{border-color:rgba(0,140,60,0.4);color:var(--navy);}
 .form-cat-btn.active{background:var(--navy);color:var(--white);border-color:var(--navy);}
 .form-cat-icon{font-size:16px;}
 .form-step{display:none;}
@@ -224,10 +224,10 @@ body{font-family:var(--fb);background:var(--cream);color:var(--navy);line-height
 
 /* ═══ APPROVALS GRID ═══ */
 .approvals-section{background:var(--navy);padding:80px 0;position:relative;overflow:hidden;}
-.approvals-section::before{content:'';position:absolute;left:-120px;bottom:-80px;width:450px;height:450px;border-radius:50%;border:1px solid rgba(201,168,76,0.05);pointer-events:none;}
+.approvals-section::before{content:'';position:absolute;left:-120px;bottom:-80px;width:450px;height:450px;border-radius:50%;border:1px solid rgba(0,140,60,0.05);pointer-events:none;}
 .approvals-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;position:relative;z-index:2;}
 .approval-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);padding:22px;transition:all var(--tr);}
-.approval-card:hover{background:rgba(201,168,76,0.07);border-color:rgba(201,168,76,0.25);transform:translateY(-2px);}
+.approval-card:hover{background:rgba(0,140,60,0.07);border-color:rgba(0,140,60,0.25);transform:translateY(-2px);}
 .approval-logo{width:48px;height:48px;border-radius:var(--radius-sm);background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;margin-bottom:12px;font-size:11px;font-weight:700;color:var(--gold);letter-spacing:0.03em;flex-shrink:0;}
 .approval-name{font-size:15px;font-weight:600;color:var(--white);margin-bottom:5px;}
 .approval-full{font-size:12px;color:rgba(255,255,255,0.35);margin-bottom:10px;font-weight:300;}
@@ -235,11 +235,11 @@ body{font-family:var(--fb);background:var(--cream);color:var(--navy);line-height
 
 /* ═══ PROCESS STEPS (horizontal) ═══ */
 .process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;margin-top:52px;}
-.process-steps::before{content:'';position:absolute;top:28px;left:calc(12.5% + 24px);right:calc(12.5% + 24px);height:1px;background:linear-gradient(90deg,var(--gold) 0%,rgba(201,168,76,0.3) 100%);z-index:0;}
+.process-steps::before{content:'';position:absolute;top:28px;left:calc(12.5% + 24px);right:calc(12.5% + 24px);height:1px;background:linear-gradient(90deg,var(--gold) 0%,rgba(0,140,60,0.3) 100%);z-index:0;}
 .process-step{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 16px 32px;position:relative;z-index:1;}
 .step-circle{width:56px;height:56px;border-radius:50%;background:var(--navy);border:3px solid var(--gold);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-family:var(--fd);font-size:16px;font-weight:700;color:var(--gold);transition:all var(--tr);flex-shrink:0;}
 .process-step:hover .step-circle{background:var(--gold);color:var(--navy);}
-.step-tag{display:inline-block;font-size:11px;font-weight:600;color:var(--gold-dark);background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.25);border-radius:100px;padding:2px 9px;margin-bottom:8px;}
+.step-tag{display:inline-block;font-size:11px;font-weight:600;color:var(--gold-dark);background:rgba(0,140,60,0.1);border:1px solid rgba(0,140,60,0.25);border-radius:100px;padding:2px 9px;margin-bottom:8px;}
 .step-name{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px;}
 .step-text{font-size:13.5px;color:var(--slate);font-weight:300;line-height:1.6;}
 
@@ -251,7 +251,7 @@ body{font-family:var(--fb);background:var(--cream);color:var(--navy);line-height
 .faq-q:hover{background:var(--cream);}
 .faq-q.active{background:var(--navy);color:var(--white);}
 .faq-ico{width:24px;height:24px;border-radius:50%;border:1.5px solid rgba(10,22,40,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all var(--tr);font-size:16px;color:var(--slate-light);}
-.faq-q.active .faq-ico{border-color:rgba(201,168,76,0.4);background:rgba(201,168,76,0.1);color:var(--gold-light);transform:rotate(45deg);}
+.faq-q.active .faq-ico{border-color:rgba(0,140,60,0.4);background:rgba(0,140,60,0.1);color:var(--gold-light);transform:rotate(45deg);}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.4,0,.2,1);}
 .faq-a.open{max-height:500px;}
 .faq-a-inner{padding:0 22px 18px;font-size:14px;color:var(--slate);line-height:1.75;font-weight:300;}
@@ -316,38 +316,38 @@ body{font-family:var(--fb);background:var(--cream);color:var(--navy);line-height
 
 /* Font rendering improvements */
 body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
-.topbar{background:#0A1628;padding:9px 0;font-family:'DM Sans',-apple-system,sans-serif}
+.topbar{background:#0D2258;padding:9px 0;font-family:'DM Sans',-apple-system,sans-serif}
 .topbar .container{max-width:1160px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
-.topbar a{color:#E8D09A;text-decoration:none;font-size:13px;display:flex;align-items:center;gap:5px}
+.topbar a{color:#D4E8FF;text-decoration:none;font-size:13px;display:flex;align-items:center;gap:5px}
 .topbar a:hover{color:#fff}
 .topbar-left,.topbar-right{display:flex;gap:18px;align-items:center}
 .nav-wrapper{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid rgba(10,22,40,.08);box-shadow:0 2px 16px rgba(10,22,40,.06);font-family:'DM Sans',-apple-system,sans-serif}
 .nav-wrapper .container{max-width:1160px;margin:0 auto;padding:0 24px}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:13px 0;gap:16px}
 .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.nav-logo-mark{width:40px;height:40px;background:#0A1628;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.nav-logo-name{font-family:'Playfair Display',Georgia,serif;font-size:18px;font-weight:600;color:#0A1628;display:block;line-height:1.2}
-.nav-logo-sub{font-size:10px;font-weight:500;color:#8B6914;text-transform:uppercase;letter-spacing:.08em;display:block}
+.nav-logo-mark{width:40px;height:40px;background:#0D2258;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.nav-logo-name{font-family:'Playfair Display',Georgia,serif;font-size:18px;font-weight:600;color:#0D2258;display:block;line-height:1.2}
+.nav-logo-sub{font-size:10px;font-weight:500;color:#006B2E;text-transform:uppercase;letter-spacing:.08em;display:block}
 .nav-links{display:flex;list-style:none;gap:2px;align-items:center}
 .nav-links li{position:relative}
 .nav-links a{text-decoration:none;color:#4A5568;font-size:14px;font-weight:500;padding:8px 13px;border-radius:8px;transition:all .2s;display:flex;align-items:center;gap:4px;white-space:nowrap}
-.nav-links a:hover,.nav-links a.active{color:#0A1628;background:#FAF8F3}
-.nav-links a.nav-cta{background:#C9A84C;color:#0A1628;font-weight:600;padding:10px 20px}
-.nav-links a.nav-cta:hover{background:#B8922F}
-.nav-links a.nav-cta.active{background:#B8922F;color:#0A1628}
+.nav-links a:hover,.nav-links a.active{color:#0D2258;background:#F0F5FF}
+.nav-links a.nav-cta{background:#008C3C;color:#0D2258;font-weight:600;padding:10px 20px}
+.nav-links a.nav-cta:hover{background:#006B2E}
+.nav-links a.nav-cta.active{background:#006B2E;color:#0D2258}
 .drop-arrow{font-size:10px;color:#718096;transition:transform .2s;display:inline-block}
 .has-drop:hover .drop-arrow{transform:rotate(180deg)}
 .dropdown{position:absolute;top:calc(100% + 8px);left:0;background:#fff;border:1px solid rgba(10,22,40,.08);border-radius:12px;padding:8px;min-width:220px;box-shadow:0 4px 24px rgba(10,22,40,.1);opacity:0;pointer-events:none;transform:translateY(-6px);transition:opacity .2s,transform .2s;z-index:9999}
 .has-drop:hover .dropdown{opacity:1;pointer-events:all;transform:translateY(0)}
 .dropdown a{display:block;padding:9px 14px;font-size:14px;color:#4A5568;border-radius:8px;white-space:nowrap;text-decoration:none;font-weight:400}
-.dropdown a:hover{background:#FAF8F3;color:#0A1628}
+.dropdown a:hover{background:#F0F5FF;color:#0D2258}
 .nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;background:none;border:none}
-.nav-toggle span{display:block;width:22px;height:2px;background:#0A1628;border-radius:2px}
+.nav-toggle span{display:block;width:22px;height:2px;background:#0D2258;border-radius:2px}
 .nav-mobile{display:none;background:#fff;border-top:1px solid rgba(10,22,40,.07);padding:16px 24px 20px;max-height:80vh;overflow-y:auto}
 .nav-mobile.open{display:block}
 .nav-mobile a{display:block;padding:10px 0;font-size:15px;color:#4A5568;text-decoration:none;border-bottom:1px solid rgba(10,22,40,.05);font-weight:500}
-.nav-mobile a:hover{color:#0A1628}
-.nav-mobile a.mobile-cta{background:#C9A84C;color:#0A1628;font-weight:700;text-align:center;padding:12px;border-radius:8px;margin-top:10px;border-bottom:none}
+.nav-mobile a:hover{color:#0D2258}
+.nav-mobile a.mobile-cta{background:#008C3C;color:#0D2258;font-weight:700;text-align:center;padding:12px;border-radius:8px;margin-top:10px;border-bottom:none}
 @media(max-width:900px){.nav-links{display:none}.nav-toggle{display:flex}}
 </style>
 
@@ -363,9 +363,8 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
 <!-- NAVIGATION -->
 <div class="nav-wrapper"><div class="container">
 <nav class="nav">
-  <a href="/" class="nav-logo">
-    <div class="nav-logo-mark"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2L3 6.5v9L11 20l8-4.5v-9L11 2z" stroke="#C9A84C" stroke-width="1.5" fill="none"/><path d="M11 6l-4.5 2.5v5L11 16l4.5-2.5v-5L11 6z" fill="#C9A84C" fill-opacity="0.3"/></svg></div>
-    <div><span class="nav-logo-name">Emaar Global</span><span class="nav-logo-sub">Business Solutions</span></div>
+  <a href="/" class="nav-logo" style="display:flex;align-items:center;text-decoration:none;gap:0">
+    <img src="data:image/png;base64,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" alt="Emaar Global Business Solutions" height="40" style="display:block">
   </a>
   <ul class="nav-links">
     <li><a href="/">Home</a></li>
@@ -387,7 +386,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
         <a href="/services/legal-services/">Legal Services</a>
       </div>
     </li>
-    <li><a href="/services/visa-services/golden-visa/" style="color:#8B6914;font-weight:600;">&#11088; Golden Visa</a></li>
+    <li><a href="/services/visa-services/golden-visa/" style="color:#006B2E;font-weight:600;">&#11088; Golden Visa</a></li>
     <li><a href="/tools/uae-company-cost-calculator/">&#129518; Cost Calculator</a></li>
     <li><a href="/about/">About</a></li>
     <li><a href="/contact/" class="nav-cta">Free Consultation</a></li>
@@ -409,7 +408,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
   <a href="/services/accounting-tax/">&#8227; Accounting &amp; Tax</a>
   <a href="/services/corporate-services/">&#8227; Corporate Services</a>
   <a href="/services/legal-services/">&#8227; Legal Services</a>
-  <a href="/services/visa-services/golden-visa/" style="color:#C9A84C;font-weight:600;">&#11088; Golden Visa</a>
+  <a href="/services/visa-services/golden-visa/" style="color:#008C3C;font-weight:600;">&#11088; Golden Visa</a>
   <a href="/tools/uae-company-cost-calculator/">&#129518; Cost Calculator</a>
   <a href="/about/">About Us</a>
   <a href="/contact/" class="mobile-cta">Free Consultation &#8594;</a>
@@ -524,7 +523,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
 
       <!-- ─── LICENSING ─── -->
       <div class="svc-card visible" data-cat="lic">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M7 8h10M7 12h6"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M7 8h10M7 12h6"/><path d="M8 21h8M12 17v4"/></svg></div>
         <span class="svc-cat-badge badge-lic">Licensing</span>
         <div class="svc-name">New Trade License</div>
         <p class="svc-desc">Get your commercial, professional, or industrial license issued by DET or your chosen free zone. We handle name reservation, activity selection, documentation, and all authority submissions.</p>
@@ -532,7 +531,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
       </div>
 
       <div class="svc-card visible" data-cat="lic">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 11-7.778 7.778 5.5 5.5 0 017.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 11-7.778 7.778 5.5 5.5 0 017.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg></div>
         <span class="svc-cat-badge badge-lic">Licensing</span>
         <div class="svc-name">E-Commerce License</div>
         <p class="svc-desc">Launch your UAE online business with the right e-commerce license. We advise on jurisdiction, register your trade name, and ensure your license covers your digital sales model — website, marketplace, or social commerce.</p>
@@ -540,7 +539,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
       </div>
 
       <div class="svc-card visible" data-cat="lic">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
         <span class="svc-cat-badge badge-lic">Licensing</span>
         <div class="svc-name">License Renewal</div>
         <p class="svc-desc">Annual renewal is a legal must — and a missed deadline means fines and potential suspension. We send you timely reminders, clear outstanding issues, and complete the full renewal with DET or your free zone authority.</p>
@@ -548,7 +547,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
       </div>
 
       <div class="svc-card visible" data-cat="lic">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div>
         <span class="svc-cat-badge badge-lic">Licensing</span>
         <div class="svc-name">License Amendments</div>
         <p class="svc-desc">Adding activities, changing your trade name, updating ownership, or shifting legal structure — we prepare all amendment documents, secure regulatory approvals, and update your license across all relevant authorities.</p>
@@ -556,7 +555,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
       </div>
 
       <div class="svc-card visible" data-cat="lic">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
         <span class="svc-cat-badge badge-lic">Licensing</span>
         <div class="svc-name">Branch Office Formation</div>
         <p class="svc-desc">Expanding into the UAE with a branch of your foreign or local entity requires Ministry of Economy approvals and careful legal preparation. We manage attestations, parent company documents, and full authority liaison.</p>
@@ -564,7 +563,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
       </div>
 
       <div class="svc-card visible" data-cat="lic">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></div>
         <span class="svc-cat-badge badge-lic">Licensing</span>
         <div class="svc-name">Company Liquidation</div>
         <p class="svc-desc">Closing a company incorrectly leaves you liable for future fines and penalties. We handle the entire closure — board resolutions, final audits, public notices, labour clearance, deregistration, and cancellation letters.</p>
@@ -573,7 +572,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
 
       <!-- ─── BUSINESS SUPPORT ─── -->
       <div class="svc-card visible" data-cat="biz">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div>
         <span class="svc-cat-badge badge-biz">Business Support</span>
         <div class="svc-name">Bank Account Opening</div>
         <p class="svc-desc">We prepare a bank-ready documentation pack, select the right UAE bank for your company type, and accompany the full process to account activation. Available for mainland, free zone, and offshore companies.</p>
@@ -581,7 +580,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
       </div>
 
       <div class="svc-card visible" data-cat="biz">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
         <span class="svc-cat-badge badge-biz">Business Support</span>
         <div class="svc-name">Office Solutions</div>
         <p class="svc-desc">Physical offices, shared desks, smart offices, and virtual office packages — all meeting UAE licensing requirements. We match you with the most affordable compliant option for your specific license type.</p>
@@ -589,7 +588,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
       </div>
 
       <div class="svc-card visible" data-cat="biz">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M22 11l-3 3-1.5-1.5"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M22 11l-3 3-1.5-1.5"/></svg></div>
         <span class="svc-cat-badge badge-biz">Business Support</span>
         <div class="svc-name">Local Sponsor Services</div>
         <p class="svc-desc">For activities still requiring a UAE national sponsor, we connect you with a verified, reliable sponsor backed by a legal side agreement that fully protects your ownership rights and business control.</p>
@@ -597,7 +596,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
       </div>
 
       <div class="svc-card visible" data-cat="biz">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
         <span class="svc-cat-badge badge-biz">Business Support</span>
         <div class="svc-name">Attestation Services</div>
         <p class="svc-desc">UAE and international document attestation through MOFA, embassies, and notary public. We fast-track the process through our internal PRO team — no long waits, no multiple trips to government offices.</p>
@@ -605,7 +604,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
       </div>
 
       <div class="svc-card visible" data-cat="biz">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M2 5l7 7-7 7M13 19h9"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><path d="M2 5l7 7-7 7M13 19h9"/></svg></div>
         <span class="svc-cat-badge badge-biz">Business Support</span>
         <div class="svc-name">Legal Translation</div>
         <p class="svc-desc">MOJ-certified translation to and from Arabic and English for contracts, MOAs, certificates, and government submissions. Court-approved translators ensure your documents are accepted without rejection.</p>
@@ -613,7 +612,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
       </div>
 
       <div class="svc-card visible" data-cat="biz">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.8 19.8 0 01-3.07-8.67A2 2 0 012 1.24h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 9a16 16 0 006.29 6.29l1.12-1.12a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.8 19.8 0 01-3.07-8.67A2 2 0 012 1.24h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 9a16 16 0 006.29 6.29l1.12-1.12a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
         <span class="svc-cat-badge badge-biz">Business Support</span>
         <div class="svc-name">Virtual Receptionist</div>
         <p class="svc-desc">Professional call handling, WhatsApp response, and customer communications — all under your company name. Build a credible business presence without the overhead of a full-time front desk.</p>
@@ -622,7 +621,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
 
       <!-- ─── NOTARY ─── -->
       <div class="svc-card visible" data-cat="not">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <span class="svc-cat-badge badge-not">Notary &amp; Legal</span>
         <div class="svc-name">Power of Attorney (POA)</div>
         <p class="svc-desc">Legally binding POAs for personal, financial, real estate, or corporate matters — drafted, translated, and notarized for use in the UAE and internationally. Remote notarization available.</p>
@@ -630,7 +629,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
       </div>
 
       <div class="svc-card visible" data-cat="not">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M7 8h10M7 12h7"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M7 8h10M7 12h7"/></svg></div>
         <span class="svc-cat-badge badge-not">Notary &amp; Legal</span>
         <div class="svc-name">MOA &amp; Board Resolutions</div>
         <p class="svc-desc">We draft and notarize Memorandums of Association tailored to your business activity and legal structure, plus board resolutions for ownership changes, appointments, and major company decisions.</p>
@@ -638,7 +637,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
       </div>
 
       <div class="svc-card visible" data-cat="not">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10"/></svg></div>
         <span class="svc-cat-badge badge-not">Notary &amp; Legal</span>
         <div class="svc-name">Remote Notarization</div>
         <p class="svc-desc">Can't travel to Dubai? We notarize your documents remotely through secure video channels accepted by UAE courts — fully valid for POAs, MOAs, agreements, and most official documents.</p>
@@ -646,7 +645,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
       </div>
 
       <div class="svc-card visible" data-cat="not">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
         <span class="svc-cat-badge badge-not">Notary &amp; Legal</span>
         <div class="svc-name">Non-Muslim Wills</div>
         <p class="svc-desc">Protect your assets and assign guardianship rights in the UAE. We draft and register DIFC or Dubai Court-recognised wills for non-Muslim residents — one of the most overlooked but important documents for expats.</p>
@@ -654,7 +653,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
       </div>
 
       <div class="svc-card visible" data-cat="not">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M17 3a2.828 2.828 0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><path d="M17 3a2.828 2.828 0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></div>
         <span class="svc-cat-badge badge-not">Notary &amp; Legal</span>
         <div class="svc-name">Legal Agreements &amp; Contracts</div>
         <p class="svc-desc">MOUs, service agreements, sales contracts, NDAs, and partnership agreements — drafted with legal precision, translated into Arabic when required, and notarized for full enforceability under UAE law.</p>
@@ -663,7 +662,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
 
       <!-- ─── ONLINE APPROVALS (3 summary cards, detailed section below) ─── -->
       <div class="svc-card visible" data-cat="app">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
         <span class="svc-cat-badge badge-app">Online Approvals</span>
         <div class="svc-name">Regulatory Approvals (DHA, DM, RTA)</div>
         <p class="svc-desc">Dubai Health Authority, Dubai Municipality, and RTA approvals for medical businesses, signage, food, transport, and more. We navigate the portals, submit accurately, and follow up until approved.</p>
@@ -671,7 +670,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
       </div>
 
       <div class="svc-card visible" data-cat="app">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
         <span class="svc-cat-badge badge-app">Online Approvals</span>
         <div class="svc-name">Property &amp; Security (RERA, SIRA)</div>
         <p class="svc-desc">RERA approvals for real estate listings, developer registration, and property management. SIRA compliance for security systems and surveillance businesses — fully documented and submitted.</p>
@@ -679,7 +678,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
       </div>
 
       <div class="svc-card visible" data-cat="app">
-        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+        <div class="svc-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
         <span class="svc-cat-badge badge-app">Online Approvals</span>
         <div class="svc-name">Customs, Civil Defence &amp; Others</div>
         <p class="svc-desc">Import/export registration, customs clearance, Civil Defence NOCs and fire safety approvals, TAMM for Abu Dhabi entities — and any other approval you're not sure how to navigate.</p>
@@ -695,22 +694,22 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
   <div class="container">
     <div class="why-grid">
       <div class="why-block">
-        <div class="why-block-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="why-block-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
         <div class="why-block-title">Zero rejection risk</div>
         <p class="why-block-desc">We check every document before submission. If an authority rejects an application we filed, we revise and resubmit at no extra cost.</p>
       </div>
       <div class="why-block">
-        <div class="why-block-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div class="why-block-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
         <div class="why-block-title">Fast-track available</div>
         <p class="why-block-desc">Urgent deadline? We offer priority processing for most licensing, notary, and approval services — with same-day turnaround in many cases.</p>
       </div>
       <div class="why-block">
-        <div class="why-block-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+        <div class="why-block-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
         <div class="why-block-title">Transparent pricing</div>
         <p class="why-block-desc">Government fees, service charges, and any extras are quoted upfront. No vague estimates. No bill surprises after the work is done.</p>
       </div>
       <div class="why-block">
-        <div class="why-block-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+        <div class="why-block-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
         <div class="why-block-title">One point of contact</div>
         <p class="why-block-desc">Your relationship manager handles everything — from the first enquiry to the final approval. You never need to track down who's handling what.</p>
       </div>
@@ -776,8 +775,8 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
         <div class="approval-full">Fire Safety &amp; NOCs</div>
         <p class="approval-desc">Fire safety NOCs, building inspection approvals, and all Civil Defence documentation required for new businesses, fit-outs, and license renewals.</p>
       </div>
-      <div class="approval-card" style="background:rgba(201,168,76,0.06);border-color:rgba(201,168,76,0.2);">
-        <div class="approval-logo" style="background:rgba(201,168,76,0.15);color:var(--gold);">?</div>
+      <div class="approval-card" style="background:rgba(0,140,60,0.06);border-color:rgba(0,140,60,0.2);">
+        <div class="approval-logo" style="background:rgba(0,140,60,0.15);color:var(--gold);">?</div>
         <div class="approval-name" style="color:var(--gold-light);">Not Sure Which?</div>
         <div class="approval-full">We'll diagnose it for you</div>
         <p class="approval-desc">Don't know which department handles your case? Tell us what you're trying to do — we'll identify the correct authority and handle the entire submission.</p>
@@ -833,19 +832,19 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
         <p class="lead" style="margin-bottom:24px;">Just tell us your situation — we'll identify exactly what's required and send you a fixed-price quote. No jargon, no guesswork.</p>
         <div style="display:flex;flex-direction:column;gap:16px;margin-top:28px;">
           <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;background:var(--white);border-radius:var(--radius);border:1px solid rgba(10,22,40,0.07);">
-            <div style="width:36px;height:36px;border-radius:var(--radius-sm);background:rgba(201,168,76,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div style="width:36px;height:36px;border-radius:var(--radius-sm);background:rgba(0,140,60,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
             <div><div style="font-size:14px;font-weight:600;color:var(--navy);margin-bottom:3px;">Response within 2 hours</div><p style="font-size:13px;color:var(--slate);font-weight:300;">We confirm your requirements and send a quote the same working day.</p></div>
           </div>
           <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;background:var(--white);border-radius:var(--radius);border:1px solid rgba(10,22,40,0.07);">
-            <div style="width:36px;height:36px;border-radius:var(--radius-sm);background:rgba(201,168,76,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+            <div style="width:36px;height:36px;border-radius:var(--radius-sm);background:rgba(0,140,60,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
             <div><div style="font-size:14px;font-weight:600;color:var(--navy);margin-bottom:3px;">Fixed pricing, no surprises</div><p style="font-size:13px;color:var(--slate);font-weight:300;">Government fees and service charges all quoted clearly before you commit.</p></div>
           </div>
           <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;background:var(--white);border-radius:var(--radius);border:1px solid rgba(10,22,40,0.07);">
-            <div style="width:36px;height:36px;border-radius:var(--radius-sm);background:rgba(201,168,76,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+            <div style="width:36px;height:36px;border-radius:var(--radius-sm);background:rgba(0,140,60,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#008C3C" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
             <div><div style="font-size:14px;font-weight:600;color:var(--navy);margin-bottom:3px;">Free resubmission if rejected</div><p style="font-size:13px;color:var(--slate);font-weight:300;">If any application we submit gets rejected, we revise and resubmit at no extra charge.</p></div>
           </div>
         </div>
-        <div style="margin-top:28px;padding:18px;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.2);border-radius:var(--radius);">
+        <div style="margin-top:28px;padding:18px;background:rgba(0,140,60,0.08);border:1px solid rgba(0,140,60,0.2);border-radius:var(--radius);">
           <div style="font-size:13px;font-weight:600;color:var(--navy);margin-bottom:6px;">Prefer to speak to someone directly?</div>
           <p style="font-size:13px;color:var(--slate);font-weight:300;margin-bottom:14px;">Our team is available 7 days a week via WhatsApp and phone. Most enquiries are answered within minutes during business hours.</p>
           <div style="display:flex;gap:10px;flex-wrap:wrap;">
