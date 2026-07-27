@@ -367,7 +367,12 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
         <a href="/services/visa-services/">Visa Services</a>
         <a href="/services/accounting-tax/">Accounting &amp; Tax</a>
         <a href="/services/corporate-services/">Corporate Services</a>
+          <a href="/services/pro-services/">PRO Services</a>
+          <a href="/services/company-amendments-liquidation/">Amendments &amp; Liquidation</a>
         <a href="/services/legal-services/">Legal Services</a>
+        <a href="/services/pro-services/">PRO Services</a>
+        <a href="/services/company-amendments-liquidation/">Amendments &amp; Liquidation</a>
+        <a href="/services/pro-services/">PRO Services</a>
       </div>
     </li>
     <li><a href="/services/visa-services/golden-visa/" style="color:#1450B4;font-weight:600;">&#11088; Golden Visa</a></li>
@@ -392,6 +397,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-r
   <a href="/services/accounting-tax/">&#8227; Accounting &amp; Tax</a>
   <a href="/services/corporate-services/">&#8227; Corporate Services</a>
   <a href="/services/legal-services/">&#8227; Legal Services</a>
+  <a href="/services/pro-services/">&#8227; PRO Services</a>
   <a href="/services/visa-services/golden-visa/" style="color:#008C3C;font-weight:600;">&#11088; Golden Visa</a>
   <a href="/tools/uae-company-cost-calculator/">&#129518; Cost Calculator</a>
   <a href="/about/">About Us</a>
@@ -952,59 +958,97 @@ render();
 </a>
 
 <!-- FOOTER -->
-<footer style="background:#0D2258;color:rgba(255,255,255,.55);font-family:'DM Sans',-apple-system,sans-serif;padding:52px 0 0;margin-top:0">
-  <div style="max-width:1200px;margin:0 auto;padding:0 24px">
-    <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.08)">
+<footer class="footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+
       <!-- Brand -->
-      <div>
-        <div style="font-family:'Playfair Display',Georgia,serif;font-size:20px;font-weight:700;color:#fff;margin-bottom:3px">Emaar Global</div>
-        <div style="font-size:11px;font-weight:600;color:#008C3C;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px">Business Solutions</div>
-        <p style="font-size:13px;font-weight:300;line-height:1.7;margin-bottom:18px">Dubai&rsquo;s trusted business setup consultancy. CBLS No. 12491086. Serving 80+ nationalities across all 7 UAE emirates.</p>
-        <a href="https://wa.me/971561571514" style="display:inline-flex;align-items:center;gap:7px;background:#25D366;color:#fff;text-decoration:none;font-size:13px;font-weight:600;padding:9px 16px;border-radius:8px">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.1.547 4.162 1.588 5.979L.043 24l6.24-1.637A11.969 11.969 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+      <div class="footer-brand">
+        <a href="/" class="footer-logo" style="display:inline-block;text-decoration:none;margin-bottom:16px">
+          <img src="data:image/png;base64,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" alt="Emaar Global Business Solutions" height="36" style="display:block;max-width:190px;filter:brightness(0) invert(1)">
+        </a>
+        <p class="footer-tagline">Dubai's trusted partner for company formation, visa services, banking support, and ongoing business compliance — since 2005.</p>
+        <a href="tel:+971561571514" class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.8 19.8 0 01-3.07-8.67A2 2 0 012 1.24h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 9a16 16 0 006.29 6.29l1.12-1.12a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
           +971 56 157 1514
         </a>
-      </div>
-      <!-- Business Setup -->
-      <div>
-        <div style="font-size:12px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.07em;margin-bottom:16px">Business Setup</div>
-        <div style="display:flex;flex-direction:column;gap:9px">
-          <a href="/business-setup/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Business Setup Hub</a>
-          <a href="/business-setup/dubai-mainland/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Mainland Company</a>
-          <a href="/business-setup/free-zone/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Free Zone Company</a>
-          <a href="/business-setup/offshore/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Offshore Company</a>
-          <a href="/tools/uae-company-cost-calculator/" style="color:#008C3C;text-decoration:none;font-size:13px;font-weight:500">&#129518; Cost Calculator</a>
+        <a href="mailto:info@emaar-global.com" class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+          info@emaar-global.com
+        </a>
+        <a href="https://maps.google.com/?q=Business+Bay,Dubai" target="_blank" rel="noopener" class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Business Bay, Dubai, UAE
+        </a>
+        <div class="footer-socials">
+          <a href="#" class="social-btn" aria-label="Facebook">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="rgba(255,255,255,0.5)"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Instagram">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="LinkedIn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="rgba(255,255,255,0.5)"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://wa.me/971561571514" class="social-btn" aria-label="WhatsApp">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="rgba(255,255,255,0.5)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.1.547 4.162 1.588 5.979L.043 24l6.24-1.637A11.969 11.969 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.999a9.94 9.94 0 01-5.063-1.378l-.363-.216-3.764.987.993-3.653-.237-.374A9.941 9.941 0 012.04 12c0-5.493 4.47-9.963 9.963-9.963 2.662 0 5.165 1.037 7.048 2.92a9.914 9.914 0 012.914 7.043c-.002 5.492-4.472 9.962-9.98 9.962l.015.037z"/></svg>
+          </a>
         </div>
       </div>
-      <!-- Services -->
+
+      <!-- Setup Services -->
       <div>
-        <div style="font-size:12px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.07em;margin-bottom:16px">Services</div>
-        <div style="display:flex;flex-direction:column;gap:9px">
-          <a href="/services/license-services/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">License Services</a>
-          <a href="/services/visa-services/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Visa Services</a>
-          <a href="/services/visa-services/golden-visa/" style="color:#008C3C;text-decoration:none;font-size:13px;font-weight:500">&#11088; Golden Visa</a>
-          <a href="/services/accounting-tax/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Accounting &amp; Tax</a>
-          <a href="/services/corporate-services/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Corporate Services</a>
-          <a href="/services/legal-services/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Legal Services</a>
-        </div>
+        <div class="footer-col-title">Business Setup</div>
+        <ul class="footer-links">
+          <li><a href="/business-setup/dubai-mainland/">Mainland Company Setup</a></li>
+          <li><a href="/business-setup/free-zone/">Free Zone Company Setup</a></li>
+          <li><a href="/business-setup/offshore/">Offshore Company</a></li>
+          <li><a href="/services/license-services/">Trade License Services</a></li>
+          <li><a href="/services/corporate-services/">Company Amendments</a></li>
+          <li><a href="/services/corporate-services/">Company Liquidation</a></li>
+        </ul>
       </div>
+
+      <!-- Additional Services -->
+      <div>
+        <div class="footer-col-title">Our Services</div>
+        <ul class="footer-links">
+          <li><a href="/services/visa-services/">Visa &amp; Immigration</a></li>
+          <li><a href="/services/visa-services/golden-visa/">UAE Golden Visa</a></li>
+          <li><a href="/services/license-services/">Bank Account Opening</a></li>
+          <li><a href="/services/accounting-tax/">Tax &amp; VAT Services</a></li>
+          <li><a href="/services/corporate-services/">PRO Services</a></li>
+          <li><a href="/services/legal-services/">Trademark Registration</a></li>
+          <li><a href="/services/corporate-services/">Corporate Services</a>
+          <a href="/services/pro-services/">PRO Services</a>
+          <a href="/services/company-amendments-liquidation/">Amendments &amp; Liquidation</a></li>
+        </ul>
+      </div>
+
       <!-- Company -->
       <div>
-        <div style="font-size:12px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.07em;margin-bottom:16px">Company</div>
-        <div style="display:flex;flex-direction:column;gap:9px">
-          <a href="/about/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">About Us</a>
-          <a href="/contact/" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Contact Us</a>
-          <a href="tel:+971561571514" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">+971 56 157 1514</a>
-          <a href="mailto:info@emaar-global.com" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">info@emaar-global.com</a>
-        </div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links">
+          <li><a href="/about/">About Emaar Global</a></li>
+          <li><a href="/contact/">Blog &amp; Resources</a></li>
+          <li><a href="/business-setup/free-zone/">Free Zone Directory</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+          <li><a href="/contact/">Refer &amp; Earn</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms/">Terms of Service</a></li>
+        </ul>
       </div>
+
     </div>
-    <!-- Bottom bar -->
-    <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 0;flex-wrap:wrap;gap:12px">
-      <div style="font-size:12px;font-weight:300;color:rgba(255,255,255,.3)">&copy; 2025 Emaar Global Business Solutions LLC. CBLS No. 12491086 &middot; Dubai, UAE &middot; All rights reserved.</div>
-      <div style="display:flex;gap:20px">
-        <a href="/contact/" style="color:rgba(255,255,255,.35);text-decoration:none;font-size:12px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.35)'">Privacy Policy</a>
-        <a href="/contact/" style="color:rgba(255,255,255,.35);text-decoration:none;font-size:12px;font-weight:300" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.35)'">Terms of Service</a>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">© 2025 Emaar Global Business Solutions LLC. All rights reserved. Dubai, UAE.</div>
+      <div class="footer-bottom-right">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms/">Terms of Service</a>
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/sitemap.xml">Sitemap</a>
       </div>
     </div>
   </div>
