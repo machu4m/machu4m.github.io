@@ -1,0 +1,109 @@
+{
+  "account_size": 1000,
+  "currency": "USD",
+  "risk_per_trade_pct": 2,
+  "daily_loss_limit_pct": 5,
+  "max_trades_per_day": 10,
+  "default_lot": 0.02,
+  "contract_oz_per_lot": 100,
+  "typical_spread": 0.20,
+  "max_spread": 0.40,
+  "timezone": "Asia/Dubai",
+  "min_rr": 1.5,
+  "stop_after_consecutive_losses": 3,
+
+  "symbol": "XAUUSD",
+  "lot_step": 0.01,
+  "min_lot": 0.01,
+  "trader_dir": "trader",
+
+  "sessions": {
+    "_source": "Killzones_XAUUSD. Defined in New York time so they follow US DST; every output shows them in Dubai time (NY+9h in US winter, NY+8h in US summer).",
+    "defined_in_tz": "America/New_York",
+    "killzones": {
+      "asia":   ["20:00", "00:00"],
+      "london": ["02:00", "05:00"],
+      "ny":     ["07:00", "10:00"]
+    },
+    "ny_open_ban": ["09:30", "10:00"],
+    "_ny_open_ban_note": "UNVERIFIED window. Trade_History_Diagnosis rule 7 is a NY-open ban; set its exact times here.",
+    "rollover_block": ["16:45", "18:15"],
+    "friday_block_from": "15:00",
+    "sunday_open_block_until": "19:00",
+    "allow_outside_killzones": false
+  },
+
+  "data": {
+    "csv_server_tz": "EET",
+    "_csv_note": "MT5 server time. EET tracks GMT+2/+3. If your broker's server clock is GMT+0 (Exness), set UTC.",
+    "point_size": 0.01
+  },
+
+  "strategy": {
+    "_source": "xau-chart-map + Liquidity_timing + Setup_probabilities: sweep of a liquidity level, close back inside, displacement. Entry at the FVG or displacement close.",
+    "level_sessions": ["asia", "london"],
+    "eq_swing_bars": 3,
+    "eq_window_bars": 240,
+    "eq_tolerance": 0.30,
+    "sweep_min_pierce": 0.10,
+    "reclaim_max_bars": 3,
+    "displacement_avg_bars": 20,
+    "displacement_body_mult": 1.5,
+    "displacement_max_bars": 5,
+    "use_fvg_entry": true,
+    "limit_fill_max_bars": 15,
+    "scan_bars": 30,
+    "live_days": 3,
+    "market_entry_tolerance": 0.30,
+    "closer_side_first_pct": [73, 76],
+    "sweep_direction_odds_pct": 50,
+    "doc_min_rr": 2
+  },
+
+  "exits": {
+    "structure_buffer": 1.50,
+    "use_liquidity_target": true,
+    "default_target_r": 2.0,
+    "targets_r": [1.0, 1.5, 2.0, 3.0],
+    "breakeven_at_r": 1.0
+  },
+
+  "filters": {
+    "atr_bars": 14,
+    "spike_atr_mult": 3.0,
+    "spike_cooldown_bars": 5,
+    "fakeout_lookback_bars": 5,
+    "fakeout_wick_ratio": 0.6,
+    "fakeout_min_range_atr": 1.0,
+    "double_sweep_lookback_bars": 15
+  },
+
+  "timemachine": {
+    "max_hold_bars": 120,
+    "min_samples": 30,
+    "recent_hits_shown": 10,
+    "baseline_samples": 2000,
+    "seed": 19,
+    "coin_flip_band": 0.03,
+    "strong_band": 0.10,
+    "big_day_pct": 2.0
+  },
+
+  "journal": {
+    "revenge_minutes": 10,
+    "repeat_threshold": 2,
+    "review_days": 7,
+    "diagnosis_doc": "docs/Trade_History_Diagnosis.md",
+    "diagnosis_keywords": {
+      "outside_killzone": ["killzone", "session", "dead hour"],
+      "blocked_window": ["ny open", "ny-open", "rollover", "news", "weekend"],
+      "low_rr": ["1:2", "rr", "reward"],
+      "oversize": ["lot", "size", "risk"],
+      "no_stop": ["stop loss", "no stop", "sl"],
+      "over_max_trades": ["overtrad", "max trades", "number of trades"],
+      "after_daily_stop": ["daily stop", "daily loss"],
+      "after_loss_streak": ["losses in a row", "consecutive", "streak"],
+      "revenge": ["revenge", "after a loss", "chas"]
+    }
+  }
+}
