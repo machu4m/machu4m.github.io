@@ -1,0 +1,9 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "xau-scalper",
+  "description": "Single-skill XAUUSD desk for MT5 (paper/analysis only).",
+  "owner": {"name": "xau-scalper"},
+  "plugins": [
+    {"name": "xau-scalper", "description": "XAUUSD scalping desk for MT5. Paper/analysis only.", "source": "./", "category": "productivity"}
+  ]
+}
