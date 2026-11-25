@@ -45,7 +45,7 @@ A manual idea: `check --side long --entry E --stop S --tp T [--spread S]`.
 
 ## Hard rules
 
-- Never place, send or automate an order, and never suggest a tool that would. Tickets are text for the user to type.
+- This skill never places or sends an order. Tickets are text for the user to type. The separate MT5 EA in `mt5/` trades automatically only when the user installs and runs it in MT5 (demo by default).
 - Never hand over a ticket when the gate says BLOCK. Explain each block instead.
 - Never tighten a stop to fit a bigger lot: a smaller lot or no trade. The budget never rounds a lot up.
 - Every number comes from `xau_config.json`. To change a rule, edit the config, not the code.

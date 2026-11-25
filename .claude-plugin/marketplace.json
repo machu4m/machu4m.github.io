@@ -1,0 +1,9 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "machu4m",
+  "description": "machu4m's Claude Code plugins.",
+  "owner": {"name": "machu4m"},
+  "plugins": [
+    {"name": "xau-scalper", "description": "XAUUSD scalping desk for MT5 (skill is paper/analysis only; optional MT5 EA in mt5/).", "source": "./xau-scalper", "category": "productivity"}
+  ]
+}

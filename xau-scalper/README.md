@@ -6,6 +6,7 @@ Dubai time and an ICT/SMC sweep model. **Paper/analysis only: it never places or
 
 - Settings: `skills/xau-scalper/xau_config.json` (`xau.py init` copies it to `trader/` for editing).
 - Data: MT5 M1 CSV exports. Output: the `trader/` folder.
+- Optional automatic trading: the MT5 EA in `mt5/` (demo-only unless you allow live).
 - Rules and sources: `skills/xau-scalper/references/strategy_rules.md`.
 
 ```bash
