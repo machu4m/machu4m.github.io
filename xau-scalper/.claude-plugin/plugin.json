@@ -1,0 +1,7 @@
+{
+  "name": "xau-scalper",
+  "description": "XAUUSD scalping and day-trading desk for MT5: killzone clock, ICT/SMC sweep setups, M1 Time Machine, spread/fakeout filter, exits, lot sizing, risk gate, MT5 tickets, journal and weekly review. Paper/analysis only; never places orders.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": ["xauusd", "gold", "mt5", "scalping", "ict", "smc", "risk-management", "paper-trading"]
+}
